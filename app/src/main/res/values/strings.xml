@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">W Deutsch</string>
+    <string name="home">home</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="article">Article</string>
+    <string name="definite_article">Definite Article</string>
+    <string name="indefinite_article">Indefinite Article</string>
+    <string name="indefinite_negative_article">Negative Article</string>
+    <string name="numbers">Numbers</string>
+    <string name="single_digit">Single Digit</string>
+    <string name="double_digit">Double Digit</string>
+    <string name="triple_digit">Triple Digit</string>
+    <string name="score">Score</string>
+    <string name="complete_result">You got %1$d out of %2$d correct</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="excellent_label">Excellent</string>
+    <string name="excellent_description">“Wow, you’re a quiz whiz! Great job!”</string>
+
+    <string name="definite_article_nominative_question_1">___ Himmel ist sehr schön</string>
+    <string name="definite_article_nominative_question_2">___ Kind geht ins Kino</string>
+    <string name="definite_article_nominative_question_3">--- Junge spielt im Garten.</string>
+    <string name="definite_article_nominative_question_4">--- Lampe hängt an der Decke.</string>
+    <string name="definite_article_nominative_question_5">--- Blume blüht im Garten</string>
+    <string name="definite_article_nominative_option_1">der</string>
+    <string name="definite_article_nominative_option_2">die</string>
+    <string name="definite_article_nominative_option_3">das</string>
+
+    <string name="indefinite_article_nomiative_question_1">___ Himmel ist sehr schön</string>
+    <string name="indefinite_article_nominative_option_1">ein</string>
+    <string name="indefinite_article_nominative_option_2">eine</string>
+
+    <string name="indefinite_negative_article_nomiative_question_1">___ Himmel ist sehr schön</string>
+    <string name="indefinite_negative_article_nominative_option_1">kein</string>
+    <string name="indefinite_negative_article_nominative_option_2">keine</string>
+
+
+</resources>
