@@ -4,7 +4,10 @@ import androidx.annotation.StringRes
 
 data class ResultInfo(
     @StringRes val resultTitle: Int,
+    @StringRes val resultLabel: Int,
     val resultCategory: Result,
     @StringRes val resultMessage: Int,
-    @StringRes val resultImage: Int
-)
+    val resultImageOptions: List<Int>
+) {
+    val resultImage: Int get() = resultImageOptions.random()
+}

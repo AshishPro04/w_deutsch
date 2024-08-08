@@ -5,5 +5,5 @@ enum class Result {
     GOOD,
     AVERAGE,
     FAIR,
-    FAIL
+    POOR
 }

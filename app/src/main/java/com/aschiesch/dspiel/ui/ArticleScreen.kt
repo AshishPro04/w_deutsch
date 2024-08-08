@@ -15,6 +15,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -33,7 +35,10 @@ import com.aschiesch.dspiel.R
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 
 @Composable
-fun ArticleScreen(gameViewModel: QuizViewModel = viewModel()) {
+fun ArticleScreen(
+    gameViewModel: QuizViewModel = viewModel(),
+    onGameComplete: () -> Unit = {}
+) {
     val uiState by gameViewModel.uiState.collectAsState()
     Column {
         GameStatus(
@@ -55,15 +60,20 @@ fun ArticleScreen(gameViewModel: QuizViewModel = viewModel()) {
             ) {
                 ArticleQuestion(question =  uiState.currentQuestion)
                 Column {
-
-                    ArticleAnswerOption(option = uiState.option1){ userAnswer ->
-                        gameViewModel.userClicked(userAnswer)
+                    ArticleAnswerOption(option = uiState.option1 ){ userAnswer ->
+                        if (!gameViewModel.checkNextQuestion(userAnswer)) {
+                            onGameComplete()
+                        }
                     }
-                    ArticleAnswerOption(option = uiState.option2) {
-                        gameViewModel.userClicked(it)
+                    ArticleAnswerOption(option = uiState.option2) {userAnswer ->
+                        if (!gameViewModel.checkNextQuestion(userAnswer)) {
+                            onGameComplete()
+                        }
                     }
-                    ArticleAnswerOption(option = uiState.option3){
-                        gameViewModel.userClicked(it)
+                    ArticleAnswerOption(option = uiState.option3){userAnswer ->
+                        if (!gameViewModel.checkNextQuestion(userAnswer)) {
+                            onGameComplete()
+                        }
                     }
                 }
             }
@@ -153,18 +163,6 @@ fun QuizQuestionNumber(modifier: Modifier = Modifier, currentNumber: Int, totalN
                 Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
                 style = MaterialTheme.typography.displaySmall
             )
-//            Spacer(
-//                modifier = Modifier
-//                    .padding(horizontal = 4.dp)
-//                    .height(4.dp)
-//                    .background(MaterialTheme.colorScheme.tertiary)
-//                    .fillMaxWidth()
-//            )
-//            Text(
-//                text = totalNumber.toString(),
-//                modifier = modifier.padding(8.dp),
-//                style = MaterialTheme.typography.displaySmall
-//            )
         }
     }
 }
@@ -182,21 +180,18 @@ fun ArticleQuestion(question: Int, modifier: Modifier = Modifier) {
 
 @Composable
 fun ArticleAnswerOption(option: Int, onOptionClick: (Int) -> Unit = {}) {
-    Box(
+    Button(
         modifier = Modifier
             .padding(8.dp)
             .fillMaxWidth(0.75f)
-            .background(
-                color = MaterialTheme.colorScheme.primary,
-                shape = CutCornerShape(topStart = 25f, 0.1f, 25f, 0.1f)
-            )
             .shadow(elevation = 2.dp,
                 shape = CutCornerShape(topStart = 25f, bottomEnd = 25f),
-            )
-            .clickable {
-                onOptionClick(option)
-            },
-        contentAlignment = Alignment.Center
+            ),
+        onClick = {
+            onOptionClick(option)
+        },
+        shape = CutCornerShape(topStart = 25f, 0.10f, 25f, 0.10f),
+        border = ButtonDefaults.outlinedButtonBorder
     ) {
         Text(
             text = stringResource(id = option),

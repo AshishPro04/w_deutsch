@@ -2,7 +2,8 @@ package com.aschiesch.dspiel.ui
 
 enum class WDeutschScreen {
     HOME,
-    GAME,
+    QUIZ,
+    ARTICLE,
     RESULT,
     PRIVACY_POLICY
 }

@@ -10,11 +10,25 @@
     <string name="single_digit">Single Digit</string>
     <string name="double_digit">Double Digit</string>
     <string name="triple_digit">Triple Digit</string>
+    <string name="close">Close</string>
     <string name="score">Score</string>
     <string name="complete_result">You got %1$d out of %2$d correct</string>
-    <string name="congratulations">Congratulations</string>
+    <string name="excellent_title">Congratulations</string>
     <string name="excellent_label">Excellent</string>
-    <string name="excellent_description">“Wow, you’re a quiz whiz! Great job!”</string>
+    <string name="excellent_description">Wow! You’re a quiz whiz! 🌟</string>
+    <string name="good_title">Good Job</string>
+    <string name="good_label">Good</string>
+    <string name="good_description">Impressive! Keep up the good work! 👏</string>
+    <string name="average_title">Average</string>
+    <string name="average_label">Average</string>
+    <string name="average_description">Nice job! You\'re on the right track! 🎉</string>
+    <string name="fair_title">Fair</string>
+    <string name="fair_label">Fair</string>
+    <string name="fair_description">Not bad! Keep practicing! 💪</string>
+    <string name="needs_improvement_title">Needs Improvement</string>
+    <string name="needs_improvement_label">Poor</string>
+    <string name="needs_improvement_description">Don\'t worry, practice makes perfect! 📚</string>
+
 
     <string name="definite_article_nominative_question_1">___ Himmel ist sehr schön</string>
     <string name="definite_article_nominative_question_2">___ Kind geht ins Kino</string>

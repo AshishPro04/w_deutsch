@@ -3,10 +3,12 @@ package com.aschiesch.dspiel.ui
 import androidx.lifecycle.ViewModel
 import com.aschiesch.dspiel.data.quiz.ArticleResource
 import com.aschiesch.dspiel.data.quiz.ArticleSource
+import com.aschiesch.dspiel.data.results.Result
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
+
 class QuizViewModel() : ViewModel() {
     private  val quizItems: List<ArticleResource> = ArticleSource.definitive_articles
     private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(
@@ -98,12 +100,13 @@ class QuizViewModel() : ViewModel() {
 
     fun isLastQuestion() = _uiState.value.currentQuestionNumber == _uiState.value.totalQuestion
 
-    fun userClicked(
+    fun checkNextQuestion(
         answer: Int
-    ) {
+    ): Boolean {
         if (answer == _uiState.value.currentAnswer && !_uiState.value.isGameOver) {
             updateScore(_uiState.value.score + 1)
         }
+        setResult()
         if (_uiState.value.currentQuestionNumber < _uiState.value.totalQuestion){
             quizItems[_uiState.value.currentQuestionNumber].let {
                 proceedToNext(
@@ -118,7 +121,50 @@ class QuizViewModel() : ViewModel() {
             _uiState.update {
                 it.copy(isGameOver = true)
             }
+            return false
         }
+        return true
+    }
+    private fun setResult(){
+        val percentageScored = _uiState.value.run {
+            (score/totalQuestion.toFloat() * 100)
+        }
+        when {
+            percentageScored >= 90f ->{
+                _uiState.update {
+                    it.copy(result = Result.EXCELLENT)
+                }
+            }
+            percentageScored >= 80f ->{
+                _uiState.update {
+                    it.copy(result = Result.GOOD)
+                }
+            }
+            percentageScored >= 70f ->{
+                _uiState.update {
+                    it.copy(result = Result.AVERAGE)
+                }
+            }
+            percentageScored >= 60f ->{
+                _uiState.update {
+                    it.copy(result = Result.FAIR)
+                }
+            }
+            percentageScored >= 50f ->{
+                _uiState.update {
+                    it.copy(result = Result.POOR)
+                }
+            }
+            else -> {
+                _uiState.update {
+                    it.copy(result = null)
+                }
+            }
+        }
+    }
+
+    fun resetState() {
+        
     }
 }
 
