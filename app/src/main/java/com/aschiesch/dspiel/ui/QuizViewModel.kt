@@ -98,7 +98,6 @@ class QuizViewModel() : ViewModel() {
         }
     }
 
-    fun isLastQuestion() = _uiState.value.currentQuestionNumber == _uiState.value.totalQuestion
 
     fun checkNextQuestion(
         answer: Int
@@ -106,7 +105,6 @@ class QuizViewModel() : ViewModel() {
         if (answer == _uiState.value.currentAnswer && !_uiState.value.isGameOver) {
             updateScore(_uiState.value.score + 1)
         }
-        setResult()
         if (_uiState.value.currentQuestionNumber < _uiState.value.totalQuestion){
             quizItems[_uiState.value.currentQuestionNumber].let {
                 proceedToNext(
@@ -118,6 +116,7 @@ class QuizViewModel() : ViewModel() {
                 )
             }
         } else {
+            setResult()
             _uiState.update {
                 it.copy(isGameOver = true)
             }
@@ -150,21 +149,29 @@ class QuizViewModel() : ViewModel() {
                     it.copy(result = Result.FAIR)
                 }
             }
-            percentageScored >= 50f ->{
+            else  ->{
                 _uiState.update {
                     it.copy(result = Result.POOR)
-                }
-            }
-            else -> {
-                _uiState.update {
-                    it.copy(result = null)
                 }
             }
         }
     }
 
     fun resetState() {
-        
+        _uiState.update {
+            it.copy(
+                score = 0,
+                currentQuestionNumber = 0,
+                totalQuestion = 0,
+                currentQuestion = 0,
+                currentAnswer = 0,
+                option1 = 0,
+                option2 = 0,
+                option3 = 0,
+                isGameOver = false,
+                result = null
+            )
+        }
     }
 }
 

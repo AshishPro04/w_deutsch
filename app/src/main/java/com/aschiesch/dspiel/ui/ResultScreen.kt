@@ -1,5 +1,10 @@
 package com.aschiesch.dspiel.ui
 
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -16,17 +21,21 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.layout.layout
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -38,6 +47,7 @@ import com.aschiesch.dspiel.data.results.Result
 import com.aschiesch.dspiel.data.results.ResultInfo
 import com.aschiesch.dspiel.data.results.ResultSource
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
+import kotlin.math.roundToInt
 
 @Composable
 fun ResultScreen(
@@ -50,44 +60,56 @@ fun ResultScreen(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceAround
     ) {
-        when (state.value.result) {
-            Result.EXCELLENT -> ResultView(
-                resultScore = state.value.score,
-                resultTotalScore = state.value.totalQuestion,
-                resultInfo = ResultSource.excellent,
-                onCloseResult = onCloseResult
-            )
+        SelectResult(state){
+            quizViewModel.resetState()
+            onCloseResult()
+        }
+    }
+}
 
-            Result.GOOD -> ResultView(
-                resultScore = state.value.score,
-                resultTotalScore = state.value.totalQuestion,
-                resultInfo = ResultSource.good,
-                onCloseResult = onCloseResult
-            )
+@Composable
+private fun SelectResult(
+    state: State<QuizUiState>,
+    onCloseResult: () -> Unit
+) {
+    when (state.value.result) {
+        Result.EXCELLENT -> ResultView(
+            resultScore = state.value.score,
+            resultTotalScore = state.value.totalQuestion,
+            resultInfo = ResultSource.excellent,
+            onCloseResult = onCloseResult
+        )
 
-            Result.AVERAGE -> ResultView(
-                resultScore = state.value.score,
-                resultTotalScore = state.value.totalQuestion,
-                resultInfo = ResultSource.average,
-                onCloseResult = onCloseResult
-            )
+        Result.GOOD -> ResultView(
+            resultScore = state.value.score,
+            resultTotalScore = state.value.totalQuestion,
+            resultInfo = ResultSource.good,
+            onCloseResult = onCloseResult
+        )
 
-            Result.FAIR -> ResultView(
-                resultScore = state.value.score,
-                resultTotalScore = state.value.totalQuestion,
-                resultInfo = ResultSource.fair,
-                onCloseResult = onCloseResult
-            )
+        Result.AVERAGE -> ResultView(
+            resultScore = state.value.score,
+            resultTotalScore = state.value.totalQuestion,
+            resultInfo = ResultSource.average,
+            onCloseResult = onCloseResult
+        )
 
-            Result.POOR -> ResultView(
-                resultScore = state.value.score,
-                resultTotalScore = state.value.totalQuestion,
-                resultInfo = ResultSource.poor,
-                onCloseResult = onCloseResult
-            )
-            else -> {
-                CircularProgressIndicator()
-            }
+        Result.FAIR -> ResultView(
+            resultScore = state.value.score,
+            resultTotalScore = state.value.totalQuestion,
+            resultInfo = ResultSource.fair,
+            onCloseResult = onCloseResult
+        )
+
+        Result.POOR -> ResultView(
+            resultScore = state.value.score,
+            resultTotalScore = state.value.totalQuestion,
+            resultInfo = ResultSource.poor,
+            onCloseResult = onCloseResult
+        )
+
+        else -> {
+            CircularProgressIndicator()
         }
     }
 }
@@ -99,6 +121,20 @@ fun ResultView(
     resultInfo: ResultInfo,
     onCloseResult: () -> Unit
 ) {
+    val resultImage by rememberSaveable(resultInfo) {
+        mutableIntStateOf(resultInfo.resultImage)
+    }
+    val infiniteTransition = rememberInfiniteTransition(label = "infinite transition")
+    val scale by infiniteTransition.animateFloat(
+        initialValue = 1f,
+        targetValue = 1.2f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(5000),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "scale image"
+    )
+
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
         Card(modifier = Modifier
             .padding(8.dp)
@@ -119,7 +155,7 @@ fun ResultView(
                 ) {
                     Text(
                         text = stringResource(id = resultInfo.resultTitle),
-                        style = MaterialTheme.typography.displaySmall,
+                        style = MaterialTheme.typography.displaySmall.copy(),
                         modifier = Modifier.padding(8.dp)
                     )
                     Text(
@@ -162,8 +198,23 @@ fun ResultView(
                 textAlign = TextAlign.Center
             )
             Image(
-                painter = painterResource(id = resultInfo.resultImage),
-                contentDescription = null
+                painter = painterResource(id = resultImage),
+                contentDescription = null,
+                modifier = Modifier
+                    .graphicsLayer {
+                        scaleX = scale
+                        scaleY = scale
+                    }
+                    .layout { measurable, constraints ->
+                        val placeable = measurable.measure(constraints)
+                        val scaledHeight = (placeable.height * scale).roundToInt()
+                        val scaledWidth = (placeable.width * scale).roundToInt()
+                        val xPos = (scaledWidth - placeable.width) / 2
+                        val yPos = (scaledHeight - placeable.height) / 2
+                        layout(width = scaledWidth, height = scaledHeight) {
+                            placeable.placeRelative(xPos, yPos)
+                        }
+                    }
             )
 
         }
