@@ -121,6 +121,7 @@ fun ResultView(
     resultInfo: ResultInfo,
     onCloseResult: () -> Unit
 ) {
+    // resultImage value will only change if resultInfo changes
     val resultImage by rememberSaveable(resultInfo) {
         mutableIntStateOf(resultInfo.resultImage)
     }

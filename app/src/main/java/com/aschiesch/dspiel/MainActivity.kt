@@ -37,7 +37,6 @@ import androidx.navigation.compose.rememberNavController
 import com.aschiesch.dspiel.ui.ArticleScreen
 import com.aschiesch.dspiel.ui.HomeScreen
 
-import com.aschiesch.dspiel.ui.QuizScreen
 import com.aschiesch.dspiel.ui.QuizViewModel
 import com.aschiesch.dspiel.ui.ResultScreen
 import com.aschiesch.dspiel.ui.WDeutschScreen
