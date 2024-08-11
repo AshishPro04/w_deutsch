@@ -1,9 +1,7 @@
 package com.aschiesch.dspiel.ui
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
@@ -13,6 +11,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
@@ -59,20 +59,12 @@ fun ArticleScreen(
                 verticalArrangement = Arrangement.SpaceAround
             ) {
                 ArticleQuestion(question =  uiState.currentQuestion)
-                Column {
-                    ArticleAnswerOption(option = uiState.option1 ){ userAnswer ->
-                        if (!gameViewModel.checkNextQuestion(userAnswer)) {
-                            onGameComplete()
-                        }
-                    }
-                    ArticleAnswerOption(option = uiState.option2) {userAnswer ->
-                        if (!gameViewModel.checkNextQuestion(userAnswer)) {
-                            onGameComplete()
-                        }
-                    }
-                    ArticleAnswerOption(option = uiState.option3){userAnswer ->
-                        if (!gameViewModel.checkNextQuestion(userAnswer)) {
-                            onGameComplete()
+                LazyColumn {
+                    items(uiState.options){
+                        ArticleAnswerOption(option = it) { userAnswer ->
+                            if (!gameViewModel.checkNextQuestion(userAnswer)) {
+                                onGameComplete()
+                            }
                         }
                     }
                 }
@@ -184,7 +176,8 @@ fun ArticleAnswerOption(option: Int, onOptionClick: (Int) -> Unit = {}) {
         modifier = Modifier
             .padding(8.dp)
             .fillMaxWidth(0.75f)
-            .shadow(elevation = 2.dp,
+            .shadow(
+                elevation = 2.dp,
                 shape = CutCornerShape(topStart = 25f, bottomEnd = 25f),
             ),
         onClick = {

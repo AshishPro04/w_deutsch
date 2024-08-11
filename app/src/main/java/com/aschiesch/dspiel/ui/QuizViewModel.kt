@@ -1,6 +1,7 @@
 package com.aschiesch.dspiel.ui
 
 import androidx.lifecycle.ViewModel
+import com.aschiesch.dspiel.data.quiz.QuizMode
 import com.aschiesch.dspiel.data.quiz.ArticleResource
 import com.aschiesch.dspiel.data.quiz.ArticleSource
 import com.aschiesch.dspiel.data.results.Result
@@ -9,22 +10,28 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 
-class QuizViewModel() : ViewModel() {
-    private  val quizItems: List<ArticleResource> = ArticleSource.definitive_articles
-    private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(
-        QuizUiState(
-            score = 0,
-            currentQuestionNumber = 0,
-            totalQuestion = 0,
-            currentQuestion = 0,
-            currentAnswer = 0,
-            option1 = 0,
-            option2 = 0,
-            option3 = 0,
-            isGameOver = false,
-            result = null
+class QuizViewModel(
+    articleType: String
+) : ViewModel() {
+
+    private  val quizItems: List<ArticleResource> = when (articleType) {
+        QuizMode.DEFINITE_ARTICLE.name -> ArticleSource.definitiveArticles
+        QuizMode.INDEFINITE_ARTICLE.name -> ArticleSource.indefiniteArticles
+        QuizMode.NEGATIVE_ARTICLE.name -> ArticleSource.negativeArticles
+        else ->  ArticleSource.definitiveArticles
+    }
+                private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(
+            QuizUiState(
+                score = 0,
+                currentQuestionNumber = 0,
+                totalQuestion = 0,
+                currentQuestion = 0,
+                currentAnswer = 0,
+                options = listOf(),
+                isGameOver = false,
+                result = null
+            )
         )
-    )
     val uiState: StateFlow<QuizUiState> = _uiState.asStateFlow()
 
 
@@ -35,9 +42,7 @@ class QuizViewModel() : ViewModel() {
             totalQuestion = quizItems.size,
             currentQuestion = quizItems[0].question,
             currentAnswer = quizItems[0].answer,
-            option1 = quizItems[0].option1,
-            option2 = quizItems[0].option2,
-            option3 = quizItems[0].option3
+            options = quizItems[0].options
         )
     }
 
@@ -48,9 +53,7 @@ class QuizViewModel() : ViewModel() {
         totalQuestion: Int,
         currentQuestion: Int,
         currentAnswer: Int,
-        option1: Int,
-        option2: Int,
-        option3: Int,
+        options: List<Int>,
         isGameOver: Boolean = false
     ) {
          _uiState.update {
@@ -60,10 +63,8 @@ class QuizViewModel() : ViewModel() {
                 totalQuestion = totalQuestion,
                 currentQuestion = currentQuestion,
                 currentAnswer = currentAnswer,
-                option1 = option1,
-                option2 = option2,
-                option3 = option3,
-                isGameOver = isGameOver
+                isGameOver = isGameOver,
+                options = options
             )
         }
     }
@@ -76,9 +77,7 @@ class QuizViewModel() : ViewModel() {
     fun proceedToNext(
         nextQuestion: Int,
         nextAnswer: Int,
-        nextOption1: Int,
-        nextOption2: Int,
-        nextOption3: Int
+        options: List<Int>,
     ) {
         if (_uiState.value.currentQuestionNumber < _uiState.value.totalQuestion) {
             _uiState.update {
@@ -86,9 +85,7 @@ class QuizViewModel() : ViewModel() {
                     currentQuestionNumber = it.currentQuestionNumber + 1,
                     currentQuestion = nextQuestion,
                     currentAnswer = nextAnswer,
-                    option1 = nextOption1,
-                    option2 = nextOption2,
-                    option3 = nextOption3
+                    options = options
                     )
             }
         } else {
@@ -110,9 +107,7 @@ class QuizViewModel() : ViewModel() {
                 proceedToNext(
                     nextQuestion = it.question,
                     nextAnswer = it.answer,
-                    nextOption1 = it.option1,
-                    nextOption2 = it.option2,
-                    nextOption3 = it.option3
+                    options = it.options
                 )
             }
         } else {
@@ -165,9 +160,7 @@ class QuizViewModel() : ViewModel() {
                 totalQuestion = 0,
                 currentQuestion = 0,
                 currentAnswer = 0,
-                option1 = 0,
-                option2 = 0,
-                option3 = 0,
+                options = listOf(),
                 isGameOver = false,
                 result = null
             )

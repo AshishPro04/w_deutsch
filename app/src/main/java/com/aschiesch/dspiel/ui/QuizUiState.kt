@@ -9,9 +9,7 @@ data class QuizUiState(
     val currentQuestion: Int,
     val currentAnswer: Int,
     val userOption: String? = null,
-    val option1: Int,
-    val option2: Int,
-    val option3: Int,
+    val options: List<Int>,
     val isGameOver: Boolean,
     val result: Result?
 )

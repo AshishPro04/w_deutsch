@@ -1,6 +1,7 @@
 package com.aschiesch.dspiel
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -30,18 +31,21 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import com.aschiesch.dspiel.data.quiz.QuizMode
 import com.aschiesch.dspiel.ui.ArticleScreen
 import com.aschiesch.dspiel.ui.HomeScreen
 
 import com.aschiesch.dspiel.ui.QuizViewModel
+import com.aschiesch.dspiel.ui.QuizViewModelFactory
 import com.aschiesch.dspiel.ui.ResultScreen
 import com.aschiesch.dspiel.ui.WDeutschScreen
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
-
 
 
 class MainActivity : ComponentActivity() {
@@ -73,18 +77,36 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier.padding(innerPadding)
                     ) {
                         composable(WDeutschScreen.HOME.name) {
-                            HomeScreen() {
-                                navController.navigatePopBackStack(WDeutschScreen.QUIZ.name)
+                            HomeScreen() {articleType ->
+                                navController.navigatePopBackStack("${WDeutschScreen.QUIZ.name}/$articleType")
                             }
                         }
                         navigation(
-                            route = WDeutschScreen.QUIZ.name,
-                            startDestination = WDeutschScreen.ARTICLE.name) {
+                            route = "${WDeutschScreen.QUIZ.name}/{articleType}",
+                            startDestination = "${WDeutschScreen.ARTICLE.name}/{articleType}",
+                            arguments = listOf(navArgument("articleType") {
+                                type = NavType.StringType
+                            })
+                        ) {
 
-                            composable(WDeutschScreen.ARTICLE.name) {
-                                val viewModel: QuizViewModel = it.sharedViewModel(navController)
-                                ArticleScreen(viewModel){
-
+                            composable(
+                                "${WDeutschScreen.ARTICLE.name}/{articleType}",
+                                arguments = listOf(navArgument("articleType") {
+                                    type = NavType.StringType
+                                    defaultValue = QuizMode.DEFINITE_ARTICLE.name
+                                })
+                            ) {
+                                val articleType = it.arguments?.getString("articleType")
+                                Log.d("QUIZ", "Recieved Article name: $articleType")
+                                val viewModelFactory = QuizViewModelFactory(
+                                    articleType ?: QuizMode.DEFINITE_ARTICLE.name
+                                )
+                                val viewModel: QuizViewModel = it.sharedViewModel(
+                                    navController,
+                                    articleType ?: QuizMode.DEFINITE_ARTICLE.name,
+                                    viewModelFactory
+                                )
+                                ArticleScreen(viewModel) {
                                     navController.navigate(WDeutschScreen.RESULT.name) {
                                         launchSingleTop = true
                                         popUpTo(WDeutschScreen.ARTICLE.name) {
@@ -94,8 +116,17 @@ class MainActivity : ComponentActivity() {
                                 }
                             }
                             composable(WDeutschScreen.RESULT.name) {
-                                val viewModel: QuizViewModel = it.sharedViewModel(navController)
-                                ResultScreen(viewModel){
+                                val articleType = it.arguments?.getString("articleType")
+                                val viewModelFactory = QuizViewModelFactory(
+                                    articleType ?: QuizMode.DEFINITE_ARTICLE.name
+                                )
+                                val viewModel: QuizViewModel = it.sharedViewModel(
+                                    navController,
+                                    articleType ?: QuizMode.DEFINITE_ARTICLE.name,
+                                    viewModelFactory
+                                )
+//                                val viewModel: QuizViewModel = it.sharedViewModel(navController)
+                                ResultScreen(viewModel) {
                                     navController.navigatePopBackStack(WDeutschScreen.HOME.name)
                                 }
                             }
@@ -112,12 +143,15 @@ class MainActivity : ComponentActivity() {
     @Composable
     inline fun <reified T : ViewModel> NavBackStackEntry.sharedViewModel(
         navController: NavController,
+        quizType: String,
+        viewModelFactory: QuizViewModelFactory = QuizViewModelFactory(quizType)
     ): T {
-        val navGraphRoute = destination.parent?.route ?: return viewModel()
-        val parentEntry  = remember(this){
+        val navGraphRoute =
+            destination.parent?.route ?: return viewModel(factory = viewModelFactory)
+        val parentEntry = remember(this) {
             navController.getBackStackEntry(navGraphRoute)
         }
-        return viewModel(parentEntry)
+        return viewModel(parentEntry, factory = viewModelFactory)
     }
 
     @Composable
@@ -129,7 +163,6 @@ class MainActivity : ComponentActivity() {
     }
 
 
-
     @OptIn(ExperimentalMaterial3Api::class)
     @Composable
     fun WDeutschTopBar() {
@@ -138,7 +171,7 @@ class MainActivity : ComponentActivity() {
                 Text(
                     text = stringResource(id = R.string.app_name),
                     style = MaterialTheme.typography.displaySmall
-                    )
+                )
             },
             modifier = Modifier.shadow(
                 elevation = 4.dp,
