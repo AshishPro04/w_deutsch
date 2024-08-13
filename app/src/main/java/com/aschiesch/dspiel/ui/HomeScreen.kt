@@ -34,9 +34,9 @@ fun HomeScreen(
             Category(
                 categoryName = stringResource(R.string.article),
                 playItems = listOf(
-                    QuizInfo(nameId = R.string.definite_article, quizMode = QuizMode.DEFINITE_ARTICLE),
-                    QuizInfo(nameId = R.string.indefinite_article, quizMode = QuizMode.INDEFINITE_ARTICLE),
-                    QuizInfo(nameId = R.string.indefinite_negative_article, quizMode = QuizMode.NEGATIVE_ARTICLE)
+                    QuizInfo(R.string.definite_article, QuizMode.DEFINITE_ARTICLE),
+                    QuizInfo(R.string.indefinite_article, QuizMode.INDEFINITE_ARTICLE),
+                    QuizInfo(R.string.indefinite_negative_article, QuizMode.NEGATIVE_ARTICLE)
                 ),
                 modifier = Modifier.padding(8.dp),
                 onOpen = onOpen
@@ -44,13 +44,12 @@ fun HomeScreen(
             Category(
                 categoryName = stringResource(id = R.string.numbers),
                 playItems = listOf(
-                    QuizInfo(nameId = R.string.single_digit, quizMode = QuizMode.SINGLE_DIGIT),
-                    QuizInfo(nameId = R.string.double_digit, quizMode = QuizMode.DOUBLE_DIGIT),
-                    QuizInfo(nameId = R.string.triple_digit, quizMode = QuizMode.TRIPLE_DIGIT)
+                    QuizInfo(R.string.single_digit, QuizMode.SINGLE_DIGIT),
+                    QuizInfo(R.string.double_digit, QuizMode.DOUBLE_DIGIT),
+                    QuizInfo(R.string.triple_digit, QuizMode.TRIPLE_DIGIT)
                 ),
                 modifier = Modifier.padding(8.dp)
             ) {
-
             }
         }
     }
