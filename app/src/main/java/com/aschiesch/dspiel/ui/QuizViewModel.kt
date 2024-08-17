@@ -18,6 +18,7 @@ class QuizViewModel(
         QuizMode.DEFINITE_ARTICLE.name -> ArticleSource.definitiveArticles
         QuizMode.INDEFINITE_ARTICLE.name -> ArticleSource.indefiniteArticles
         QuizMode.NEGATIVE_ARTICLE.name -> ArticleSource.negativeArticles
+        QuizMode.SINGLE_DIGIT.name -> ArticleSource.numbersSingleDigitNumeric
         else ->  ArticleSource.definitiveArticles
     }
                 private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(

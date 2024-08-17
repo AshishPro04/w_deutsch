@@ -29,7 +29,7 @@
     <string name="needs_improvement_label">Poor</string>
     <string name="needs_improvement_description">Don\'t worry, practice makes perfect! 📚</string>
 
-<!--    Indefinite Article Nominative Case German -->
+    <!--    Indefinite Article Nominative Case German -->
     <string name="definite_article_nominative_question_1">___ Himmel ist sehr schön</string>
     <string name="definite_article_nominative_question_2">___ Kind geht ins Kino</string>
     <string name="definite_article_nominative_question_3">--- Junge spielt im Garten.</string>
@@ -94,7 +94,7 @@
     <string name="definite_article_nominative_option_1">der</string>
     <string name="definite_article_nominative_option_2">die</string>
     <string name="definite_article_nominative_option_3">das</string>
-<!--    Indefinite Article Nominative Case German -->
+    <!--    Indefinite Article Nominative Case German -->
     <string name="indefinite_article_nominative_question_1">___ Apfel liegt auf dem Tisch.</string>
     <string name="indefinite_article_nominative_question_2">___ Katze spielt im Garten.</string>
     <string name="indefinite_article_nominative_question_3">___ Lehrer unterrichtet die Klasse.</string>
@@ -225,6 +225,92 @@
     <string name="negative_article_nominative_option_1">Kein</string>
     <string name="negative_article_nominative_option_2">Keine</string>
 
+
+    <string name="number_1_digit_0">0</string>
+    <string name="number_1_digit_1">1</string>
+    <string name="number_1_digit_2">2</string>
+    <string name="number_1_digit_3">3</string>
+    <string name="number_1_digit_4">4</string>
+    <string name="number_1_digit_5">5</string>
+    <string name="number_1_digit_6">6</string>
+    <string name="number_1_digit_7">7</string>
+    <string name="number_1_digit_8">8</string>
+    <string name="number_1_digit_9">9</string>
+
+    <string name="number_1_digit_0_answer">null</string>
+    <string name="number_1_digit_1_answer">eins</string>
+    <string name="number_1_digit_2_answer">zwei</string>
+    <string name="number_1_digit_3_answer">drei</string>
+    <string name="number_1_digit_4_answer">vier</string>
+    <string name="number_1_digit_5_answer">fünf</string>
+    <string name="number_1_digit_6_answer">sechs</string>
+    <string name="number_1_digit_7_answer">sieben</string>
+    <string name="number_1_digit_8_answer">acht</string>
+    <string name="number_1_digit_9_answer">neun</string>
+
+
+    <string name="number_2_digit_1">zweiundvierzig</string>
+    <string name="number_2_digit_2">fünfundsechzig</string>
+    <string name="number_2_digit_3">dreiundachtzig</string>
+    <string name="number_2_digit_4">neunundneunzig</string>
+    <string name="number_2_digit_5">einundzwanzig</string>
+    <string name="number_2_digit_6">achtundvierzig</string>
+    <string name="number_2_digit_7">siebenundsiebzig</string>
+    <string name="number_2_digit_8">vierundfünfzig</string>
+    <string name="number_2_digit_9">sechsundneunzig</string>
+    <string name="number_2_digit_10">zweiunddreißig</string>
+    <string name="number_2_digit_11">fünfundvierzig</string>
+    <string name="number_2_digit_12">achtundsechzig</string>
+    <string name="number_2_digit_13">einundneunzig</string>
+    <string name="number_2_digit_14">vierundzwanzig</string>
+    <string name="number_2_digit_15">siebenundfünfzig</string>
+    <string name="number_2_digit_16">zehnundachtzig</string>
+    <string name="number_2_digit_17">dreiundsechzig</string>
+    <string name="number_2_digit_18">sechsundvierzig</string>
+    <string name="number_2_digit_19">neunundsiebzig</string>
+    <string name="number_2_digit_20">zweiundachtzig</string>
+    <string name="number_2_digit_21">fünfundfünfzig</string>
+    <string name="number_2_digit_22">achtundzwanzig</string>
+    <string name="number_2_digit_23">einundsechzig</string>
+    <string name="number_2_digit_24">vierunddreißig</string>
+    <string name="number_2_digit_25">siebenundachtzig</string>
+    <string name="number_2_digit_26">zehnundneunzig</string>
+    <string name="number_2_digit_27">dreiundvierzig</string>
+    <string name="number_2_digit_28">sechsundfünfzig</string>
+    <string name="number_2_digit_29">neunundzwanzig</string>
+    <string name="number_2_digit_30">zweiundsiebzig</string>
+
+
+    <string name="number__2_digit_1_answer">42</string>
+    <string name="number__2_digit_2_answer">65</string>
+    <string name="number__2_digit_3_answer">83</string>
+    <string name="number__2_digit_4_answer">99</string>
+    <string name="number__2_digit_5_answer">21</string>
+    <string name="number__2_digit_6_answer">48</string>
+    <string name="number__2_digit_7_answer">77</string>
+    <string name="number__2_digit_8_answer">54</string>
+    <string name="number__2_digit_9_answer">96</string>
+    <string name="number_2_digit_10_answer">32</string>
+    <string name="number_2_digit_11_answer">45</string>
+    <string name="number_2_digit_12_answer">68</string>
+    <string name="number_2_digit_13_answer">91</string>
+    <string name="number_2_digit_14_answer">24</string>
+    <string name="number_2_digit_15_answer">57</string>
+    <string name="number_2_digit_16_answer">80</string>
+    <string name="number_2_digit_17_answer">63</string>
+    <string name="number_2_digit_18_answer">46</string>
+    <string name="number_2_digit_19_answer">79</string>
+    <string name="number_2_digit_20_answer">82</string>
+    <string name="number_2_digit_21_answer">55</string>
+    <string name="number_2_digit_22_answer">28</string>
+    <string name="number_2_digit_23_answer">61</string>
+    <string name="number_2_digit_24_answer">34</string>
+    <string name="number_2_digit_25_answer">87</string>
+    <string name="number_2_digit_26_answer">90</string>
+    <string name="number_2_digit_27_answer">43</string>
+    <string name="number_2_digit_28_answer">56</string>
+    <string name="number_2_digit_29_answer">29</string>
+    <string name="number_2_digit_30_answer">72</string>
 
 
 </resources>

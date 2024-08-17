@@ -77,9 +77,12 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier.padding(innerPadding)
                     ) {
                         composable(WDeutschScreen.HOME.name) {
-                            HomeScreen() {articleType ->
-                                navController.navigatePopBackStack("${WDeutschScreen.QUIZ.name}/$articleType")
-                            }
+                            HomeScreen(
+                                onQuizOpen = { articleType ->
+                                    navController
+                                        .navigatePopBackStack("${WDeutschScreen.QUIZ.name}/$articleType")
+                                }
+                            )
                         }
                         navigation(
                             route = "${WDeutschScreen.QUIZ.name}/{articleType}",

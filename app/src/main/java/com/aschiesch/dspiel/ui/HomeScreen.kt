@@ -27,7 +27,7 @@ import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 
 @Composable
 fun HomeScreen(
-    onOpen: (String) -> Unit
+    onQuizOpen: (String) -> Unit
 ) {
     Surface {
         Column(modifier = Modifier.fillMaxWidth()) {
@@ -39,7 +39,7 @@ fun HomeScreen(
                     QuizInfo(R.string.indefinite_negative_article, QuizMode.NEGATIVE_ARTICLE)
                 ),
                 modifier = Modifier.padding(8.dp),
-                onOpen = onOpen
+                onOpen = onQuizOpen
             )
             Category(
                 categoryName = stringResource(id = R.string.numbers),
@@ -48,9 +48,9 @@ fun HomeScreen(
                     QuizInfo(R.string.double_digit, QuizMode.DOUBLE_DIGIT),
                     QuizInfo(R.string.triple_digit, QuizMode.TRIPLE_DIGIT)
                 ),
-                modifier = Modifier.padding(8.dp)
-            ) {
-            }
+                modifier = Modifier.padding(8.dp),
+                onOpen = onQuizOpen
+            )
         }
     }
 }
