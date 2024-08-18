@@ -264,7 +264,7 @@
     <string name="number_2_digit_13">einundneunzig</string>
     <string name="number_2_digit_14">vierundzwanzig</string>
     <string name="number_2_digit_15">siebenundfünfzig</string>
-    <string name="number_2_digit_16">zehnundachtzig</string>
+    <string name="number_2_digit_16">achtzig</string>
     <string name="number_2_digit_17">dreiundsechzig</string>
     <string name="number_2_digit_18">sechsundvierzig</string>
     <string name="number_2_digit_19">neunundsiebzig</string>
@@ -274,22 +274,22 @@
     <string name="number_2_digit_23">einundsechzig</string>
     <string name="number_2_digit_24">vierunddreißig</string>
     <string name="number_2_digit_25">siebenundachtzig</string>
-    <string name="number_2_digit_26">zehnundneunzig</string>
+    <string name="number_2_digit_26">neunzig</string>
     <string name="number_2_digit_27">dreiundvierzig</string>
     <string name="number_2_digit_28">sechsundfünfzig</string>
     <string name="number_2_digit_29">neunundzwanzig</string>
     <string name="number_2_digit_30">zweiundsiebzig</string>
 
 
-    <string name="number__2_digit_1_answer">42</string>
-    <string name="number__2_digit_2_answer">65</string>
-    <string name="number__2_digit_3_answer">83</string>
-    <string name="number__2_digit_4_answer">99</string>
-    <string name="number__2_digit_5_answer">21</string>
-    <string name="number__2_digit_6_answer">48</string>
-    <string name="number__2_digit_7_answer">77</string>
-    <string name="number__2_digit_8_answer">54</string>
-    <string name="number__2_digit_9_answer">96</string>
+    <string name="number_2_digit_1_answer">42</string>
+    <string name="number_2_digit_2_answer">65</string>
+    <string name="number_2_digit_3_answer">83</string>
+    <string name="number_2_digit_4_answer">99</string>
+    <string name="number_2_digit_5_answer">21</string>
+    <string name="number_2_digit_6_answer">48</string>
+    <string name="number_2_digit_7_answer">77</string>
+    <string name="number_2_digit_8_answer">54</string>
+    <string name="number_2_digit_9_answer">96</string>
     <string name="number_2_digit_10_answer">32</string>
     <string name="number_2_digit_11_answer">45</string>
     <string name="number_2_digit_12_answer">68</string>

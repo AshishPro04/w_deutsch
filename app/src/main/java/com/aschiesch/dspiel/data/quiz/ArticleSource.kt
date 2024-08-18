@@ -12,18 +12,7 @@ object ArticleSource {
         R.string.definite_article_nominative_option_2,
         R.string.definite_article_nominative_option_3,
     )
-    val singleDigitNumericAnswers = listOf(
-        R.string.number_1_digit_0_answer,
-        R.string.number_1_digit_1_answer,
-        R.string.number_1_digit_2_answer,
-        R.string.number_1_digit_3_answer,
-        R.string.number_1_digit_4_answer,
-        R.string.number_1_digit_5_answer,
-        R.string.number_1_digit_6_answer,
-        R.string.number_1_digit_7_answer,
-        R.string.number_1_digit_8_answer,
-        R.string.number_1_digit_9_answer
-    )
+
     val definitiveArticles = listOf(
         ArticleResource(
             question = R.string.definite_article_nominative_question_1,
@@ -483,79 +472,6 @@ object ArticleSource {
             question = R.string.negative_article_nominative_question_30,
             answer = R.string.negative_article_nominative_option_2,
             options = negativeArticleOptions
-        )
-    )
-
-    val numbersSingleDigitNumeric = listOf(
-        ArticleResource(
-            question = R.string.number_1_digit_0,
-            answer = R.string.number_1_digit_0_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_0_answer
-            ).shuffled()
-        ),
-        ArticleResource(
-            question = R.string.number_1_digit_1,
-            answer = R.string.number_1_digit_1_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_1_answer
-            ).shuffled()
-        ),
-        ArticleResource(
-            question = R.string.number_1_digit_2,
-            answer = R.string.number_1_digit_2_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_2_answer
-            ).shuffled()
-        ),
-        ArticleResource(
-            question = R.string.number_1_digit_3,
-            answer = R.string.number_1_digit_3_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_3_answer
-            ).shuffled()
-        ),
-        ArticleResource(
-            question = R.string.number_1_digit_4,
-            answer = R.string.number_1_digit_4_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_4_answer
-            ).shuffled()
-        ),
-        ArticleResource(
-            question = R.string.number_1_digit_5,
-            answer = R.string.number_1_digit_5_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_5_answer
-            ).shuffled()
-        ),
-        ArticleResource(
-            question = R.string.number_1_digit_6,
-            answer = R.string.number_1_digit_6_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_6_answer
-            ).shuffled()
-        ),
-        ArticleResource(
-            question = R.string.number_1_digit_7,
-            answer = R.string.number_1_digit_7_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_7_answer
-            ).shuffled()
-        ),
-        ArticleResource(
-            question = R.string.number_1_digit_8,
-            answer = R.string.number_1_digit_8_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_8_answer
-            ).shuffled()
-        ),
-        ArticleResource(
-            question = R.string.number_1_digit_9,
-            answer = R.string.number_1_digit_9_answer,
-            options = singleDigitNumericAnswers.shuffled().take(2).plus(
-                R.string.number_1_digit_8_answer
-            ).shuffled()
         )
     )
 }

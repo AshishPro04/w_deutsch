@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.aschiesch.dspiel.data.quiz.QuizMode
 import com.aschiesch.dspiel.data.quiz.ArticleResource
 import com.aschiesch.dspiel.data.quiz.ArticleSource
+import com.aschiesch.dspiel.data.quiz.NumberSource
 import com.aschiesch.dspiel.data.results.Result
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -18,7 +19,8 @@ class QuizViewModel(
         QuizMode.DEFINITE_ARTICLE.name -> ArticleSource.definitiveArticles
         QuizMode.INDEFINITE_ARTICLE.name -> ArticleSource.indefiniteArticles
         QuizMode.NEGATIVE_ARTICLE.name -> ArticleSource.negativeArticles
-        QuizMode.SINGLE_DIGIT.name -> ArticleSource.numbersSingleDigitNumeric
+        QuizMode.SINGLE_DIGIT.name -> NumberSource.numbersSingleDigitNumeric
+        QuizMode.DOUBLE_DIGIT.name -> NumberSource.numbersDoubleDigitNumeric
         else ->  ArticleSource.definitiveArticles
     }
                 private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(
