@@ -313,4 +313,67 @@
     <string name="number_2_digit_30_answer">72</string>
 
 
+    <string name="number_3_digit_1">123</string>
+    <string name="number_3_digit_2">234</string>
+    <string name="number_3_digit_3">345</string>
+    <string name="number_3_digit_4">456</string>
+    <string name="number_3_digit_5">567</string>
+    <string name="number_3_digit_6">678</string>
+    <string name="number_3_digit_7">789</string>
+    <string name="number_3_digit_8">890</string>
+    <string name="number_3_digit_9">901</string>
+    <string name="number_3_digit_10">135</string>
+    <string name="number_3_digit_11">246</string>
+    <string name="number_3_digit_12">357</string>
+    <string name="number_3_digit_13">468</string>
+    <string name="number_3_digit_14">579</string>
+    <string name="number_3_digit_15">680</string>
+    <string name="number_3_digit_16">791</string>
+    <string name="number_3_digit_17">802</string>
+    <string name="number_3_digit_18">913</string>
+    <string name="number_3_digit_19">147</string>
+    <string name="number_3_digit_20">258</string>
+    <string name="number_3_digit_21">369</string>
+    <string name="number_3_digit_22">470</string>
+    <string name="number_3_digit_23">581</string>
+    <string name="number_3_digit_24">692</string>
+    <string name="number_3_digit_25">703</string>
+    <string name="number_3_digit_26">814</string>
+    <string name="number_3_digit_27">925</string>
+    <string name="number_3_digit_28">159</string>
+    <string name="number_3_digit_29">260</string>
+    <string name="number_3_digit_30">371</string>
+
+
+    <string name="number_3_digit_1_answer">einhundertdreiundzwanzig</string>
+    <string name="number_3_digit_2_answer">zweihundertvierunddreißig</string>
+    <string name="number_3_digit_3_answer">dreihundertfünfundvierzig</string>
+    <string name="number_3_digit_4_answer">vierhundertsechsundfünfzig</string>
+    <string name="number_3_digit_5_answer">fünfhundertsiebenundsechzig</string>
+    <string name="number_3_digit_6_answer">sechshundertachtundsiebzig</string>
+    <string name="number_3_digit_7_answer">siebenhundertneunundachtzig</string>
+    <string name="number_3_digit_8_answer">achthundertneunzig</string>
+    <string name="number_3_digit_9_answer">neunhunderteins</string>
+    <string name="number_3_digit_10_answer">einhundertfünfunddreißig</string>
+    <string name="number_3_digit_11_answer">zweihundertsechsundvierzig</string>
+    <string name="number_3_digit_12_answer">dreihundertsiebenundfünfzig</string>
+    <string name="number_3_digit_13_answer">vierhundertachtundsechzig</string>
+    <string name="number_3_digit_14_answer">fünfhundertneunundsiebzig</string>
+    <string name="number_3_digit_15_answer">sechshundertachtzig</string>
+    <string name="number_3_digit_16_answer">siebenhunderteinundneunzig</string>
+    <string name="number_3_digit_17_answer">achthundertzwei</string>
+    <string name="number_3_digit_18_answer">neunhundertdreizehn</string>
+    <string name="number_3_digit_19_answer">einhundertsiebenundvierzig</string>
+    <string name="number_3_digit_20_answer">zweihundertachtundfünfzig</string>
+    <string name="number_3_digit_21_answer">dreihundertneunundsechzig</string>
+    <string name="number_3_digit_22_answer">vierhundertsiebzig</string>
+    <string name="number_3_digit_23_answer">fünfhunderteinundachtzig</string>
+    <string name="number_3_digit_24_answer">sechshundertzweiundneunzig</string>
+    <string name="number_3_digit_25_answer">siebenhundertdrei</string>
+    <string name="number_3_digit_26_answer">achthundertvierzehn</string>
+    <string name="number_3_digit_27_answer">neunhundertfünfundzwanzig</string>
+    <string name="number_3_digit_28_answer">einhundertneunundfünfzig</string>
+    <string name="number_3_digit_29_answer">zweihundertsechzig</string>
+    <string name="number_3_digit_30_answer">dreihunderteinundsiebzig</string>
+
 </resources>
