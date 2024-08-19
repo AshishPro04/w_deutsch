@@ -2,10 +2,11 @@ package com.aschiesch.dspiel.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -50,6 +51,11 @@ fun HomeScreen(
                 ),
                 modifier = Modifier.padding(8.dp),
                 onOpen = onQuizOpen
+            )
+            PlayItem(
+                articleItem = QuizInfo(R.string.verb_conjugations, QuizMode.VERB_CONJUGATIONS),
+                onOpen = onQuizOpen,
+                modifier = Modifier.padding(8.dp)
             )
         }
     }
@@ -96,7 +102,8 @@ fun PlayItem(
         onClick = {onOpen(articleItem.quizMode.name)},
         modifier = modifier
             .padding(8.dp)
-            .size(128.dp),
+            .defaultMinSize(minWidth = 128.dp)
+            .height(128.dp),
         elevation = CardDefaults.elevatedCardElevation()
     ) {
         Column(

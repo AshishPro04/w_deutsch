@@ -10,6 +10,7 @@
     <string name="single_digit">Single Digit</string>
     <string name="double_digit">Double Digit</string>
     <string name="triple_digit">Triple Digit</string>
+    <string name="verb_conjugations">Verb Conjugations"></string>
     <string name="close">Close</string>
     <string name="score">Score</string>
     <string name="complete_result">You got %1$d out of %2$d correct</string>
@@ -376,4 +377,608 @@
     <string name="number_3_digit_29_answer">zweihundertsechzig</string>
     <string name="number_3_digit_30_answer">dreihunderteinundsiebzig</string>
 
+
+    <string name="verb_1_question">Ich _______ einen Apfel.</string>
+    <string name="verb_1_correct">esse</string>
+    <string name="verb_1_incorrect_1">isst</string>
+    <string name="verb_1_incorrect_2">esst</string>
+
+    <string name="verb_2_question">Du _______ Wasser.</string>
+    <string name="verb_2_correct">trinkst</string>
+    <string name="verb_2_incorrect_1">trinke</string>
+    <string name="verb_2_incorrect_2">trinkt</string>
+
+    <string name="verb_3_question">Er/Sie/Es _______ ein Buch.</string>
+    <string name="verb_3_correct">liest</string>
+    <string name="verb_3_incorrect_1">lese</string>
+    <string name="verb_3_incorrect_2">lesen</string>
+
+    <string name="verb_4_question">Wir _______ Fußball.</string>
+    <string name="verb_4_correct">spielen</string>
+    <string name="verb_4_incorrect_1">spiele</string>
+    <string name="verb_4_incorrect_2">spielst</string>
+
+    <string name="verb_5_question">Ihr _______ Pizza.</string>
+    <string name="verb_5_correct">esst</string>
+    <string name="verb_5_incorrect_1">isst</string>
+    <string name="verb_5_incorrect_2">esse</string>
+
+    <string name="verb_6_question">Sie _______ fern.</string>
+    <string name="verb_6_correct">sehen</string>
+    <string name="verb_6_incorrect_1">sehe</string>
+    <string name="verb_6_incorrect_2">siehst</string>
+
+    <string name="verb_7_question">Ich _______ einen Brief.</string>
+    <string name="verb_7_correct">schreibe</string>
+    <string name="verb_7_incorrect_1">schreibst</string>
+    <string name="verb_7_incorrect_2">schreibt</string>
+
+    <string name="verb_8_question">Du _______ ein Bild.</string>
+    <string name="verb_8_correct">malst</string>
+    <string name="verb_8_incorrect_1">male</string>
+    <string name="verb_8_incorrect_2">malt</string>
+
+    <string name="verb_9_question">Er/Sie/Es _______ Musik.</string>
+    <string name="verb_9_correct">hört</string>
+    <string name="verb_9_incorrect_1">höre</string>
+    <string name="verb_9_incorrect_2">hören</string>
+
+    <string name="verb_10_question">Wir _______ im Garten.</string>
+    <string name="verb_10_correct">arbeiten</string>
+    <string name="verb_10_incorrect_1">arbeite</string>
+    <string name="verb_10_incorrect_2">arbeitest</string>
+
+    <string name="verb_11_question">Ihr _______ Deutsch.</string>
+    <string name="verb_11_correct">lernt</string>
+    <string name="verb_11_incorrect_1">lerne</string>
+    <string name="verb_11_incorrect_2">lernst</string>
+
+    <string name="verb_12_question">Sie _______ im Chor.</string>
+    <string name="verb_12_correct">singen</string>
+    <string name="verb_12_incorrect_1">singe</string>
+    <string name="verb_12_incorrect_2">singst</string>
+
+    <string name="verb_13_question">Ich _______ meinen Freund.</string>
+    <string name="verb_13_correct">rufe</string>
+    <string name="verb_13_incorrect_1">rufst</string>
+    <string name="verb_13_incorrect_2">ruft</string>
+
+    <string name="verb_14_question">Du _______ deine Mutter.</string>
+    <string name="verb_14_correct">besuchst</string>
+    <string name="verb_14_incorrect_1">besuche</string>
+    <string name="verb_14_incorrect_2">besucht</string>
+
+    <string name="verb_15_question">Er/Sie/Es _______ einen Film.</string>
+    <string name="verb_15_correct">sieht</string>
+    <string name="verb_15_incorrect_1">sehe</string>
+    <string name="verb_15_incorrect_2">sehen</string>
+
+    <string name="verb_16_question">Wir _______ in die Schule.</string>
+    <string name="verb_16_correct">gehen</string>
+    <string name="verb_16_incorrect_1">gehe</string>
+    <string name="verb_16_incorrect_2">gehst</string>
+
+    <string name="verb_17_question">Ihr _______ ins Kino.</string>
+    <string name="verb_17_correct">geht</string>
+    <string name="verb_17_incorrect_1">gehe</string>
+    <string name="verb_17_incorrect_2">gehen</string>
+
+    <string name="verb_18_question">Sie _______ ins Museum.</string>
+    <string name="verb_18_correct">gehen</string>
+    <string name="verb_18_incorrect_1">gehe</string>
+    <string name="verb_18_incorrect_2">gehst</string>
+
+    <string name="verb_19_question">Ich _______ einen Kuchen.</string>
+    <string name="verb_19_correct">backe</string>
+    <string name="verb_19_incorrect_1">backst</string>
+    <string name="verb_19_incorrect_2">backt</string>
+
+    <string name="verb_20_question">Du _______ dein Zimmer auf.</string>
+    <string name="verb_20_correct">räumst</string>
+    <string name="verb_20_incorrect_1">räume</string>
+    <string name="verb_20_incorrect_2">räumt</string>
+
+    <string name="verb_21_question">Er/Sie/Es _______ die Blumen.</string>
+    <string name="verb_21_correct">gießt</string>
+    <string name="verb_21_incorrect_1">gieße</string>
+    <string name="verb_21_incorrect_2">gießen</string>
+
+    <string name="verb_22_question">Wir _______ Einkäufe.</string>
+    <string name="verb_22_correct">machen</string>
+    <string name="verb_22_incorrect_1">mache</string>
+    <string name="verb_22_incorrect_2">machst</string>
+
+    <string name="verb_23_question">Ihr _______ Rad.</string>
+    <string name="verb_23_correct">fahrt</string>
+    <string name="verb_23_incorrect_1">fahre</string>
+    <string name="verb_23_incorrect_2">fährst</string>
+
+    <string name="verb_24_question">Sie _______ im Park spazieren.</string>
+    <string name="verb_24_correct">gehen</string>
+    <string name="verb_24_incorrect_1">gehe</string>
+    <string name="verb_24_incorrect_2">gehst</string>
+
+    <string name="verb_25_question">Ich _______ früh auf.</string>
+    <string name="verb_25_correct">wache</string>
+    <string name="verb_25_incorrect_1">wachst</string>
+    <string name="verb_25_incorrect_2">wacht</string>
+
+    <string name="verb_26_question">Du _______ lange.</string>
+    <string name="verb_26_correct">schläfst</string>
+    <string name="verb_26_incorrect_1">schlafe</string>
+    <string name="verb_26_incorrect_2">schläft</string>
+
+    <string name="verb_27_question">Er/Sie/Es _______ zu Mittag.</string>
+    <string name="verb_27_correct">isst</string>
+    <string name="verb_27_incorrect_1">esse</string>
+    <string name="verb_27_incorrect_2">essen</string>
+
+    <string name="verb_28_question">Wir _______ Kaffee.</string>
+    <string name="verb_28_correct">trinken</string>
+    <string name="verb_28_incorrect_1">trinke</string>
+    <string name="verb_28_incorrect_2">trinkst</string>
+
+    <string name="verb_29_question">Ihr _______ Tee.</string>
+    <string name="verb_29_correct">trinkt</string>
+    <string name="verb_29_incorrect_1">trinke</string>
+    <string name="verb_29_incorrect_2">trinken</string>
+
+    <string name="verb_30_question">Sie _______ Abendessen.</string>
+    <string name="verb_30_correct">essen</string>
+    <string name="verb_30_incorrect_1">esse</string>
+    <string name="verb_30_incorrect_2">isst</string>
+
+    <!--    Beginner 2  -->
+    <string name="verb_31_question">_______ die Tür auf!</string>
+    <string name="verb_31_correct">Öffne</string>
+    <string name="verb_31_incorrect_1">Öffnest</string>
+    <string name="verb_31_incorrect_2">Öffnet</string>
+
+    <string name="verb_32_question">_______ das Fensterzu!</string>
+    <string name="verb_32_correct">Mach</string>
+    <string name="verb_32_incorrect_1">Machst</string>
+    <string name="verb_32_incorrect_2">Macht</string>
+
+    <string name="verb_33_question">_______ dein Buch!</string>
+    <string name="verb_33_correct">Schlag</string>
+    <string name="verb_33_incorrect_1">Schlägst</string>
+    <string name="verb_33_incorrect_2">Schlagt</string>
+
+    <string name="verb_34_question">_______ leise!</string>
+    <string name="verb_34_correct">Sei</string>
+    <string name="verb_34_incorrect_1">Bist</string>
+    <string name="verb_34_incorrect_2">Ist</string>
+
+    <string name="verb_35_question">_______ aufmerksam!</string>
+    <string name="verb_35_correct">Sei</string>
+    <string name="verb_35_incorrect_1">Bist</string>
+    <string name="verb_35_incorrect_2">Sind</string>
+
+    <string name="verb_36_question">_______ freundlich!</string>
+    <string name="verb_36_correct">Sei</string>
+    <string name="verb_36_incorrect_1">Bist</string>
+    <string name="verb_36_incorrect_2">Ist</string>
+
+    <string name="verb_37_question">_______ hilfsbereit!</string>
+    <string name="verb_37_correct">Sei</string>
+    <string name="verb_37_incorrect_1">Bist</string>
+    <string name="verb_37_incorrect_2">Ist</string>
+
+    <string name="verb_38_question">_______ pünktlich!</string>
+    <string name="verb_38_correct">Sei</string>
+    <string name="verb_38_incorrect_1">Bist</string>
+    <string name="verb_38_incorrect_2">Ist</string>
+
+    <string name="verb_39_question">_______ vorsichtig!</string>
+    <string name="verb_39_correct">Sei</string>
+    <string name="verb_39_incorrect_1">Bist</string>
+    <string name="verb_39_incorrect_2">Ist</string>
+
+    <string name="verb_40_question">_______ nicht so laut!</string>
+    <string name="verb_40_correct">Sei</string>
+    <string name="verb_40_incorrect_1">Bist</string>
+    <string name="verb_40_incorrect_2">Ist</string>
+
+    <string name="verb_41_question">_______ eure Hausaufgaben!</string>
+    <string name="verb_41_correct">Macht</string>
+    <string name="verb_41_incorrect_1">Machen</string>
+    <string name="verb_41_incorrect_2">Machst</string>
+
+    <string name="verb_42_question">_______ eure Schuhe aus!</string>
+    <string name="verb_42_correct">Zieht</string>
+    <string name="verb_42_incorrect_1">Ziehen</string>
+    <string name="verb_42_incorrect_2">Ziehst</string>
+
+    <string name="verb_43_question">_______ euch die Hände!</string>
+    <string name="verb_43_correct">Wascht</string>
+    <string name="verb_43_incorrect_1">Waschen</string>
+    <string name="verb_43_incorrect_2">Wäscht</string>
+
+    <string name="verb_44_question">_______ euch an!</string>
+    <string name="verb_44_correct">Zieht</string>
+    <string name="verb_44_incorrect_1">Ziehst</string>
+    <string name="verb_44_incorrect_2">Ziehen</string>
+
+    <string name="verb_45_question">_______ euch hin!</string>
+    <string name="verb_45_correct">Setzt</string>
+    <string name="verb_45_incorrect_1">Setzen</string>
+    <string name="verb_45_incorrect_2">Setz</string>
+
+    <string name="verb_46_question">_______ mir den Ball!</string>
+    <string name="verb_46_correct">Gib</string>
+    <string name="verb_46_incorrect_1">Geben</string>
+    <string name="verb_46_incorrect_2">Gebt</string>
+
+    <string name="verb_47_question">_______ mir zuhören!</string>
+    <string name="verb_47_correct">Hör</string>
+    <string name="verb_47_incorrect_1">Hören</string>
+    <string name="verb_47_incorrect_2">Hört</string>
+
+    <string name="verb_48_question">_______ mir helfen!</string>
+    <string name="verb_48_correct">Hilf</string>
+    <string name="verb_48_incorrect_1">Helfen</string>
+    <string name="verb_48_incorrect_2">Helft</string>
+
+    <string name="verb_49_question">_______ mit mir spielen!</string>
+    <string name="verb_49_correct">Spiel</string>
+    <string name="verb_49_incorrect_1">Spielen</string>
+    <string name="verb_49_incorrect_2">Spielt</string>
+
+    <string name="verb_50_question">_______ mit mir kommen!</string>
+    <string name="verb_50_correct">Komm</string>
+    <string name="verb_50_incorrect_1">Kommen</string>
+    <string name="verb_50_incorrect_2">Kommt</string>
+    <!--    Beginner 3-->
+    <string name="verb_51_question">Ich _______ glücklich.</string>
+    <string name="verb_51_correct">bin</string>
+    <string name="verb_51_incorrect_1">bist</string>
+    <string name="verb_51_incorrect_2">ist</string>
+
+    <string name="verb_52_question">Du _______ traurig.</string>
+    <string name="verb_52_correct">bist</string>
+    <string name="verb_52_incorrect_1">bin</string>
+    <string name="verb_52_incorrect_2">ist</string>
+
+    <string name="verb_53_question">Er/Sie/Es _______ krank.</string>
+    <string name="verb_53_correct">ist</string>
+    <string name="verb_53_incorrect_1">bin</string>
+    <string name="verb_53_incorrect_2">bist</string>
+
+    <string name="verb_54_question">Wir _______ zu Hause.</string>
+    <string name="verb_54_correct">sind</string>
+    <string name="verb_54_incorrect_1">bin</string>
+    <string name="verb_54_incorrect_2">seid</string>
+
+    <string name="verb_55_question">Ihr _______ in der Schule.</string>
+    <string name="verb_55_correct">seid</string>
+    <string name="verb_55_incorrect_1">sind</string>
+    <string name="verb_55_incorrect_2">bin</string>
+
+    <string name="verb_56_question">Sie _______ im Urlaub.</string>
+    <string name="verb_56_correct">sind</string>
+    <string name="verb_56_incorrect_1">seid</string>
+    <string name="verb_56_incorrect_2">ist</string>
+
+    <string name="verb_57_question">Ich _______ Durst.</string>
+    <string name="verb_57_correct">habe</string>
+    <string name="verb_57_incorrect_1">hast</string>
+    <string name="verb_57_incorrect_2">hat</string>
+
+    <string name="verb_58_question">Du _______ Hunger.</string>
+    <string name="verb_58_correct">hast</string>
+    <string name="verb_58_incorrect_1">habe</string>
+    <string name="verb_58_incorrect_2">hat</string>
+
+    <string name="verb_59_question">Er/Sie/Es _______ Müde.</string>
+    <string name="verb_59_correct">ist</string>
+    <string name="verb_59_incorrect_1">bin</string>
+    <string name="verb_59_incorrect_2">bist</string>
+
+    <string name="verb_60_question">Wir _______ kalt.</string>
+    <string name="verb_60_correct">sind</string>
+    <string name="verb_60_incorrect_1">seid</string>
+    <string name="verb_60_incorrect_2">bin</string>
+
+    <string name="verb_61_question">Ihr _______ warm.</string>
+    <string name="verb_61_correct">seid</string>
+    <string name="verb_61_incorrect_1">sind</string>
+    <string name="verb_61_incorrect_2">bin</string>
+
+    <string name="verb_62_question">Sie _______ glücklich.</string>
+    <string name="verb_62_correct">sind</string>
+    <string name="verb_62_incorrect_1">seid</string>
+    <string name="verb_62_incorrect_2">ist</string>
+
+    <string name="verb_63_question">Ich _______ einen Bruder.</string>
+    <string name="verb_63_correct">habe</string>
+    <string name="verb_63_incorrect_1">hast</string>
+    <string name="verb_63_incorrect_2">hat</string>
+
+    <string name="verb_64_question">Du _______ eine Schwester.</string>
+    <string name="verb_64_correct">hast</string>
+    <string name="verb_64_incorrect_1">habe</string>
+    <string name="verb_64_incorrect_2">hat</string>
+
+    <string name="verb_65_question">Er/Sie/Es _______ ein Haustier.</string>
+    <string name="verb_65_correct">hat</string>
+    <string name="verb_65_incorrect_1">habe</string>
+    <string name="verb_65_incorrect_2">hast</string>
+
+    <string name="verb_66_question">Wir _______ ein Auto.</string>
+    <string name="verb_66_correct">haben</string>
+    <string name="verb_66_incorrect_1">habt</string>
+    <string name="verb_66_incorrect_2">habe</string>
+
+    <string name="verb_67_question">Ihr _______ Fahrräder.</string>
+    <string name="verb_67_correct">habt</string>
+    <string name="verb_67_incorrect_1">haben</string>
+    <string name="verb_67_incorrect_2">hast</string>
+
+    <string name="verb_68_question">Sie _______ einen Garten.</string>
+    <string name="verb_68_correct">haben</string>
+    <string name="verb_68_incorrect_1">habt</string>
+    <string name="verb_68_incorrect_2">hat</string>
+
+    <string name="verb_69_question">Ich _______ Zeit.</string>
+    <string name="verb_69_correct">habe</string>
+    <string name="verb_69_incorrect_1">hast</string>
+    <string name="verb_69_incorrect_2">hat</string>
+
+    <string name="verb_70_question">Du _______ keine Lust.</string>
+    <string name="verb_70_correct">hast</string>
+    <string name="verb_70_incorrect_1">habe</string>
+    <string name="verb_70_incorrect_2">hat</string>
+
+    <string name="verb_71_question">Er/Sie/Es _______ Angst.</string>
+    <string name="verb_71_correct">hat</string>
+    <string name="verb_71_incorrect_1">hast</string>
+    <string name="verb_71_incorrect_2">habe</string>
+
+    <string name="verb_72_question">Wir _______ Spaß.</string>
+    <string name="verb_72_correct">haben</string>
+    <string name="verb_72_incorrect_1">habt</string>
+    <string name="verb_72_incorrect_2">habe</string>
+
+    <string name="verb_73_question">Ihr _______ Recht.</string>
+    <string name="verb_73_correct">habt</string>
+    <string name="verb_73_incorrect_1">haben</string>
+    <string name="verb_73_incorrect_2">hast</string>
+
+    <string name="verb_74_question">Sie _______ Unrecht.</string>
+    <string name="verb_74_correct">haben</string>
+    <string name="verb_74_incorrect_1">habt</string>
+    <string name="verb_74_incorrect_2">hat</string>
+
+    <string name="verb_75_question">Ich _______ schwimmen.</string>
+    <string name="verb_75_correct">kann</string>
+    <string name="verb_75_incorrect_1">will</string>
+    <string name="verb_75_incorrect_2">muss</string>
+
+    <string name="verb_76_question">Du _______ singen.</string>
+    <string name="verb_76_correct">kannst</string>
+    <string name="verb_76_incorrect_1">willst</string>
+    <string name="verb_76_incorrect_2">musst</string>
+
+    <string name="verb_77_question">Er/Sie/Es _______ tanzen.</string>
+    <string name="verb_77_correct">kann</string>
+    <string name="verb_77_incorrect_1">will</string>
+    <string name="verb_77_incorrect_2">muss</string>
+
+    <string name="verb_78_question">Wir _______ kochen.</string>
+    <string name="verb_78_correct">können</string>
+    <string name="verb_78_incorrect_1">wollen</string>
+    <string name="verb_78_incorrect_2">müssen</string>
+
+    <string name="verb_79_question">Ihr _______ malen.</string>
+    <string name="verb_79_correct">könnt</string>
+    <string name="verb_79_incorrect_1">wollt</string>
+    <string name="verb_79_incorrect_2">müsst</string>
+
+    <string name="verb_80_question">Sie _______ spielen.</string>
+    <string name="verb_80_correct">können</string>
+    <string name="verb_80_incorrect_1">wollen</string>
+    <string name="verb_80_incorrect_2">müssen</string>
+
+    <string name="verb_81_question">Ich _______ jetzt gehen.</string>
+    <string name="verb_81_correct">muss</string>
+    <string name="verb_81_incorrect_1">will</string>
+    <string name="verb_81_incorrect_2">kann</string>
+
+    <string name="verb_82_question">Du _______ deine Hausaufgaben machen.</string>
+    <string name="verb_82_correct">musst</string>
+    <string name="verb_82_incorrect_1">willst</string>
+    <string name="verb_82_incorrect_2">kannst</string>
+
+    <string name="verb_83_question">Er/Sie/Es _______ zum Arzt gehen.</string>
+    <string name="verb_83_correct">muss</string>
+    <string name="verb_83_incorrect_1">will</string>
+    <string name="verb_83_incorrect_2">kann</string>
+
+    <string name="verb_84_question">Wir _______ einkaufen gehen.</string>
+    <string name="verb_84_correct">müssen</string>
+    <string name="verb_84_incorrect_1">wollen</string>
+    <string name="verb_84_incorrect_2">können</string>
+
+    <string name="verb_85_question">Ihr _______ leise sein.</string>
+    <string name="verb_85_correct">müsst</string>
+    <string name="verb_85_incorrect_1">wollt</string>
+    <string name="verb_85_incorrect_2">könnt</string>
+
+    <string name="verb_86_question">Sie _______ arbeiten.</string>
+    <string name="verb_86_correct">müssen</string>
+    <string name="verb_86_incorrect_1">wollen</string>
+    <string name="verb_86_incorrect_2">können</string>
+
+    <string name="verb_87_question">Ich _______ gerne Eis essen.</string>
+    <string name="verb_87_correct">mag</string>
+    <string name="verb_87_incorrect_1">will</string>
+    <string name="verb_87_incorrect_2">muss</string>
+
+    <string name="verb_88_question">Du _______ gerne ins Kino gehen.</string>
+    <string name="verb_88_correct">magst</string>
+    <string name="verb_88_incorrect_1">willst</string>
+    <string name="verb_88_incorrect_2">musst</string>
+
+    <string name="verb_89_question">Er/Sie/Es _______ gerne Musik hören.</string>
+    <string name="verb_89_correct">mag</string>
+    <string name="verb_89_incorrect_1">will</string>
+    <string name="verb_89_incorrect_2">muss</string>
+
+    <string name="verb_90_question">Wir _______ gerne Fußball spielen.</string>
+    <string name="verb_90_correct">mögen</string>
+    <string name="verb_90_incorrect_1">wollen</string>
+    <string name="verb_90_incorrect_2">müssen</string>
+
+    <string name="verb_91_question">Ihr _______ gerne Freunde treffen.</string>
+    <string name="verb_91_correct">mögt</string>
+    <string name="verb_91_incorrect_1">wollt</string>
+    <string name="verb_91_incorrect_2">müsst</string>
+
+    <string name="verb_92_question">Sie _______ gerne reisen.</string>
+    <string name="verb_92_correct">mögen</string>
+    <string name="verb_92_incorrect_1">wollen</string>
+    <string name="verb_92_incorrect_2">müssen</string>
+
+    <string name="verb_93_question">Ich _______ ein Glas Wasser trinken.</string>
+    <string name="verb_93_correct">möchte</string>
+    <string name="verb_93_incorrect_1">will</string>
+    <string name="verb_93_incorrect_2">muss</string>
+
+    <string name="verb_94_question">_______ du bitte das Fenster öffnen?</string>
+    <string name="verb_94_correct">Möchtest</string>
+    <string name="verb_94_incorrect_1">Willst</string>
+    <string name="verb_94_incorrect_2">Musst</string>
+
+    <string name="verb_95_question">Er/Sie/Es _______ gerne mitkommen.</string>
+    <string name="verb_95_correct">möchte</string>
+    <string name="verb_95_incorrect_1">will</string>
+    <string name="verb_95_incorrect_2">muss</string>
+
+    <string name="verb_96_question">Wir _______ gerne helfen.</string>
+    <string name="verb_96_correct">möchten</string>
+    <string name="verb_96_incorrect_1">wollen</string>
+    <string name="verb_96_incorrect_2">müssen</string>
+
+    <string name="verb_97_question">_______ ihr bitte leise sein?</string>
+    <string name="verb_97_correct">Möchtet</string>
+    <string name="verb_97_incorrect_1">Wollt</string>
+    <string name="verb_97_incorrect_2">Müsst</string>
+
+    <string name="verb_98_question">Sie _______ gerne mehr erfahren.</string>
+    <string name="verb_98_correct">möchten</string>
+    <string name="verb_98_incorrect_1">wollen</string>
+    <string name="verb_98_incorrect_2">müssen</string>
+
+    <string name="verb_99_question">Ich _______ dich anrufen.</string>
+    <string name="verb_99_correct">werde</string>
+    <string name="verb_99_incorrect_1">will</string>
+    <string name="verb_99_incorrect_2">muss</string>
+
+    <string name="verb_100_question">Du _______ mir schreiben.</string>
+    <string name="verb_100_correct">wirst</string>
+    <string name="verb_100_incorrect_1">willst</string>
+    <string name="verb_100_incorrect_2">musst</string>
+
+
+    <string name="verb_1_answer_en">I eat an apple.</string>
+    <string name="verb_2_answer_en">You drink water.</string>
+    <string name="verb_3_answer_en">He/She/It reads a book.</string>
+    <string name="verb_4_answer_en">We play football.</string>
+    <string name="verb_5_answer_en">You (pl.) eat pizza.</string>
+    <string name="verb_6_answer_en">They watch TV.</string>
+    <string name="verb_7_answer_en">I write a letter.</string>
+    <string name="verb_8_answer_en">You draw a picture.</string>
+    <string name="verb_9_answer_en">He/She/It listens to music.</string>
+    <string name="verb_10_answer_en">We work in the garden.</string>
+    <string name="verb_11_answer_en">You (pl.) learn German.</string>
+    <string name="verb_12_answer_en">They sing in the choir.</string>
+    <string name="verb_13_answer_en">I call my friend.</string>
+    <string name="verb_14_answer_en">You visit your mother.</string>
+    <string name="verb_15_answer_en">He/She/It watches a film.</string>
+    <string name="verb_16_answer_en">We go to school.</string>
+    <string name="verb_17_answer_en">You (pl.) go to the cinema.</string>
+    <string name="verb_18_answer_en">They go to the museum.</string>
+    <string name="verb_19_answer_en">I bake a cake.</string>
+    <string name="verb_20_answer_en">You tidy your room.</string>
+    <string name="verb_21_answer_en">He/She/It waters the flowers.</string>
+    <string name="verb_22_answer_en">We do the shopping.</string>
+    <string name="verb_23_answer_en">You (pl.) ride a bike.</string>
+    <string name="verb_24_answer_en">They walk in the park.</string>
+    <string name="verb_25_answer_en">I wake up early.</string>
+    <string name="verb_26_answer_en">You sleep for a long time.</string>
+    <string name="verb_27_answer_en">He/She/It eats lunch.</string>
+    <string name="verb_28_answer_en">We drink coffee.</string>
+    <string name="verb_29_answer_en">You (pl.) drink tea.</string>
+    <string name="verb_30_answer_en">They eat dinner.</string>
+    <string name="verb_31_answer_en">Open the door!</string>
+    <string name="verb_32_answer_en">Close the window!</string>
+    <string name="verb_33_answer_en">Open your book!</string>
+    <string name="verb_34_answer_en">Be quiet!</string>
+    <string name="verb_35_answer_en">Be attentive!</string>
+    <string name="verb_36_answer_en">Be friendly!</string>
+    <string name="verb_37_answer_en">Be helpful!</string>
+    <string name="verb_38_answer_en">Be on time!</string>
+    <string name="verb_39_answer_en">Be careful!</string>
+    <string name="verb_40_answer_en">Be quiet!</string>
+    <string name="verb_41_answer_en">Do your homework!</string>
+    <string name="verb_42_answer_en">Take off your shoes!</string>
+    <string name="verb_43_answer_en">Wash your hands!</string>
+    <string name="verb_44_answer_en">Get dressed!</string>
+    <string name="verb_45_answer_en">Sit down!</string>
+    <string name="verb_46_answer_en">Give me the ball!</string>
+    <string name="verb_47_answer_en">Listen to me!</string>
+    <string name="verb_48_answer_en">Help me!</string>
+    <string name="verb_49_answer_en">Play with me!</string>
+    <string name="verb_50_answer_en">Come with me!</string>
+
+    <string name="verb_51_answer_en">I am happy.</string>
+    <string name="verb_52_answer_en">You are sad.</string>
+    <string name="verb_53_answer_en">He/She/It is sick.</string>
+    <string name="verb_54_answer_en">We are at home.</string>
+    <string name="verb_55_answer_en">You (pl.) are at school.</string>
+    <string name="verb_56_answer_en">They are on vacation.</string>
+    <string name="verb_57_answer_en">I am thirsty.</string>
+    <string name="verb_58_answer_en">You are hungry.</string>
+    <string name="verb_59_answer_en">He/She/It is tired.</string>
+    <string name="verb_60_answer_en">We are cold.</string>
+    <string name="verb_61_answer_en">You (pl.) are warm.</string>
+    <string name="verb_62_answer_en">They are happy.</string>
+    <string name="verb_63_answer_en">I have a brother.</string>
+    <string name="verb_64_answer_en">You have a sister.</string>
+    <string name="verb_65_answer_en">He/She/It has a pet.</string>
+    <string name="verb_66_answer_en">We have a car.</string>
+    <string name="verb_67_answer_en">You (pl.) have bikes.</string>
+    <string name="verb_68_answer_en">They have a garden.</string>
+    <string name="verb_69_answer_en">I have time.</string>
+    <string name="verb_70_answer_en">You don\'t feel like it.</string>
+    <string name="verb_71_answer_en">He/She/It isafraid.</string>
+    <string name="verb_72_answer_en">We have fun.</string>
+    <string name="verb_73_answer_en">You (pl.) are right.</string>
+    <string name="verb_74_answer_en">They are wrong.</string>
+    <string name="verb_75_answer_en">I can swim.</string>
+    <string name="verb_76_answer_en">You can sing.</string>
+    <string name="verb_77_answer_en">He/She/It can dance.</string>
+    <string name="verb_78_answer_en">We can cook.</string>
+    <string name="verb_79_answer_en">You (pl.) can paint.</string>
+    <string name="verb_80_answer_en">They can play.</string>
+    <string name="verb_81_answer_en">I must go now.</string>
+    <string name="verb_82_answer_en">You must do your homework.</string>
+    <string name="verb_83_answer_en">He/She/It must go to the doctor.</string>
+    <string name="verb_84_answer_en">We must go shopping.</string>
+    <string name="verb_85_answer_en">You (pl.) must be quiet.</string>
+    <string name="verb_86_answer_en">They must work.</string>
+    <string name="verb_87_answer_en">I like to eat ice cream.</string>
+    <string name="verb_88_answer_en">You like to go to the cinema.</string>
+    <string name="verb_89_answer_en">He/She/It likes to listen to music.</string>
+    <string name="verb_90_answer_en">We like to play football.</string>
+    <string name="verb_91_answer_en">You (pl.) like to meet friends.</string>
+    <string name="verb_92_answer_en">They like to travel.</string>
+    <string name="verb_93_answer_en">I would like to drinka glass of water.</string>
+    <string name="verb_94_answer_en">Would you please open the window?</string>
+    <string name="verb_95_answer_en">He/She/It would like to come along.</string>
+    <string name="verb_96_answer_en">We would like to help.</string>
+    <string name="verb_97_answer_en">Would you (pl.) please be quiet?</string>
+    <string name="verb_98_answer_en">They would like to learn more.</string>
+    <string name="verb_99_answer_en">I will call you.</string>
+    <string name="verb_100_answer_en">You will write to me.</string>
 </resources>

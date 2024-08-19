@@ -6,5 +6,6 @@ enum class QuizMode {
     NEGATIVE_ARTICLE,
     SINGLE_DIGIT,
     DOUBLE_DIGIT,
-    TRIPLE_DIGIT
+    TRIPLE_DIGIT,
+    VERB_CONJUGATIONS
 }

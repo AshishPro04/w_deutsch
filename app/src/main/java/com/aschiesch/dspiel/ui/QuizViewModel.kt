@@ -5,6 +5,7 @@ import com.aschiesch.dspiel.data.quiz.QuizMode
 import com.aschiesch.dspiel.data.quiz.ArticleResource
 import com.aschiesch.dspiel.data.quiz.ArticleSource
 import com.aschiesch.dspiel.data.quiz.NumberSource
+import com.aschiesch.dspiel.data.quiz.VerbConjugationResource
 import com.aschiesch.dspiel.data.results.Result
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -16,13 +17,14 @@ class QuizViewModel(
 ) : ViewModel() {
 
     private  val quizItems: List<ArticleResource> = when (articleType) {
-        QuizMode.DEFINITE_ARTICLE.name -> ArticleSource.definitiveArticles
-        QuizMode.INDEFINITE_ARTICLE.name -> ArticleSource.indefiniteArticles
-        QuizMode.NEGATIVE_ARTICLE.name -> ArticleSource.negativeArticles
-        QuizMode.SINGLE_DIGIT.name -> NumberSource.numbersSingleDigitNumeric
-        QuizMode.DOUBLE_DIGIT.name -> NumberSource.numbersDoubleDigitNumeric
-        QuizMode.TRIPLE_DIGIT.name -> NumberSource.numbersTripleDigitNumeric
-        else ->  ArticleSource.definitiveArticles
+        QuizMode.DEFINITE_ARTICLE.name -> ArticleSource.definitiveArticles.shuffled()
+        QuizMode.INDEFINITE_ARTICLE.name -> ArticleSource.indefiniteArticles.shuffled()
+        QuizMode.NEGATIVE_ARTICLE.name -> ArticleSource.negativeArticles.shuffled()
+        QuizMode.SINGLE_DIGIT.name -> NumberSource.numbersSingleDigitNumeric.shuffled()
+        QuizMode.DOUBLE_DIGIT.name -> NumberSource.numbersDoubleDigitNumeric.shuffled()
+        QuizMode.TRIPLE_DIGIT.name -> NumberSource.numbersTripleDigitNumeric.shuffled()
+        QuizMode.VERB_CONJUGATIONS.name -> VerbConjugationResource.verbConjugations.shuffled().take(30)
+        else ->  ArticleSource.definitiveArticles.shuffled()
     }
                 private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(
             QuizUiState(
@@ -68,7 +70,7 @@ class QuizViewModel(
                 currentQuestion = currentQuestion,
                 currentAnswer = currentAnswer,
                 isGameOver = isGameOver,
-                options = options
+                options = options.shuffled()
             )
         }
     }
