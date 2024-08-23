@@ -10,7 +10,7 @@
     <string name="single_digit">Single Digit</string>
     <string name="double_digit">Double Digit</string>
     <string name="triple_digit">Triple Digit</string>
-    <string name="verb_conjugations">Verb Conjugations"></string>
+    <string name="verb_conjugations">Verb Conjugations</string>
     <string name="close">Close</string>
     <string name="score">Score</string>
     <string name="complete_result">You got %1$d out of %2$d correct</string>

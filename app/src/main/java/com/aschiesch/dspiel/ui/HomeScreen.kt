@@ -1,5 +1,6 @@
 package com.aschiesch.dspiel.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.defaultMinSize
@@ -17,6 +18,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -103,8 +105,21 @@ fun PlayItem(
         modifier = modifier
             .padding(8.dp)
             .defaultMinSize(minWidth = 128.dp)
-            .height(128.dp),
-        elevation = CardDefaults.elevatedCardElevation()
+            .height(128.dp)
+            .background(
+                brush = Brush.linearGradient(
+                    colors = listOf(
+                        MaterialTheme.colorScheme.primaryContainer,
+                        MaterialTheme.colorScheme.tertiaryContainer
+                    )
+                ),
+                shape = CardDefaults.shape
+            )
+        ,
+        elevation = CardDefaults.cardElevation(),
+        colors = CardDefaults.elevatedCardColors(
+            containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.0f)
+        )
     ) {
         Column(
             modifier = Modifier.fillMaxSize(),
