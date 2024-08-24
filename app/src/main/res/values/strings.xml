@@ -10,7 +10,8 @@
     <string name="single_digit">Single Digit</string>
     <string name="double_digit">Double Digit</string>
     <string name="triple_digit">Triple Digit</string>
-    <string name="verb_conjugations">Verb Conjugations</string>
+    <string name="verbs_title">Verbs</string>
+    <string name="verb_conjugations_1">Verb Conjugations 1</string>
     <string name="close">Close</string>
     <string name="score">Score</string>
     <string name="complete_result">You got %1$d out of %2$d correct</string>
@@ -981,4 +982,1089 @@
     <string name="verb_98_answer_en">They would like to learn more.</string>
     <string name="verb_99_answer_en">I will call you.</string>
     <string name="verb_100_answer_en">You will write to me.</string>
+
+    <string name="verb_101_question">Ich _______ (nehmen) den Bus zur Schule.</string>
+    <string name="verb_101_correct">nehme</string>
+    <string name="verb_101_incorrect_1">nimmst</string>
+    <string name="verb_101_incorrect_2">nimmt</string>
+
+    <string name="verb_102_question">Du _______ (sprechen) sehr gut Deutsch.</string>
+    <string name="verb_102_correct">sprichst</string>
+    <string name="verb_102_incorrect_1">spreche</string>
+    <string name="verb_102_incorrect_2">spricht</string>
+
+    <string name="verb_103_question">Er/Sie/Es _______ (sehen) einen Vogel im Baum.</string>
+    <string name="verb_103_correct">sieht</string>
+    <string name="verb_103_incorrect_1">sehe</string>
+    <string name="verb_103_incorrect_2">sehen</string>
+
+    <string name="verb_104_question">Wir _______ (geben) dir ein Geschenk.</string>
+    <string name="verb_104_correct">geben</string>
+    <string name="verb_104_incorrect_1">gebe</string>
+    <string name="verb_104_incorrect_2">gibst</string>
+
+    <string name="verb_105_question">Ihr _______ (essen) gerne Schokolade.</string>
+    <string name="verb_105_correct">esst</string>
+    <string name="verb_105_incorrect_1">isst</string>
+    <string name="verb_105_incorrect_2">esse</string>
+
+    <string name="verb_106_question">Sie _______ (lesen) die Zeitung.</string>
+    <string name="verb_106_correct">lesen</string>
+    <string name="verb_106_incorrect_1">lese</string>
+    <string name="verb_106_incorrect_2">liest</string>
+
+    <string name="verb_107_question">Ich _______ (fahren) mit dem Fahrrad zur Arbeit.</string>
+    <string name="verb_107_correct">fahre</string>
+    <string name="verb_107_incorrect_1">fährst</string>
+    <string name="verb_107_incorrect_2">fährt</string>
+
+    <string name="verb_108_question">Du _______ (laufen) jeden Morgen im Park.</string>
+    <string name="verb_108_correct">läufst</string>
+    <string name="verb_108_incorrect_1">laufe</string>
+    <string name="verb_108_incorrect_2">läuft</string>
+
+    <string name="verb_109_question">Er/Sie/Es _______ (schlafen) noch.</string>
+    <string name="verb_109_correct">schläft</string>
+    <string name="verb_109_incorrect_1">schlafe</string>
+    <string name="verb_109_incorrect_2">schlafen</string>
+
+    <string name="verb_110_question">Wir _______ (helfen) dir gerne.</string>
+    <string name="verb_110_correct">helfen</string>
+    <string name="verb_110_incorrect_1">helfe</string>
+    <string name="verb_110_incorrect_2">hilfst</string>
+
+    <string name="verb_111_question">Ich _______ (lernen) viel für die Prüfung.</string>
+    <string name="verb_111_correct">habe gelernt</string>
+    <string name="verb_111_incorrect_1">bin gelernt</string>
+    <string name="verb_111_incorrect_2">hast gelernt</string>
+
+    <string name="verb_112_question">Du _______ (machen) einen Fehler.</string>
+    <string name="verb_112_correct">hast gemacht</string>
+    <string name="verb_112_incorrect_1">bist gemacht</string>
+    <string name="verb_112_incorrect_2">habe gemacht</string>
+
+    <string name="verb_113_question">Er/Sie/Es _______ (arbeiten) den ganzen Tag.</string>
+    <string name="verb_113_correct">hat gearbeitet</string>
+    <string name="verb_113_incorrect_1">ist gearbeitet</string>
+    <string name="verb_113_incorrect_2">habe gearbeitet</string>
+
+    <string name="verb_114_question">Wir _______ (spielen) im Garten.</string>
+    <string name="verb_114_correct">haben gespielt</string>
+    <string name="verb_114_incorrect_1">sind gespielt</string>
+    <string name="verb_114_incorrect_2">habt gespielt</string>
+
+    <string name="verb_115_question">Ihr _______ (besuchen) eure Großeltern.</string>
+    <string name="verb_115_correct">habt besucht</string>
+    <string name="verb_115_incorrect_1">seid besucht</string>
+    <string name="verb_115_incorrect_2">haben besucht</string>
+
+    <string name="verb_116_question">Sie _______ (kaufen) ein neues Auto.</string>
+    <string name="verb_116_correct">haben gekauft</string>
+    <string name="verb_116_incorrect_1">sind gekauft</string>
+    <string name="verb_116_incorrect_2">habtgekauft</string>
+
+    <string name="verb_117_question">Ich _______ (trinken) einen Kaffee.</string>
+    <string name="verb_117_correct">habe getrunken</string>
+    <string name="verb_117_incorrect_1">bin getrunken</string>
+    <string name="verb_117_incorrect_2">hast getrunken</string>
+
+    <string name="verb_118_question">Du _______ (essen) ein Stück Kuchen.</string>
+    <string name="verb_118_correct">hast gegessen</string>
+    <string name="verb_118_incorrect_1">bist gegessen</string>
+    <string name="verb_118_incorrect_2">habe gegessen</string>
+
+    <string name="verb_119_question">Er/Sie/Es _______ (finden) den Schlüssel.</string>
+    <string name="verb_119_correct">hat gefunden</string>
+    <string name="verb_119_incorrect_1">ist gefunden</string>
+    <string name="verb_119_incorrect_2">habe gefunden</string>
+
+    <string name="verb_120_question">Wir _______ (schreiben) einen Brief.</string>
+    <string name="verb_120_correct">haben geschrieben</string>
+    <string name="verb_120_incorrect_1">sind geschrieben</string>
+    <string name="verb_120_incorrect_2">habt geschrieben</string>
+
+    <string name="verb_121_question">Ich _______ (müssen) jetzt gehen.</string>
+    <string name="verb_121_correct">muss</string>
+    <string name="verb_121_incorrect_1">kann</string>
+    <string name="verb_121_incorrect_2">will</string>
+
+    <string name="verb_122_question">Du _______ (können) gut schwimmen.</string>
+    <string name="verb_122_correct">kannst</string>
+    <string name="verb_122_incorrect_1">musst</string>
+    <string name="verb_122_incorrect_2">darfst</string>
+
+    <string name="verb_123_question">Er/Sie/Es _______ (dürfen) nicht rauchen.</string>
+    <string name="verb_123_correct">darf</string>
+    <string name="verb_123_incorrect_1">muss</string>
+    <string name="verb_123_incorrect_2">kann</string>
+
+    <string name="verb_124_question">Wir _______ (sollen) früh aufstehen.</string>
+    <string name="verb_124_correct">sollen</string>
+    <string name="verb_124_incorrect_1">müssen</string>
+    <string name="verb_124_incorrect_2">wollen</string>
+
+    <string name="verb_125_question">Ihr _______ (wollen) ins Kino gehen?</string>
+    <string name="verb_125_correct">wollt</string>
+    <string name="verb_125_incorrect_1">müsst</string>
+    <string name="verb_125_incorrect_2">dürft</string>
+
+    <string name="verb_126_question">Sie _______ (mögen) keine Pizza.</string>
+    <string name="verb_126_correct">mögen</string>
+    <string name="verb_126_incorrect_1">wollen</string>
+    <string name="verb_126_incorrect_2">müssen</string>
+
+    <string name="verb_127_question">Ich _______ (möchten) gerne ein Glas Wasser.</string>
+    <string name="verb_127_correct">möchte</string>
+    <string name="verb_127_incorrect_1">will</string>
+    <string name="verb_127_incorrect_2">muss</string>
+
+    <string name="verb_128_question">Du _______ (können) mir bitte helfen?</string>
+    <string name="verb_128_correct">kannst</string>
+    <string name="verb_128_incorrect_1">musst</string>
+    <string name="verb_128_incorrect_2">sollst</string>
+
+    <string name="verb_129_question">Er/Sie/Es _______ (müssen) zum Arzt gehen.</string>
+    <string name="verb_129_correct">muss</string>
+    <string name="verb_129_incorrect_1">kann</string>
+    <string name="verb_129_incorrect_2">soll</string>
+
+    <string name="verb_130_question">Wir _______ (dürfen) hier nicht parken.</string>
+    <string name="verb_130_correct">dürfen</string>
+    <string name="verb_130_incorrect_1">müssen</string>
+    <string name="verb_130_incorrect_2">können</string>
+
+    <string name="verb_131_question">Ich _______ (gehen) gestern ins Kino.</string>
+    <string name="verb_131_correct">bin gegangen</string>
+    <string name="verb_131_incorrect_1">habe gegangen</string>
+    <string name="verb_131_incorrect_2">hast gegangen</string>
+
+    <string name="verb_132_question">Du _______ (kommen) zu spät.</string>
+    <string name="verb_132_correct">bist gekommen</string>
+    <string name="verb_132_incorrect_1">hast gekommen</string>
+    <string name="verb_132_incorrect_2">habe gekommen</string>
+
+    <string name="verb_133_question">Er/Sie/Es _______ (laufen) schnell nach Hause.</string>
+    <string name="verb_133_correct">ist gelaufen</string>
+    <string name="verb_133_incorrect_1">hat gelaufen</string>
+    <string name="verb_133_incorrect_2">habe gelaufen</string>
+
+    <string name="verb_134_question">Wir _______ (fahren) in den Urlaub.</string>
+    <string name="verb_134_correct">sind gefahren</string>
+    <string name="verb_134_incorrect_1">haben gefahren</string>
+    <string name="verb_134_incorrect_2">habt gefahren</string>
+
+    <string name="verb_135_question">Ihr _______ (bleiben) zu lange auf der Party.</string>
+    <string name="verb_135_correct">seid geblieben</string>
+    <string name="verb_135_incorrect_1">habt geblieben</string>
+    <string name="verb_135_incorrect_2">haben geblieben</string>
+
+    <string name="verb_136_question">Sie _______ (fliegen) nach Spanien.</string>
+    <string name="verb_136_correct">sind geflogen</string>
+    <string name="verb_136_incorrect_1">haben geflogen</string>
+    <string name="verb_136_incorrect_2">habt geflogen</string>
+
+    <string name="verb_137_question">Ich _______ (schwimmen) im See.</string>
+    <string name="verb_137_correct">bin geschwommen</string>
+    <string name="verb_137_incorrect_1">habe geschwommen</string>
+    <string name="verb_137_incorrect_2">hast geschwommen</string>
+
+    <string name="verb_138_question">Du _______ (fallen) vom Fahrrad.</string>
+    <string name="verb_138_correct">bist gefallen</string>
+    <string name="verb_138_incorrect_1">hast gefallen</string>
+    <string name="verb_138_incorrect_2">habe gefallen</string>
+
+    <string name="verb_139_question">Er/Sie/Es _______ (geschehen) schnell.</string>
+    <string name="verb_139_correct">ist geschehen</string>
+    <string name="verb_139_incorrect_1">hat geschehen</string>
+    <string name="verb_139_incorrect_2">habe geschehen</string>
+    <string name="verb_140_question">Wir _______ (sein) im Zoo.</string>
+    <string name="verb_140_correct">sind gewesen</string>
+    <string name="verb_140_incorrect_1">haben gewesen</string>
+    <string name="verb_140_incorrect_2">habt gewesen</string>
+
+    <string name="verb_141_question">Ich _______ (lernen) morgen für die Prüfung.</string>
+    <string name="verb_141_correct">werde lernen</string>
+    <string name="verb_141_incorrect_1">will lernen</string>
+    <string name="verb_141_incorrect_2">muss lernen</string>
+
+    <string name="verb_142_question">Du _______ (treffen) deine Freunde am Wochenende.</string>
+    <string name="verb_142_correct">wirst treffen</string>
+    <string name="verb_142_incorrect_1">willst treffen</string>
+    <string name="verb_142_incorrect_2">musst treffen</string>
+
+    <string name="verb_143_question">Er/Sie/Es _______ (reisen) nächstes Jahr nach Italien.</string>
+    <string name="verb_143_correct">wird reisen</string>
+    <string name="verb_143_incorrect_1">will reisen</string>
+    <string name="verb_143_incorrect_2">muss reisen</string>
+
+    <string name="verb_144_question">Wir _______ (feiern) deinen Geburtstag.</string>
+    <string name="verb_144_correct">werden feiern</string>
+    <string name="verb_144_incorrect_1">wollen feiern</string>
+    <string name="verb_144_incorrect_2">müssen feiern</string>
+
+    <string name="verb_145_question">Ihr _______ (besuchen) uns bald wieder.</string>
+    <string name="verb_145_correct">werdet besuchen</string>
+    <string name="verb_145_incorrect_1">wollt besuchen</string>
+    <string name="verb_145_incorrect_2">müsst besuchen</string>
+
+    <string name="verb_146_question">Sie _______ (gewinnen) das Spiel.</string>
+    <string name="verb_146_correct">werden gewinnen</string>
+    <string name="verb_146_incorrect_1">wollen gewinnen</string>
+    <string name="verb_146_incorrect_2">müssen gewinnen</string>
+
+    <string name="verb_147_question">Ich _______ (anrufen) dich später.</string>
+    <string name="verb_147_correct">werde anrufen</string>
+    <string name="verb_147_incorrect_1">will anrufen</string>
+    <string name="verb_147_incorrect_2">muss anrufen</string>
+
+    <string name="verb_148_question">Du _______ (schreiben) mir eine E-Mail.</string>
+    <string name="verb_148_correct">wirst schreiben</string>
+    <string name="verb_148_incorrect_1">willst schreiben</string>
+    <string name="verb_148_incorrect_2">musst schreiben</string>
+
+    <string name="verb_149_question">Er/Sie/Es _______ (kommen) morgen früh.</string>
+    <string name="verb_149_correct">wird kommen</string>
+    <string name="verb_149_incorrect_1">will kommen</string>
+    <string name="verb_149_incorrect_2">muss kommen</string>
+
+    <string name="verb_150_question">Wir _______ (gehen) heute Abend ins Restaurant.</string>
+    <string name="verb_150_correct">werden gehen</string>
+    <string name="verb_150_incorrect_1">wollen gehen</string>
+    <string name="verb_150_incorrect_2">müssen gehen</string>
+
+    <string name="verb_151_question">Ich _______ (spielen) gestern Fußball.</string>
+    <string name="verb_151_correct">spielte</string>
+    <string name="verb_151_incorrect_1">spiele</string>
+    <string name="verb_151_incorrect_2">spielst</string>
+
+    <string name="verb_152_question">Du _______ (lernen) fleißig für die Prüfung.</string>
+    <string name="verb_152_correct">lerntest</string>
+    <string name="verb_152_incorrect_1">lerne</string>
+    <string name="verb_152_incorrect_2">lernt</string>
+
+    <string name="verb_153_question">Er/Sie/Es _______ (kaufen) ein neues Buch.</string>
+    <string name="verb_153_correct">kaufte</string>
+    <string name="verb_153_incorrect_1">kaufe</string>
+    <string name="verb_153_incorrect_2">kaufen</string>
+
+    <string name="verb_154_question">Wir _______ (gehen) ins Kino.</string>
+    <string name="verb_154_correct">gingen</string>
+    <string name="verb_154_incorrect_1">gehen</string>
+    <string name="verb_154_incorrect_2">gehst</string>
+
+    <string name="verb_155_question">Ihr _______ (essen) Pizza im Restaurant.</string>
+    <string name="verb_155_correct">aßt</string>
+    <string name="verb_155_incorrect_1">essen</string>
+    <string name="verb_155_incorrect_2">isst</string>
+
+    <string name="verb_156_question">Sie _______ (fahren) mit dem Zug nach Berlin.</string>
+    <string name="verb_156_correct">fuhren</string>
+    <string name="verb_156_incorrect_1">fahren</string>
+    <string name="verb_156_incorrect_2">fährt</string>
+
+    <string name="verb_157_question">Ich _______ (trinken) ein Glas Wasser.</string>
+    <string name="verb_157_correct">trank</string>
+    <string name="verb_157_incorrect_1">trinke</string>
+    <string name="verb_157_incorrect_2">trinken</string>
+
+    <string name="verb_158_question">Du _______ (schlafen) bis Mittag.</string>
+    <string name="verb_158_correct">schliefst</string>
+    <string name="verb_158_incorrect_1">schlafe</string>
+    <string name="verb_158_incorrect_2">schlafen</string>
+
+    <string name="verb_159_question">Er _______ (finden) einen Euro auf der Straße.</string>
+    <string name="verb_159_correct">fand</string>
+    <string name="verb_159_incorrect_1">finde</string>
+    <string name="verb_159_incorrect_2">finden</string>
+
+    <string name="verb_160_question">Wir _______ (sehen) einen interessanten Film.</string>
+    <string name="verb_160_correct">sahen</string>
+    <string name="verb_160_incorrect_1">sehen</string>
+    <string name="verb_160_incorrect_2">seht</string>
+
+    <string name="verb_161_question">Ich _______ (müssen) gestern früh aufstehen.</string>
+    <string name="verb_161_correct">habe gemusst</string>
+    <string name="verb_161_incorrect_1">bin gemusst</string>
+    <string name="verb_161_incorrect_2">hast gemusst</string>
+
+    <string name="verb_162_question">Du _______ (können) nicht kommen.</string>
+    <string name="verb_162_correct">hast gekonnt</string>
+    <string name="verb_162_incorrect_1">bist gekonnt</string>
+    <string name="verb_162_incorrect_2">habe gekonnt</string>
+
+    <string name="verb_163_question">Er _______ (dürfen) nicht ausgehen.</string>
+    <string name="verb_163_correct">hat gedurft</string>
+    <string name="verb_163_incorrect_1">ist gedurft</string>
+    <string name="verb_163_incorrect_2">habe gedurft</string>
+
+    <string name="verb_164_question">Wir _______ (sollen) die Aufgabe erledigen.</string>
+    <string name="verb_164_correct">haben gesollt</string>
+    <string name="verb_164_incorrect_1">sind gesollt</string>
+    <string name="verb_164_incorrect_2">habt gesollt</string>
+
+    <string name="verb_165_question">Ihr _______ (wollen) nicht lernen.</string>
+    <string name="verb_165_correct">habt gewollt</string>
+    <string name="verb_165_incorrect_1">seid gewollt</string>
+    <string name="verb_165_incorrect_2">haben gewollt</string>
+
+    <string name="verb_166_question">Sie _______ (mögen) den Film nicht.</string>
+    <string name="verb_166_correct">haben gemocht</string>
+    <string name="verb_166_incorrect_1">sind gemocht</string>
+    <string name="verb_166_incorrect_2">habt gemocht</string>
+
+    <string name="verb_167_question">Ich _______ (möchten) gerne mitkommen, aber ich konnte nicht.</string>
+    <string name="verb_167_correct">hätte gemocht</string>
+    <string name="verb_167_incorrect_1">habe gemocht</string>
+    <string name="verb_167_incorrect_2">hast gemocht</string>
+
+    <string name="verb_168_question">Du _______ (müssen) den Arzt anrufen.</string>
+    <string name="verb_168_correct">hättest gemusst</string>
+    <string name="verb_168_incorrect_1">hast gemusst</string>
+    <string name="verb_168_incorrect_2">habe gemusst</string>
+
+    <string name="verb_169_question">Er _______ (können) das Problem lösen.</string>
+    <string name="verb_169_correct">hätte gekonnt</string>
+    <string name="verb_169_incorrect_1">hat gekonnt</string>
+    <string name="verb_169_incorrect_2">habe gekonnt</string>
+
+    <string name="verb_170_question">Wir _______ (dürfen) nicht so laut sein.</string>
+    <string name="verb_170_correct">hätten gedurft</string>
+    <string name="verb_170_incorrect_1">haben gedurft</string>
+    <string name="verb_170_incorrect_2">habt gedurft</string>
+
+    <string name="verb_171_question">_______ (geben) Sie mir bitte den Zucker?</string>
+    <string name="verb_171_correct">Geben</string>
+    <string name="verb_171_incorrect_1">Gebt</string>
+    <string name="verb_171_incorrect_2">Gib</string>
+
+    <string name="verb_172_question">Ich _______ (vergessen) meinen Schlüssel.</string>
+    <string name="verb_172_correct">habe vergessen</string>
+    <string name="verb_172_incorrect_1">bin vergessen</string>
+    <string name="verb_172_incorrect_2">hast vergessen</string>
+
+    <string name="verb_173_question">Wir _______ (fahren) morgen nach Hamburg.</string>
+    <string name="verb_173_correct">werden fahren</string>
+    <string name="verb_173_incorrect_1">wollen fahren</string>
+    <string name="verb_173_incorrect_2">müssen fahren</string>
+
+    <string name="verb_174_question">_______ (sein) du schon einmal in Paris?</string>
+    <string name="verb_174_correct">Bist</string>
+    <string name="verb_174_incorrect_1">Warst</string>
+    <string name="verb_174_incorrect_2">Seid</string>
+
+    <string name="verb_175_question">Er _______ (sprechen) drei Sprachen.</string>
+    <string name="verb_175_correct">spricht</string>
+    <string name="verb_175_incorrect_1">spreche</string>
+    <string name="verb_175_incorrect_2">sprechen</string>
+
+    <string name="verb_176_question">Ihr _______ (sehen) müde aus.</string>
+    <string name="verb_176_correct">seht</string>
+    <string name="verb_176_incorrect_1">sehen</string>
+    <string name="verb_176_incorrect_2">siehst</string>
+
+    <string name="verb_177_question">Ich _______ (haben) gestern ein neues Fahrrad gekauft.</string>
+    <string name="verb_177_correct">habe gekauft</string>
+    <string name="verb_177_incorrect_1">bin gekauft</string>
+    <string name="verb_177_incorrect_2">hast gekauft</string>
+
+    <string name="verb_178_question">Du _______ (dürfen) nicht mit dem Feuer spielen.</string>
+    <string name="verb_178_correct">darfst</string>
+    <string name="verb_178_incorrect_1">musst</string>
+    <string name="verb_178_incorrect_2">kannst</string>
+
+    <string name="verb_179_question">Wir _______ (gehen) am Sonntag ins Museum.</string>
+    <string name="verb_179_correct">werden gehen</string>
+    <string name="verb_179_incorrect_1">wollen gehen</string>
+    <string name="verb_179_incorrect_2">müssen gehen</string>
+
+    <string name="verb_180_question">_______ (bringen) du mir bitte ein Glas Wasser?</string>
+    <string name="verb_180_correct">Bringst</string>
+    <string name="verb_180_incorrect_1">Bringen</string>
+    <string name="verb_180_incorrect_2">Bringt</string>
+
+    <string name="verb_181_question">Sie _______ (kommen) gerade aus dem Urlaub zurück.</string>
+    <string name="verb_181_correct">sind gekommen</string>
+    <string name="verb_181_incorrect_1">haben gekommen</string>
+    <string name="verb_181_incorrect_2">habt gekommen</string>
+
+    <string name="verb_182_question">Ich _______ (wissen) nicht, wo der Bahnhof ist.</string>
+    <string name="verb_182_correct">weiß</string>
+    <string name="verb_182_incorrect_1">wisse</string>
+    <string name="verb_182_incorrect_2">wissen</string>
+
+    <string name="verb_183_question">Du _______(lesen) ein sehr spannendes Buch.</string>
+    <string name="verb_183_correct">liest</string>
+    <string name="verb_183_incorrect_1">lese</string>
+    <string name="verb_183_incorrect_2">lesen</string>
+
+    <string name="verb_184_question">Sie _______ (schreiben) einen Brief an ihre Eltern.</string>
+    <string name="verb_184_correct">schreibt</string>
+    <string name="verb_184_incorrect_1">schreibe</string>
+    <string name="verb_184_incorrect_2">schreiben</string>
+
+    <string name="verb_185_question">Wir _______ (denken) oft an dich.</string>
+    <string name="verb_185_correct">denken</string>
+    <string name="verb_185_incorrect_1">denke</string>
+    <string name="verb_185_incorrect_2">denkst</string>
+
+    <string name="verb_186_question">Ihr _______ (machen) einen guten Job.</string>
+    <string name="verb_186_correct">macht</string>
+    <string name="verb_186_incorrect_1">machen</string>
+    <string name="verb_186_incorrect_2">mache</string>
+
+    <string name="verb_187_question">Sie _______ (wohnen) in einem schönen Haus.</string>
+    <string name="verb_187_correct">wohnen</string>
+    <string name="verb_187_incorrect_1">wohne</string>
+    <string name="verb_187_incorrect_2">wohnst</string>
+
+    <string name="verb_188_question">Ich _______ (haben) Durst und Hunger.</string>
+    <string name="verb_188_correct">habe</string>
+    <string name="verb_188_incorrect_1">hast</string>
+    <string name="verb_188_incorrect_2">hat</string>
+
+    <string name="verb_189_question">Du _______ (sehen) aus, als ob du müde wärst.</string>
+    <string name="verb_189_correct">siehst</string>
+    <string name="verb_189_incorrect_1">sehe</string>
+    <string name="verb_189_incorrect_2">sehen</string>
+
+    <string name="verb_190_question">Er/Sie/Es _______ (wissen) die Antwort nicht.</string>
+    <string name="verb_190_correct">weiß</string>
+    <string name="verb_190_incorrect_1">wisse</string>
+    <string name="verb_190_incorrect_2">wissen</string>
+
+    <string name="verb_191_question">Wir _______ (brauchen) einen neuen Tisch.</string>
+    <string name="verb_191_correct">brauchen</string>
+    <string name="verb_191_incorrect_1">brauche</string>
+    <string name="verb_191_incorrect_2">brauchst</string>
+
+    <string name="verb_192_question">Ihr _______ (finden) den Weg zum Bahnhof?</string>
+    <string name="verb_192_correct">findet</string>
+    <string name="verb_192_incorrect_1">finden</string>
+    <string name="verb_192_incorrect_2">finde</string>
+
+    <string name="verb_193_question">Sie _______ (verkaufen) ihr altes Auto.</string>
+    <string name="verb_193_correct">verkaufen</string>
+    <string name="verb_193_incorrect_1">verkaufe</string>
+    <string name="verb_193_incorrect_2">verkaufst</string>
+
+    <string name="verb_194_question">Ich _______ (hoffen), dass du bald wiederkommst.</string>
+    <string name="verb_194_correct">hoffe</string>
+    <string name="verb_194_incorrect_1">hoffst</string>
+    <string name="verb_194_incorrect_2">hofft</string>
+
+    <string name="verb_195_question">Du _______ (glauben) mir nicht?</string>
+    <string name="verb_195_correct">glaubst</string>
+    <string name="verb_195_incorrect_1">glaube</string>
+    <string name="verb_195_incorrect_2">glauben</string>
+
+    <string name="verb_196_question">Er/Sie/Es _______ (verstehen) kein Deutsch.</string>
+    <string name="verb_196_correct">versteht</string>
+    <string name="verb_196_incorrect_1">verstehe</string>
+    <string name="verb_196_incorrect_2">verstehen</string>
+
+    <string name="verb_197_question">Wir _______ (warten) auf den Bus.</string>
+    <string name="verb_197_correct">warten</string>
+    <string name="verb_197_incorrect_1">warte</string>
+    <string name="verb_197_incorrect_2">wartest</string>
+
+    <string name="verb_198_question">Ihr _______ (spielen) gerne Karten?</string>
+    <string name="verb_198_correct">spielt</string>
+    <string name="verb_198_incorrect_1">spielen</string>
+    <string name="verb_198_incorrect_2">spiele</string>
+
+    <string name="verb_199_question">Sie _______ (arbeiten) in einem Büro.</string>
+    <string name="verb_199_correct">arbeiten</string>
+    <string name="verb_199_incorrect_1">arbeite</string>
+    <string name="verb_199_incorrect_2">arbeitest</string>
+
+    <string name="verb_200_question">_______ (haben) wir morgen frei?</string>
+    <string name="verb_200_correct">Haben</string>
+    <string name="verb_200_incorrect_1">Habt</string>
+    <string name="verb_200_incorrect_2">Hast</string>
+
+
+    <string name="verb_101_question_en">I ____ (take) the bus to school.</string>
+    <string name="verb_102_question_en">You ____ (speak) German very well.</string>
+    <string name="verb_103_question_en">He/She/It ____ (see) a bird in the tree.</string>
+    <string name="verb_104_question_en">We ____ (give) you a present.</string>
+    <string name="verb_105_question_en">You (pl.) ____ (eat) chocolate gladly.</string>
+    <string name="verb_106_question_en">They ____ (read) the newspaper.</string>
+    <string name="verb_107_question_en">I ____ (ride) my bike to work.</string>
+    <string name="verb_108_question_en">You ____ (run)in the park every morning.</string>
+    <string name="verb_109_question_en">He/She/It ____ (sleep) still.</string>
+    <string name="verb_110_question_en">We ____ (help) you gladly.</string>
+    <string name="verb_111_question_en">I ____ (learn) a lot for the exam.</string>
+    <string name="verb_112_question_en">You ____ (make) a mistake.</string>
+    <string name="verb_113_question_en">He/She/It ____ (work) all day.</string>
+    <string name="verb_114_question_en">We ____ (play) in the garden.</string>
+    <string name="verb_115_question_en">You (pl.) ____ (visit) your grandparents.</string>
+    <string name="verb_116_question_en">They ____ (buy) a new car.</string>
+    <string name="verb_117_question_en">I ____ (drink) a coffee.</string>
+    <string name="verb_118_question_en">You ____ (eat) a piece of cake.</string>
+    <string name="verb_119_question_en">He/She/It ____ (find) the key.</string>
+    <string name="verb_120_question_en">We ____ (write) a letter.</string>
+    <string name="verb_121_question_en">I ____ (have to) go now.</string>
+    <string name="verb_122_question_en">You ____ (can) swim well.</string>
+    <string name="verb_123_question_en">He/She/It ____ (may) not smoke.</string>
+    <string name="verb_124_question_en">We ____ (should) get up early.</string>
+    <string name="verb_125_question_en">You (pl.) ____ (want to) go to the cinema?</string>
+    <string name="verb_126_question_en">They ____ (like) no pizza.</string>
+    <string name="verb_127_question_en">I ____ (would like) a glass of water.</string>
+    <string name="verb_128_question_en">You ____ (can) please help me?</string>
+    <string name="verb_129_question_en">He/She/It ____ (have to) go to the doctor.</string>
+    <string name="verb_130_question_en">We ____ (may) not park here.</string>
+    <string name="verb_131_question_en">I ____ (go) to the cinema yesterday.</string>
+    <string name="verb_132_question_en">You ____ (come) too late.</string>
+    <string name="verb_133_question_en">He/She/It ____ (run) home quickly.</string>
+    <string name="verb_134_question_en">We ____ (drive) on vacation.</string>
+    <string name="verb_135_question_en">You (pl.) ____ (stay) too long at the party.</string>
+    <string name="verb_136_question_en">They ____ (fly) to Spain.</string>
+    <string name="verb_137_question_en">I ____ (swim) in the lake.</string>
+    <string name="verb_138_question_en">You ____ (fall) off the bike.</string>
+    <string name="verb_139_question_en">It ____ (happen) quickly.</string>
+    <string name="verb_140_question_en">We ____ (be) at the zoo.</string>
+    <string name="verb_141_question_en">I ____ (learn) for the exam tomorrow.</string>
+    <string name="verb_142_question_en">You ____ (meet) your friends on the weekend.</string>
+    <string name="verb_143_question_en">He/She/It ____ (travel) to Italy next year.</string>
+    <string name="verb_144_question_en">We ____ (celebrate) your birthday.</string>
+    <string name="verb_145_question_en">You (pl.) ____ (visit) us again soon.</string>
+    <string name="verb_146_question_en">They ____ (win) the game.</string>
+    <string name="verb_147_question_en">I ____ (call) you later.</string>
+    <string name="verb_148_question_en">You ____ (write) me an email.</string>
+    <string name="verb_149_question_en">He/She/It ____ (come) tomorrow morning.</string>
+    <string name="verb_150_question_en">We ____ (go) to the restaurant tonight.</string>
+    <string name="verb_151_question_en">I ____ (play) football yesterday.</string>
+    <string name="verb_152_question_en">You ____ (study) diligently for the exam.</string>
+    <string name="verb_153_question_en">He/She/It ____ (buy) a new book.</string>
+    <string name="verb_154_question_en">We ____ (go) to the cinema.</string>
+    <string name="verb_155_question_en">You (pl.) ____ (eat) pizza in the restaurant.</string>
+    <string name="verb_156_question_en">They ____ (travel) to Berlin by train.</string>
+    <string name="verb_157_question_en">I ____ (drink) a glass of water.</string>
+    <string name="verb_158_question_en">You ____ (sleep) until noon.</string>
+    <string name="verb_159_question_en">He/She/It ____ (find) a Euro on the street.</string>
+    <string name="verb_160_question_en">We ____ (see) an interesting film.</string>
+    <string name="verb_161_question_en">I ____ (have to) get up early yesterday.</string>
+    <string name="verb_162_question_en">You ____ (could) not come.</string>
+    <string name="verb_163_question_en">He/She/It ____ (may) not go out.</string>
+    <string name="verb_164_question_en">We ____ (should) complete the task.</string>
+    <string name="verb_165_question_en">You (pl.) ____ (want to) not study.</string>
+    <string name="verb_166_question_en">They ____ (like) the film not.</string>
+    <string name="verb_167_question_en">I ____ (would have liked) to come along, but I could not.</string>
+    <string name="verb_168_question_en">You ____ (should have) call the doctor.</string>
+    <string name="verb_169_question_en">He/She/It ____ (could have) solve the problem.</string>
+    <string name="verb_170_question_en">We ____ (should not have) be so loud.</string>
+    <string name="verb_171_question_en">____ (give) you me please the sugar?</string>
+    <string name="verb_172_question_en">I ____ (forget) my key.</string>
+
+    <string name="verb_173_question_en">We ____ (drive) to Hamburg tomorrow.</string>
+    <string name="verb_174_question_en">____ (Have) you ever been to Paris?</string>
+    <string name="verb_175_question_en">He ____ (speak) three languages.</string>
+    <string name="verb_176_question_en">You (pl.) ____ (look) tired.</string>
+    <string name="verb_177_question_en">I ____ (have) bought a new bike yesterday.</string>
+    <string name="verb_178_question_en">You (informal) ____ (may) not play with fire.</string>
+    <string name="verb_179_question_en">We ____ (go) to the museum on Sunday.</string>
+    <string name="verb_180_question_en">____ (Bring) you (informal) me a glass of water please?</string>
+    <string name="verb_181_question_en">They ____ (come) just back from vacation.</string>
+    <string name="verb_182_question_en">I ____ (know) not where the train station is.</string>
+    <string name="verb_183_question_en">You (informal) ____ (read) a very exciting book.</string>
+    <string name="verb_184_question_en">She ____ (write) a letter to her parents.</string>
+    <string name="verb_185_question_en">We ____ (think) of you often.</string>
+    <string name="verb_186_question_en">You (pl.) ____ (do) a good job.</string>
+    <string name="verb_187_question_en">They ____(live) in a beautiful house.</string>
+    <string name="verb_188_question_en">I ____ (have) thirst and hunger.</string>
+    <string name="verb_189_question_en">You (informal) ____ (look) as if you were tired.</string>
+    <string name="verb_190_question_en">He/She/It ____ (know) the answer not.</string>
+    <string name="verb_191_question_en">We ____ (need) a new table.</string>
+    <string name="verb_192_question_en">You (pl.) ____ (find) the way to the train station?</string>
+    <string name="verb_193_question_en">They ____ (sell) their old car.</string>
+    <string name="verb_194_question_en">I ____ (hope) that you come back soon.</string>
+    <string name="verb_195_question_en">You (informal) ____ (believe) me not?</string>
+    <string name="verb_196_question_en">He/She/It ____ (understand) no German.</string>
+    <string name="verb_197_question_en">We ____ (wait) for the bus.</string>
+    <string name="verb_198_question_en">You (pl.) ____ (play) cards often?</string>
+    <string name="verb_199_question_en">They ____ (work) in an office.</string>
+    <string name="verb_200_question_en">____ (Have) we tomorrow off?</string>
+
+
+    <!--        Advanced Questions -->
+    <string name="verb_201_question">Ich _______ (essen) schon, bevor du gekommen bist.</string>
+    <string name="verb_201_correct">hatte gegessen</string>
+    <string name="verb_201_incorrect_1">habe gegessen</string>
+    <string name="verb_201_incorrect_2">esse</string>
+
+    <string name="verb_202_question">Nachdem wir _______ (lernen), gingen wir ins Kino.</string>
+    <string name="verb_202_correct">gelernt hatten</string>
+    <string name="verb_202_incorrect_1">lernen</string>
+    <string name="verb_202_incorrect_2">gelernt haben</string>
+
+    <string name="verb_203_question">Er/Sie/Es _______ (vergessen), den Herd auszuschalten.</string>
+    <string name="verb_203_correct">hatte vergessen</string>
+    <string name="verb_203_incorrect_1">vergisst</string>
+    <string name="verb_203_incorrect_2">hat vergessen</string>
+
+    <string name="verb_204_question">Wir _______ (fahren) gerade los, als es anfing zu regnen.</string>
+    <string name="verb_204_correct">waren gefahren</string>
+    <string name="verb_204_incorrect_1">sind gefahren</string>
+    <string name="verb_204_incorrect_2">fahren</string>
+
+    <string name="verb_205_question">Ihr _______ (sehen) den Film schon?</string>
+    <string name="verb_205_correct">hattet gesehen</string>
+    <string name="verb_205_incorrect_1">habt gesehen</string>
+    <string name="verb_205_incorrect_2">seht</string>
+
+    <string name="verb_206_question">Sie _______ (sein) sehr glücklich über die Nachricht.</string>
+    <string name="verb_206_correct">waren gewesen</string>
+    <string name="verb_206_incorrect_1">sind gewesen</string>
+    <string name="verb_206_incorrect_2">sind</string>
+
+    <string name="verb_207_question">Wenn ich Zeit hätte, _______ (gehen) ich mit dir ins Kino.</string>
+    <string name="verb_207_correct">würde gehen</string>
+    <string name="verb_207_incorrect_1">gehe</string>
+    <string name="verb_207_incorrect_2">ginge</string>
+
+    <string name="verb_208_question">Er/Sie/Es würde gerne kommen, aber er/sie/es _______ (müssen) arbeiten.</string>
+    <string name="verb_208_correct">müsste</string>
+    <string name="verb_208_incorrect_1">muss</string>
+    <string name="verb_208_incorrect_2">müssen</string>
+
+    <string name="verb_209_question">Wir _______ (fahren) in Urlaub, wenn wir mehr Geld hätten.</string>
+    <string name="verb_209_correct">würden fahren</string>
+    <string name="verb_209_incorrect_1">fahren</string>
+    <string name="verb_209_incorrect_2">fuhren</string>
+
+    <string name="verb_210_question">Würdet ihr mir helfen, wenn ich euch _______ (fragen)?</string>
+    <string name="verb_210_correct">frägte</string>
+    <string name="verb_210_incorrect_1">frage</string>
+    <string name="verb_210_incorrect_2">fragen</string>
+
+    <string name="verb_211_question">Sie _______ (kaufen) das Haus, wenn es nicht so teuer wäre.</string>
+    <string name="verb_211_correct">würden kaufen</string>
+    <string name="verb_211_incorrect_1">kaufen</string>
+    <string name="verb_211_incorrect_2">kauften</string>
+    <string name="verb_212_question">Ich wünschte, ich _______ (können) besser singen.</string>
+    <string name="verb_212_correct">könnte</string>
+    <string name="verb_212_incorrect_1">kann</string>
+    <string name="verb_212_incorrect_2">können</string>
+
+    <string name="verb_213_question">Das Auto _______ (reparieren) in der Werkstatt.</string>
+    <string name="verb_213_correct">wirdrepariert</string>
+    <string name="verb_213_incorrect_1">ist repariert</string>
+    <string name="verb_213_incorrect_2">repariert</string>
+
+    <string name="verb_214_question">Die Tür _______ (öffnen) von einem Schlüssel.</string>
+    <string name="verb_214_correct">wird geöffnet</string>
+    <string name="verb_214_incorrect_1">ist geöffnet</string>
+    <string name="verb_214_incorrect_2">öffnet</string>
+
+    <string name="verb_215_question">Der Kuchen _______ (backen) von meiner Mutter.</string>
+    <string name="verb_215_correct">wurde gebacken</string>
+    <string name="verb_215_incorrect_1">ist gebacken</string>
+    <string name="verb_215_incorrect_2">backt</string>
+
+    <string name="verb_216_question">Die Briefe _______ (schreiben) morgen.</string>
+    <string name="verb_216_correct">werden geschrieben</string>
+    <string name="verb_216_incorrect_1">sind geschrieben</string>
+    <string name="verb_216_incorrect_2">schreiben</string>
+
+    <string name="verb_217_question">Das Haus _______ (bauen) im letzten Jahr.</string>
+    <string name="verb_217_correct">wurde gebaut</string>
+    <string name="verb_217_incorrect_1">ist gebaut</string>
+    <string name="verb_217_incorrect_2">baut</string>
+
+    <string name="verb_218_question">Die Regeln _______ (erklären) vom Lehrer.</string>
+    <string name="verb_218_correct">wurden erklärt</string>
+    <string name="verb_218_incorrect_1">sind erklärt</string>
+    <string name="verb_218_incorrect_2">erklären</string>
+
+    <string name="verb_219_question">Das ist der Mann, _______ (der) mir geholfen hat.</string>
+    <string name="verb_219_correct">der</string>
+    <string name="verb_219_incorrect_1">den</string>
+    <string name="verb_219_incorrect_2">dem</string>
+
+    <string name="verb_220_question">Das Buch, _______ (das) ich lese, ist sehr spannend.</string>
+    <string name="verb_220_correct">das</string>
+    <string name="verb_220_incorrect_1">der</string>
+    <string name="verb_220_incorrect_2">die</string>
+
+    <string name="verb_221_question">Die Frau, _______ (die) dort steht, ist meine Lehrerin.</string>
+    <string name="verb_221_correct">die</string>
+    <string name="verb_221_incorrect_1">der</string>
+    <string name="verb_221_incorrect_2">das</string>
+
+    <string name="verb_222_question">Kennst du denFilm, _______ (von dem) ich dir erzählt habe?</string>
+    <string name="verb_222_correct">von dem</string>
+    <string name="verb_222_incorrect_1">den</string>
+    <string name="verb_222_incorrect_2">dem</string>
+
+    <string name="verb_223_question">Das ist das Haus, _______ (in dem) ich wohne.</string>
+    <string name="verb_223_correct">in dem</string>
+    <string name="verb_223_incorrect_1">in das</string>
+    <string name="verb_223_incorrect_2">das</string>
+
+    <string name="verb_224_question">Die Kinder, _______ (mit denen) ich gespielt habe, sind meine Freunde.</string>
+    <string name="verb_224_correct">mit denen</string>
+    <string name="verb_224_incorrect_1">mit den</string>
+    <string name="verb_224_incorrect_2">die</string>
+
+    <string name="verb_225_question">_______ (Lächelnd) begrüßte sie mich.</string>
+    <string name="verb_225_correct">Lächelnd</string>
+    <string name="verb_225_incorrect_1">Gelächelt</string>
+    <string name="verb_225_incorrect_2">Lächle</string>
+
+    <string name="verb_226_question">_______ (Im Park spazierend) traf ich einen alten Freund.</string>
+    <string name="verb_226_correct">Im Park spazierend</string>
+    <string name="verb_226_incorrect_1">Im Park spaziert</string>
+    <string name="verb_226_incorrect_2">Spazierend im Park</string>
+
+    <string name="verb_227_question">_______ (Vom Regen überrascht) suchten wir Schutz.</string>
+    <string name="verb_227_correct">Vom Regen überrascht</string>
+    <string name="verb_227_incorrect_1">Überrascht vom Regen</string>
+    <string name="verb_227_incorrect_2">Überraschend vom Regen</string>
+
+    <string name="verb_228_question">_______ (Den ganzen Tag gearbeitet) war er sehr müde.</string>
+    <string name="verb_228_correct">Den ganzen Tag gearbeitet</string>
+    <string name="verb_228_incorrect_1">Gearbeitet den ganzen Tag</string>
+    <string name="verb_228_incorrect_2">Arbeitend den ganzen Tag</string>
+
+    <string name="verb_229_question">_______ (Das Buch gelesen) gab ich es zurück.</string>
+    <string name="verb_229_correct">Das Buch gelesen</string>
+    <string name="verb_229_incorrect_1">Gelesen das Buch</string>
+    <string name="verb_229_incorrect_2">Lesend das Buch</string>
+
+    <string name="verb_230_question">_______ (Die Musik hörend) entspannte ich mich.</string>
+    <string name="verb_230_correct">Die Musik hörend</string>
+    <string name="verb_230_incorrect_1">Gehört die Musik</string>
+    <string name="verb_230_incorrect_2">Hörend die Musik</string>
+
+    <string name="verb_231_question">Er sagte, er _______ (sein) krank.</string>
+    <string name="verb_231_correct">sei</string>
+    <string name="verb_231_incorrect_1">ist</string>
+    <string name="verb_231_incorrect_2">wäre</string>
+
+    <string name="verb_232_question">Sie meinte, sie _______ (kommen) morgen.</string>
+    <string name="verb_232_correct">komme</string>
+    <string name="verb_232_incorrect_1">kommt</string>
+    <string name="verb_232_incorrect_2">käme</string>
+
+    <string name="verb_233_question">Der Lehrer erklärte, die Erde _______ (sein) rund.</string>
+    <string name="verb_233_correct">sei</string>
+    <string name="verb_233_incorrect_1">ist</string>
+    <string name="verb_233_incorrect_2">wäre</string>
+
+    <string name="verb_234_question">Die Zeitung berichtete, der Präsident _______ (treffen) den Kanzler.</string>
+    <string name="verb_234_correct">treffe</string>
+    <string name="verb_234_incorrect_1">trifft</string>
+    <string name="verb_234_incorrect_2">träfe</string>
+
+    <string name="verb_235_question">Man sagte, das Wetter _______ (werden) schlecht.</string>
+    <string name="verb_235_correct">werde</string>
+    <string name="verb_235_incorrect_1">wird</string>
+    <string name="verb_235_incorrect_2">würde</string>
+
+    <string name="verb_236_question">Ich hörte, du _______ (haben) Geburtstag.</string>
+    <string name="verb_236_correct">habest</string>
+    <string name="verb_236_incorrect_1">hast</string>
+    <string name="verb_236_incorrect_2">hättest</string>
+
+    <string name="verb_237_question">Der _______ (Junge) spielt im Garten.</string>
+    <string name="verb_237_correct">Junge</string>
+    <string name="verb_237_incorrect_1">Junges</string>
+    <string name="verb_237_incorrect_2">Jung</string>
+
+    <string name="verb_238_question">Hast du den _______ (Studenten) gesehen?</string>
+    <string name="verb_238_correct">Studenten</string>
+    <string name="verb_238_incorrect_1">Student</string>
+    <string name="verb_238_incorrect_2">Students</string>
+
+    <string name="verb_239_question">Ich kenne den _______ (Namen) des Buches nicht.</string>
+    <string name="verb_239_correct">Namen</string>
+    <string name="verb_239_incorrect_1">Name</string>
+    <string name="verb_239_incorrect_2">Names</string>
+
+    <string name="verb_240_question">Die _______ (Männer) arbeiten auf dem Bau.</string>
+    <string name="verb_240_correct">Männer</string>
+    <string name="verb_240_incorrect_1">Mann</string>
+    <string name="verb_240_incorrect_2">Mannes</string>
+
+    <string name="verb_241_question">Wir haben den _______ (Herren) im Restaurant getroffen.</string>
+    <string name="verb_241_correct">Herren</string>
+    <string name="verb_241_incorrect_1">Herr</string>
+    <string name="verb_241_incorrect_2">Herrs</string>
+
+    <string name="verb_242_question">Die _______ (Jungen) gehen zur Schule.</string>
+    <string name="verb_242_correct">Jungen</string>
+    <string name="verb_242_incorrect_1">Junge</string>
+    <string name="verb_242_incorrect_2">Junges</string>
+
+    <string name="verb_243_question">Obwohl es regnete, _______ (gehen) wir spazieren.</string>
+    <string name="verb_243_correct">gingen</string>
+    <string name="verb_243_incorrect_1">gehen</string>
+    <string name="verb_243_incorrect_2">sind gegangen</string>
+
+    <string name="verb_244_question">Ich werde dich anrufen, sobald ich _______ (ankommen) bin.</string>
+    <string name="verb_244_correct">angekommen</string>
+    <string name="verb_244_incorrect_1">ankomme</string>
+    <string name="verb_244_incorrect_2">angekommen bin</string>
+
+    <string name="verb_245_question">Er/Sie/Es bedauert, dass er/sie/es nicht _______ (kommen) kann.</string>
+    <string name="verb_245_correct">kommen</string>
+    <string name="verb_245_incorrect_1">kommt</string>
+    <string name="verb_245_incorrect_2">kommen kann</string>
+
+    <string name="verb_246_question">Wäre ich doch _______ (fliegen) können!</string>
+    <string name="verb_246_correct">fliegen</string>
+    <string name="verb_246_incorrect_1">geflogen</string>
+    <string name="verb_246_incorrect_2">fliege</string>
+
+    <string name="verb_247_question">Das ist das schönste Geschenk, das ich je _______ (bekommen) habe.</string>
+    <string name="verb_247_correct">bekommen</string>
+    <string name="verb_247_incorrect_1">bekam</string>
+    <string name="verb_247_incorrect_2">bekomme</string>
+
+    <string name="verb_248_question">_______ (Sollte) es regnen, nehmen wir den Bus.</string>
+    <string name="verb_248_correct">Sollte</string>
+    <string name="verb_248_incorrect_1">Soll</string>
+    <string name="verb_248_incorrect_2">Sollen</string>
+
+    <string name="verb_249_question">Er/Sie/Es hat mir versprochen, dass er/sie/es mir _______ (helfen).</string>
+    <string name="verb_249_correct">helfen wird</string>
+    <string name="verb_249_incorrect_1">helfen würde</string>
+    <string name="verb_249_incorrect_2">hilft</string>
+
+    <string name="verb_250_question">Ich bin sicher, dass du die Prüfung _______ (bestehen) wirst.</string>
+    <string name="verb_250_correct">bestehen</string>
+    <string name="verb_250_incorrect_1">bestehst</string>
+    <string name="verb_250_incorrect_2">bestehen wirst</string>
+
+    <string name="verb_251_question">Bevor ich ins Bett gehe, _______ (lesen) ich noch ein Buch.</string>
+    <string name="verb_251_correct">lese</string>
+    <string name="verb_251_incorrect_1">las</string>
+    <string name="verb_251_incorrect_2">habe gelesen</string>
+
+    <string name="verb_252_question">Nachdem er/sie/es _______ (duschen), frühstückte er/sie/es.</string>
+    <string name="verb_252_correct">geduscht hatte</string>
+    <string name="verb_252_incorrect_1">duschte</string>
+    <string name="verb_252_incorrect_2">hat geduscht</string>
+
+    <string name="verb_253_question">Sie _______ (sehen) den Film bereits, als er im Fernsehen lief.</string>
+    <string name="verb_253_correct">hatten gesehen</string>
+    <string name="verb_253_incorrect_1">haben gesehen</string>
+    <string name="verb_253_incorrect_2">sahen</string>
+
+    <string name="verb_254_question">Wir _______ (fahren) gerade ab, als du angerufen hast.</string>
+    <string name="verb_254_correct">waren gefahren</string>
+    <string name="verb_254_incorrect_1">sind gefahren</string>
+    <string name="verb_254_incorrect_2">fuhren</string>
+
+    <string name="verb_255_question">_______ (Hast) du schon einmal ein solches Konzert erlebt?</string>
+    <string name="verb_255_correct">Hast</string>
+    <string name="verb_255_incorrect_1">Hattest</string>
+    <string name="verb_255_incorrect_2">Habt</string>
+
+    <string name="verb_256_question">Sie _______ (sein) sehr erleichtert, als sie die Nachricht hörten.</string>
+    <string name="verb_256_correct">waren</string>
+    <string name="verb_256_incorrect_1">sind</string>
+    <string name="verb_256_incorrect_2">waren gewesen</string>
+
+    <string name="verb_257_question">Wenn ich mehr Zeit hätte, _______ (lernen) ich eine neue Sprache.</string>
+    <string name="verb_257_correct">würde lernen</string>
+    <string name="verb_257_incorrect_1">lernte</string>
+    <string name="verb_257_incorrect_2">würde gelernt</string>
+
+    <string name="verb_258_question">Er/Sie/Es _______ (gehen) gerne ins Theater, wenn er/sie/es nicht so müde wäre.</string>
+    <string name="verb_258_correct">würde gehen</string>
+    <string name="verb_258_incorrect_1">ginge</string>
+    <string name="verb_258_incorrect_2">geht</string>
+
+    <string name="verb_259_question">Wir _______ (fahren) mit dem Fahrrad, wenn das Wetter besser wäre.</string>
+    <string name="verb_259_correct">würden fahren</string>
+    <string name="verb_259_incorrect_1">fuhren</string>
+    <string name="verb_259_incorrect_2">wären gefahren</string>
+
+    <string name="verb_260_question">_______ (Hätten) Sie Zeit, uns zu helfen?</string>
+    <string name="verb_260_correct">Hätten</string>
+    <string name="verb_260_incorrect_1">Haben</string>
+    <string name="verb_260_incorrect_2">Hatte</string>
+
+    <string name="verb_261_question">Sie _______ (kaufen) das Auto, wenn sie genug Geld hätten.</string>
+    <string name="verb_261_correct">würden kaufen</string>
+    <string name="verb_261_incorrect_1">kauften</string>
+    <string name="verb_261_incorrect_2">hätten gekauft</string>
+
+    <string name="verb_262_question">Ich wünschte, ich _______ (sein) reich.</string>
+    <string name="verb_262_correct">wäre</string>
+    <string name="verb_262_incorrect_1">bin</string>
+    <string name="verb_262_incorrect_2">sei</string>
+
+    <string name="verb_263_question">Das Essen _______ (kochen) gerade.</string>
+    <string name="verb_263_correct">wird gekocht</string>
+    <string name="verb_263_incorrect_1">ist gekocht</string>
+    <string name="verb_263_incorrect_2">kocht</string>
+
+    <string name="verb_264_question">Die Fenster _______ (putzen) jeden Samstag.</string>
+    <string name="verb_264_correct">werden geputzt</string>
+    <string name="verb_264_incorrect_1">sind geputzt</string>
+    <string name="verb_264_incorrect_2">putzen</string>
+
+    <string name="verb_265_question">Der Kuchen _______ (essen) gestern.</string>
+    <string name="verb_265_correct">wurde gegessen</string>
+    <string name="verb_265_incorrect_1">ist gegessen</string>
+    <string name="verb_265_incorrect_2">aß</string>
+
+    <string name="verb_266_question">Die Geschenke _______ (öffnen) morgen früh.</string>
+    <string name="verb_266_correct">werden geöffnet</string>
+    <string name="verb_266_incorrect_1">sind geöffnet</string>
+    <string name="verb_266_incorrect_2">öffnen</string>
+
+    <string name="verb_267_question">Das Haus _______ (renovieren) letztes Jahr.</string>
+    <string name="verb_267_correct">wurde renoviert</string>
+    <string name="verb_267_incorrect_1">ist renoviert</string>
+    <string name="verb_267_incorrect_2">renovierte</string>
+
+    <string name="verb_268_question">Die E-Mails _______ (beantworten) von meinem Kollegen.</string>
+    <string name="verb_268_correct">wurden beantwortet</string>
+    <string name="verb_268_incorrect_1">sind beantwortet</string>
+    <string name="verb_268_incorrect_2">beantworteten</string>
+
+    <string name="verb_269_question">Das ist die Katze, _______ (die) mir gehört.</string>
+    <string name="verb_269_correct">die</string>
+    <string name="verb_269_incorrect_1">der</string>
+    <string name="verb_269_incorrect_2">das</string>
+
+    <string name="verb_270_question">Der Film, _______ (den) wir gesehen haben, war sehr lustig.</string>
+    <string name="verb_270_correct">den</string>
+    <string name="verb_270_incorrect_1">der</string>
+    <string name="verb_270_incorrect_2">dem</string>
+
+    <string name="verb_271_question">Kennst du das Lied, _______ (das) im Radio läuft?</string>
+    <string name="verb_271_correct">das</string>
+    <string name="verb_271_incorrect_1">die</string>
+    <string name="verb_271_incorrect_2">den</string>
+
+    <string name="verb_272_question">Das ist der Mann, _______ (mit dem) ich gesprochen habe.</string>
+    <string name="verb_272_correct">mit dem</string>
+    <string name="verb_272_incorrect_1">mit den</string>
+    <string name="verb_272_incorrect_2">den</string>
+
+    <string name="verb_273_question">Die Stadt, _______ (in der) ich wohne, ist sehr schön.</string>
+    <string name="verb_273_correct">in der</string>
+    <string name="verb_273_incorrect_1">in die</string>
+    <string name="verb_273_incorrect_2">der</string>
+
+    <string name="verb_274_question">Die Freunde, _______ (für die) ich das Geschenk gekauft habe, kommen morgen.</string>
+    <string name="verb_274_correct">für die</string>
+    <string name="verb_274_incorrect_1">für den</string>
+    <string name="verb_274_incorrect_2">die</string>
+
+    <string name="verb_275_question">_______ (Nach Hause gehend) sah ich einen Unfall.</string>
+    <string name="verb_275_correct">Nach Hause gehend</string>
+    <string name="verb_275_incorrect_1">Gehend nach Hause</string>
+    <string name="verb_275_incorrect_2">Gegangen nach Hause</string>
+
+    <string name="verb_276_question">_______ (Das Fenster öffnend) ließ sie frische Luft herein.</string>
+    <string name="verb_276_correct">Das Fenster öffnend</string>
+    <string name="verb_276_incorrect_1">Öffnend das Fenster</string>
+    <string name="verb_276_incorrect_2">Geöffnet das Fenster</string>
+
+    <string name="verb_277_question">_______ (Völlig erschöpft) schlief er sofort ein.</string>
+    <string name="verb_277_correct">Völlig erschöpft</string>
+    <string name="verb_277_incorrect_1">Erschöpft völlig</string>
+    <string name="verb_277_incorrect_2">Erschöpfend völlig</string>
+
+    <string name="verb_278_question">_______ (Die Arbeit beendet) ging er nach Hause.</string>
+    <string name="verb_278_correct">Die Arbeit beendet</string>
+    <string name="verb_278_incorrect_1">Beendet die Arbeit</string>
+    <string name="verb_278_incorrect_2">Beendend die Arbeit</string>
+
+    <string name="verb_279_question">_______ (Den Film gesehen) diskutierten wir darüber.</string>
+    <string name="verb_279_correct">Den Film gesehen</string>
+    <string name="verb_279_incorrect_1">Gesehenden Film</string>
+    <string name="verb_279_incorrect_2">Sehend den Film</string>
+
+    <string name="verb_280_question">_______ (Im Garten sitzend) genoss er die Sonne.</string>
+    <string name="verb_280_correct">Im Garten sitzend</string>
+    <string name="verb_280_incorrect_1">Sitzend im Garten</string>
+    <string name="verb_280_incorrect_2">Gesessen im Garten</string>
+
+    <string name="verb_201_question_en">I ____ (eat) already before you came.</string>
+    <string name="verb_202_question_en">After we ____ (study), we went to the cinema.</string>
+    <string name="verb_203_question_en">He/She/It ____ (forget) to turn off the stove.</string>
+    <string name="verb_204_question_en">We ____ (drive) just off when it started to rain.</string>
+    <string name="verb_205_question_en">You (pl.) ____ (see) the film already?</string>
+    <string name="verb_206_question_en">They ____ (be) very happy about the news.</string>
+    <string name="verb_207_question_en">If I had time, I ____ (go) to the cinema with you.</string>
+    <string name="verb_208_question_en">He/She/It would like to come, but he/she/it ____ (have to) work.</string>
+    <string name="verb_209_question_en">We ____ (go) on vacation if we had more money.</string>
+    <string name="verb_210_question_en">Would you (pl.) help me if I ____ (ask) you?</string>
+    <string name="verb_211_question_en">They ____ (buy) the house if it weren\'t so expensive.</string>
+    <string name="verb_212_question_en">I wish I ____ (can) sing better.</string>
+    <string name="verb_213_question_en">The car ____ (repair) in the workshop.</string>
+    <string name="verb_214_question_en">The door ____ (open) by a key.</string>
+    <string name="verb_215_question_en">The cake ____ (bake) by my mother.</string>
+    <string name="verb_216_question_en">The letters ____ (write) tomorrow.</string>
+    <string name="verb_217_question_en">The house ____ (build) last year.</string>
+    <string name="verb_218_question_en">The rules ____ (explain) by the teacher.</string>
+    <string name="verb_219_question_en">That is the man ____ (who) helped me.</string>
+    <string name="verb_220_question_en">The book ____ (that) I am reading is very exciting.</string>
+    <string name="verb_221_question_en">The woman ____ (who) is standing there is my teacher.</string>
+    <string name="verb_222_question_en">Do you know the film ____ (about which) I told you?</string>
+    <string name="verb_223_question_en">That is the house ____ (in which) I live.</string>
+    <string name="verb_224_question_en">The children ____ (with whom) I played are my friends.</string>
+    <string name="verb_225_question_en">____ (Smiling), she greeted me.</string>
+    <string name="verb_226_question_en">____ (Walking in the park), I met an old friend.</string>
+    <string name="verb_227_question_en">____ (Surprised by the rain), we sought shelter.</string>
+    <string name="verb_228_question_en">____ (Having worked all day), he was very tired.</string>
+    <string name="verb_229_question_en">____ (Having read the book), I returned it.</string>
+    <string name="verb_230_question_en">____ (Listening to the music), I relaxed.</string>
+    <string name="verb_231_question_en">He said he ____ (be) sick.</string>
+    <string name="verb_232_question_en">She said she ____ (come) tomorrow.</string>
+    <string name="verb_233_question_en">The teacher explained that the earth ____ (be) round.</string>
+    <string name="verb_234_question_en">The newspaper reported that the president ____ (meet) the chancellor.</string>
+    <string name="verb_235_question_en">They said the weather ____ (become) bad.</string>
+    <string name="verb_236_question_en">I heard you ____ (have) a birthday.</string>
+    <string name="verb_237_question_en">The ____ (boy) is playing in the garden.</string>
+    <string name="verb_238_question_en">Have you seen the ____ (student)?</string>
+    <string name="verb_239_question_en">I don\'t know the ____ (name) of the book.</string>
+    <string name="verb_240_question_en">The ____ (men) are working on the construction site.</string>
+    <string name="verb_241_question_en">We met the ____ (gentleman) in the restaurant.</string>
+    <string name="verb_242_question_en">The ____ (boys) are going to school.</string>
+    <string name="verb_243_question_en">Although it was raining, we ____ (go) for a walk.</string>
+    <string name="verb_244_question_en">I will call you as soon as I ____ (arrive).</string>
+    <string name="verb_245_question_en">He/She/It regrets that he/she/it cannot ____ (come).</string>
+    <string name="verb_246_question_en">If only I could ____ (fly)!</string>
+    <string name="verb_247_question_en">That is the most beautiful gift I have ever ____ (receive).</string>
+    <string name="verb_248_question_en">____ (Should) it rain, we will take the bus.</string>
+    <string name="verb_249_question_en">He/She/It promised me that he/she/it ____ (help) me.</string>
+    <string name="verb_250_question_en">I am sure that you ____ (pass)the exam.</string>
+    <string name="verb_251_question_en">Before I go to bed, I ____ (read) a book.</string>
+    <string name="verb_252_question_en">After he/she/it ____ (shower), he/she/it had breakfast.</string>
+    <string name="verb_253_question_en">They ____ (see) the film already when it was on TV.</string>
+    <string name="verb_254_question_en">We ____ (drive) off just as you called.</string>
+    <string name="verb_255_question_en">____ (Have) you ever experienced such a concert?</string>
+    <string name="verb_256_question_en">They ____ (be) very relieved when they heard the news.</string>
+    <string name="verb_257_question_en">If I had more time, I ____ (learn) a new language.</string>
+    <string name="verb_258_question_en">He/She/It ____ (go) to the theatre if he/she/it weren\'t so tired.</string>
+    <string name="verb_259_question_en">We ____ (ride) our bikes if the weather were better.</string>
+    <string name="verb_260_question_en">____ (Would you have) time to help us?</string>
+    <string name="verb_261_question_en">They ____ (buy) the car if they had enough money.</string>
+    <string name="verb_262_question_en">I wish I ____ (be) rich.</string>
+    <string name="verb_263_question_en">The food ____ (cook) right now.</string>
+    <string name="verb_264_question_en">The windows ____ (clean) every Saturday.</string>
+    <string name="verb_265_question_en">The cake ____ (eat) yesterday.</string>
+    <string name="verb_266_question_en">The presents ____ (open) tomorrow morning.</string>
+    <string name="verb_267_question_en">The house____ (renovate) last year.</string>
+    <string name="verb_268_question_en">The e-mails ____ (answer) by my colleague.</string>
+    <string name="verb_269_question_en">That is the cat ____ (that) belongs to me.</string>
+    <string name="verb_270_question_en">The film ____ (that) we watched was very funny.</string>
+    <string name="verb_271_question_en">Do you know the song ____ (that) is playing on the radio?</string>
+    <string name="verb_272_question_en">That is the man ____ (with whom) I spoke.</string>
+    <string name="verb_273_question_en">The city ____ (in which) I live is very beautiful.</string>
+    <string name="verb_274_question_en">The friends ____ (for whom) I bought the present are coming tomorrow.</string>
+    <string name="verb_275_question_en">____ (Walking home) I saw an accident.</string>
+    <string name="verb_276_question_en">____ (Opening the window) she let in fresh air.</string>
+    <string name="verb_277_question_en">____ (Completely exhausted) he fell asleep immediately.</string>
+    <string name="verb_278_question_en">____ (Having finished the work) he went home.</string>
+    <string name="verb_279_question_en">____ (Having seen the film) we discussed it.</string>
+    <string name="verb_280_question_en">____ (Sitting in the garden) he enjoyed the sun.</string>
+
 </resources>

@@ -1,7 +1,10 @@
 package com.aschiesch.dspiel.ui
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,9 +12,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -32,7 +33,7 @@ import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 fun HomeScreen(
     onQuizOpen: (String) -> Unit
 ) {
-    Surface {
+    Surface (){
         Column(modifier = Modifier.fillMaxWidth()) {
             Category(
                 categoryName = stringResource(R.string.article),
@@ -54,10 +55,13 @@ fun HomeScreen(
                 modifier = Modifier.padding(8.dp),
                 onOpen = onQuizOpen
             )
-            PlayItem(
-                articleItem = QuizInfo(R.string.verb_conjugations, QuizMode.VERB_CONJUGATIONS),
-                onOpen = onQuizOpen,
-                modifier = Modifier.padding(8.dp)
+            Category(
+                categoryName = stringResource(id = R.string.verbs_title),
+                playItems = listOf(
+                    QuizInfo(R.string.verb_conjugations_1, QuizMode.VERB_CONJUGATIONS)
+                ),
+                modifier = Modifier.padding(8.dp),
+                onOpen = onQuizOpen
             )
         }
     }
@@ -88,20 +92,19 @@ fun CategoryTitle(
     Text(
         text = categoryName,
         modifier = modifier.padding(8.dp),
-        style = MaterialTheme.typography.titleMedium
+        style = MaterialTheme.typography.titleLarge,
+        color = MaterialTheme.colorScheme.primary
     )
 }
 
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PlayItem(
     articleItem: QuizInfo,
     onOpen: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    Card(
-        onClick = {onOpen(articleItem.quizMode.name)},
+    Box(
         modifier = modifier
             .padding(8.dp)
             .defaultMinSize(minWidth = 128.dp)
@@ -110,16 +113,24 @@ fun PlayItem(
                 brush = Brush.linearGradient(
                     colors = listOf(
                         MaterialTheme.colorScheme.primaryContainer,
-                        MaterialTheme.colorScheme.tertiaryContainer
+                        MaterialTheme.colorScheme.secondaryContainer
                     )
                 ),
                 shape = CardDefaults.shape
             )
-        ,
-        elevation = CardDefaults.cardElevation(),
-        colors = CardDefaults.elevatedCardColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.0f)
-        )
+            .clickable {
+                onOpen(articleItem.quizMode.name)
+            }
+            .border(
+                width = 1.dp,
+                brush = Brush.verticalGradient(
+                    colors = listOf(
+                        MaterialTheme.colorScheme.tertiaryContainer,
+                        MaterialTheme.colorScheme.tertiary
+                    )
+                ),
+                shape = CardDefaults.shape
+            )
     ) {
         Column(
             modifier = Modifier.fillMaxSize(),

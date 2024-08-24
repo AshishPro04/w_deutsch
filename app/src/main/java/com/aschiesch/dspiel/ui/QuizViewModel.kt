@@ -23,7 +23,7 @@ class QuizViewModel(
         QuizMode.SINGLE_DIGIT.name -> NumberSource.numbersSingleDigitNumeric.shuffled()
         QuizMode.DOUBLE_DIGIT.name -> NumberSource.numbersDoubleDigitNumeric.shuffled()
         QuizMode.TRIPLE_DIGIT.name -> NumberSource.numbersTripleDigitNumeric.shuffled()
-        QuizMode.VERB_CONJUGATIONS.name -> VerbConjugationResource.verbConjugations.shuffled().take(30)
+        QuizMode.VERB_CONJUGATIONS.name -> VerbConjugationResource.verbConjugations1.shuffled().take(30)
         else ->  ArticleSource.definitiveArticles.shuffled()
     }
                 private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(
