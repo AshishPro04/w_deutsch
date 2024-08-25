@@ -11,7 +11,13 @@
     <string name="double_digit">Double Digit</string>
     <string name="triple_digit">Triple Digit</string>
     <string name="verbs_title">Verbs</string>
+    <string name="time_title">Time &amp; Date</string>
+    <string name="time_1">Time 1</string>
+    <string name="time_2">Time 2</string>
+    <string name="date">Date</string>
     <string name="verb_conjugations_1">Verb Conjugations 1</string>
+    <string name="verb_conjugations_2">Verb Conjugations 2</string>
+    <string name="verb_conjugations_3">Verb Conjugations 3</string>
     <string name="close">Close</string>
     <string name="score">Score</string>
     <string name="complete_result">You got %1$d out of %2$d correct</string>
@@ -2067,4 +2073,1297 @@
     <string name="verb_279_question_en">____ (Having seen the film) we discussed it.</string>
     <string name="verb_280_question_en">____ (Sitting in the garden) he enjoyed the sun.</string>
 
+
+    <!--    Time -->
+    <string name="time_1_question">10:00 AM</string>
+    <string name="time_1_correct">Zehn Uhr</string>
+    <string name="time_1_incorrect_1">Elf Uhr</string>
+    <string name="time_1_incorrect_2">Halb elf</string>
+
+    <string name="time_2_question">2:30 PM</string>
+    <string name="time_2_correct">Halb drei</string>
+    <string name="time_2_incorrect_1">Zwei Uhr dreißig</string>
+    <string name="time_2_incorrect_2">Viertel vor drei</string>
+
+    <string name="time_3_question">6:15 AM</string>
+    <string name="time_3_correct">Viertel nach sechs</string>
+    <string name="time_3_incorrect_1">Viertel vor sechs</string>
+    <string name="time_3_incorrect_2">Halb sieben</string>
+
+    <string name="time_4_question">11:45 PM</string>
+    <string name="time_4_correct">Viertel vor zwölf</string>
+    <string name="time_4_incorrect_1">Viertel nach elf</string>
+    <string name="time_4_incorrect_2">Halb zwölf</string>
+
+    <string name="time_5_question">1:00 PM</string>
+    <string name="time_5_correct">Ein Uhr</string>
+    <string name="time_5_incorrect_1">Zwei Uhr</string>
+    <string name="time_5_incorrect_2">Halb zwei</string>
+
+    <string name="time_6_question">7:30 AM</string>
+    <string name="time_6_correct">Halb acht</string>
+    <string name="time_6_incorrect_1">Sieben Uhr dreißig</string>
+    <string name="time_6_incorrect_2">Viertel vor acht</string>
+
+    <string name="time_7_question">4:15 PM</string>
+    <string name="time_7_correct">Viertel nach vier</string>
+    <string name="time_7_incorrect_1">Viertel vor vier</string>
+    <string name="time_7_incorrect_2">Halb fünf</string>
+
+    <string name="time_8_question">12:45 AM</string>
+    <string name="time_8_correct">Viertel vor eins</string>
+    <string name="time_8_incorrect_1">Viertel nach zwölf</string>
+    <string name="time_8_incorrect_2">Halb eins</string>
+
+    <string name="time_9_question">3:00 AM</string>
+    <string name="time_9_correct">Drei Uhr</string>
+    <string name="time_9_incorrect_1">Vier Uhr</string>
+    <string name="time_9_incorrect_2">Halb vier</string>
+
+    <string name="time_10_question">8:30 PM</string>
+    <string name="time_10_correct">Halb neun</string>
+    <string name="time_10_incorrect_1">Acht Uhr dreißig</string>
+    <string name="time_10_incorrect_2">Viertel vor neun</string>
+
+    <string name="time_11_question">5:15 AM</string>
+    <string name="time_11_correct">Viertel nach fünf</string>
+    <string name="time_11_incorrect_1">Viertel vor fünf</string>
+    <string name="time_11_incorrect_2">Halb sechs</string>
+
+    <string name="time_12_question">9:45 AM</string>
+    <string name="time_12_correct">Viertel vor zehn</string>
+    <string name="time_12_incorrect_1">Viertel nach neun</string>
+    <string name="time_12_incorrect_2">Halb zehn</string>
+
+    <string name="time_13_question">12:00 PM</string>
+    <string name="time_13_correct">Zwölf Uhr</string>
+    <string name="time_13_incorrect_1">Ein Uhr</string>
+    <string name="time_13_incorrect_2">Halb eins</string>
+
+    <string name="time_14_question">4:30 PM</string>
+    <string name="time_14_correct">Halb fünf</string>
+    <string name="time_14_incorrect_1">Vier Uhr dreißig</string>
+    <string name="time_14_incorrect_2">Viertel vor fünf</string>
+
+    <string name="time_15_question">7:15 AM</string>
+    <string name="time_15_correct">Viertel nach sieben</string>
+    <string name="time_15_incorrect_1">Viertel vor sieben</string>
+    <string name="time_15_incorrect_2">Halb acht</string>
+
+    <string name="time_16_question">2:45 PM</string>
+    <string name="time_16_correct">Viertel vor drei</string>
+    <string name="time_16_incorrect_1">Viertel nach zwei</string>
+    <string name="time_16_incorrect_2">Halb drei</string>
+
+    <string name="time_17_question">5:00 PM</string>
+    <string name="time_17_correct">Fünf Uhr</string>
+    <string name="time_17_incorrect_1">Sechs Uhr</string>
+    <string name="time_17_incorrect_2">Halb sechs</string>
+
+    <string name="time_18_question">8:30 AM</string>
+    <string name="time_18_correct">Halb neun</string>
+    <string name="time_18_incorrect_1">Acht Uhr dreißig</string>
+    <string name="time_18_incorrect_2">Viertel vor neun</string>
+
+    <string name="time_19_question">11:15 PM</string>
+    <string name="time_19_correct">Viertel nach elf</string>
+    <string name="time_19_incorrect_1">Viertel vor elf</string>
+    <string name="time_19_incorrect_2">Halb zwölf</string>
+
+    <string name="time_20_question">6:45 AM</string>
+    <string name="time_20_correct">Viertel vor sieben</string>
+    <string name="time_20_incorrect_1">Viertel nach sechs</string>
+    <string name="time_20_incorrect_2">Halb sieben</string>
+
+    <string name="time_21_question">1:00 AM</string>
+    <string name="time_21_correct">Ein Uhr</string>
+    <string name="time_21_incorrect_1">Zwei Uhr</string>
+    <string name="time_21_incorrect_2">Halb zwei</string>
+
+    <string name="time_22_question">10:30 PM</string>
+    <string name="time_22_correct">Halb elf</string>
+    <string name="time_22_incorrect_1">Zehn Uhr dreißig</string>
+    <string name="time_22_incorrect_2">Viertel vor elf</string>
+
+    <string name="time_23_question">3:15 AM</string>
+    <string name="time_23_correct">Viertel nach drei</string>
+    <string name="time_23_incorrect_1">Viertel vor drei</string>
+    <string name="time_23_incorrect_2">Halb vier</string>
+
+    <string name="time_24_question">7:45 PM</string>
+    <string name="time_24_correct">Viertel vor acht</string>
+    <string name="time_24_incorrect_1">Viertel nach sieben</string>
+    <string name="time_24_incorrect_2">Halb acht</string>
+
+    <string name="time_25_question">2:00 AM</string>
+    <string name="time_25_correct">Zwei Uhr</string>
+    <string name="time_25_incorrect_1">Drei Uhr</string>
+    <string name="time_25_incorrect_2">Halb drei</string>
+
+    <string name="time_26_question">11:30 AM</string>
+    <string name="time_26_correct">Halb zwölf</string>
+    <string name="time_26_incorrect_1">Elf Uhr dreißig</string>
+    <string name="time_26_incorrect_2">Viertel vor zwölf</string>
+
+    <string name="time_27_question">4:15 AM</string>
+    <string name="time_27_correct">Viertel nach vier</string>
+    <string name="time_27_incorrect_1">Viertel vor vier</string>
+    <string name="time_27_incorrect_2">Halb fünf</string>
+
+    <string name="time_28_question">8:45 PM</string>
+    <string name="time_28_correct">Viertel vor neun</string>
+    <string name="time_28_incorrect_1">Viertel nach acht</string>
+    <string name="time_28_incorrect_2">Halbneun</string>
+
+    <string name="time_29_question">6:00 PM</string>
+    <string name="time_29_correct">Sechs Uhr</string>
+    <string name="time_29_incorrect_1">Sieben Uhr</string>
+    <string name="time_29_incorrect_2">Halb sieben</string>
+
+    <string name="time_30_question">9:30 AM</string>
+    <string name="time_30_correct">Halb zehn</string>
+    <string name="time_30_incorrect_1">Neun Uhr dreißig</string>
+    <string name="time_30_incorrect_2">Viertel vor zehn</string>
+
+    <string name="time_31_question">5:45 PM</string>
+    <string name="time_31_correct">Viertel vor sechs</string>
+    <string name="time_31_incorrect_1">Viertel nach fünf</string>
+    <string name="time_31_incorrect_2">Halb sechs</string>
+
+    <string name="time_32_question">10:15 AM</string>
+    <string name="time_32_correct">Viertel nach zehn</string>
+    <string name="time_32_incorrect_1">Viertel vor zehn</string>
+    <string name="time_32_incorrect_2">Halb elf</string>
+
+    <string name="time_33_question">1:30 PM</string>
+    <string name="time_33_correct">Halb zwei</string>
+    <string name="time_33_incorrect_1">Ein Uhr dreißig</string>
+    <string name="time_33_incorrect_2">Viertel vor zwei</string>
+
+    <string name="time_34_question">6:45 PM</string>
+    <string name="time_34_correct">Viertel vor sieben</string>
+    <string name="time_34_incorrect_1">Viertel nach sechs</string>
+    <string name="time_34_incorrect_2">Halb sieben</string>
+
+    <string name="time_35_question">11:00 AM</string>
+    <string name="time_35_correct">Elf Uhr</string>
+    <string name="time_35_incorrect_1">Zwölf Uhr</string>
+    <string name="time_35_incorrect_2">Halb zwölf</string>
+
+    <string name="time_36_question">3:30 PM</string>
+    <string name="time_36_correct">Halb vier</string>
+    <string name="time_36_incorrect_1">Drei Uhr dreißig</string>
+    <string name="time_36_incorrect_2">Viertel vor vier</string>
+
+    <string name="time_37_question">8:15 AM</string>
+    <string name="time_37_correct">Viertel nach acht</string>
+    <string name="time_37_incorrect_1">Viertel vor acht</string>
+    <string name="time_37_incorrect_2">Halb neun</string>
+
+    <string name="time_38_question">12:45 PM</string>
+    <string name="time_38_correct">Viertel vor eins</string>
+    <string name="time_38_incorrect_1">Viertel nach zwölf</string>
+    <string name="time_38_incorrect_2">Halb eins</string>
+
+    <string name="time_39_question">4:00 AM</string>
+    <string name="time_39_correct">Vier Uhr</string>
+    <string name="time_39_incorrect_1">Fünf Uhr</string>
+    <string name="time_39_incorrect_2">Halb fünf</string>
+
+    <string name="time_40_question">9:30 PM</string>
+    <string name="time_40_correct">Halb zehn</string>
+    <string name="time_40_incorrect_1">Neun Uhr dreißig</string>
+    <string name="time_40_incorrect_2">Viertel vor zehn</string>
+
+    <string name="time_41_question">2:15 AM</string>
+    <string name="time_41_correct">Viertel nach zwei</string>
+    <string name="time_41_incorrect_1">Viertel vor zwei</string>
+    <string name="time_41_incorrect_2">Halb drei</string>
+
+    <string name="time_42_question">7:45 AM</string>
+    <string name="time_42_correct">Viertel vor acht</string>
+    <string name="time_42_incorrect_1">Viertel nach sieben</string>
+    <string name="time_42_incorrect_2">Halb acht</string>
+
+    <string name="time_43_question">11:00 PM</string>
+    <string name="time_43_correct">Elf Uhr</string>
+    <string name="time_43_incorrect_1">Zwölf Uhr</string>
+    <string name="time_43_incorrect_2">Halb zwölf</string>
+
+    <string name="time_44_question">5:30 AM</string>
+    <string name="time_44_correct">Halb sechs</string>
+    <string name="time_44_incorrect_1">Fünf Uhr dreißig</string>
+    <string name="time_44_incorrect_2">Viertel vor sechs</string>
+
+    <string name="time_45_question">10:15 PM</string>
+    <string name="time_45_correct">Viertel nach zehn</string>
+    <string name="time_45_incorrect_1">Viertel vor zehn</string>
+    <string name="time_45_incorrect_2">Halb elf</string>
+
+    <string name="time_46_question">1:45 AM</string>
+    <string name="time_46_correct">Viertel vor zwei</string>
+    <string name="time_46_incorrect_1">Viertel nach eins</string>
+    <string name="time_46_incorrect_2">Halb zwei</string>
+
+    <string name="time_47_question">6:00 AM</string>
+    <string name="time_47_correct">Sechs Uhr</string>
+    <string name="time_47_incorrect_1">Sieben Uhr</string>
+    <string name="time_47_incorrect_2">Halb sieben</string>
+
+    <string name="time_48_question">10:30 AM</string>
+    <string name="time_48_correct">Halb elf</string>
+    <string name="time_48_incorrect_1">Zehn Uhr dreißig</string>
+    <string name="time_48_incorrect_2">Viertel vor elf</string>
+
+    <string name="time_49_question">3:15 PM</string>
+    <string name="time_49_correct">Viertel nach drei</string>
+    <string name="time_49_incorrect_1">Viertel vor drei</string>
+    <string name="time_49_incorrect_2">Halb vier</string>
+
+    <string name="time_50_question">8:45 AM</string>
+    <string name="time_50_correct">Viertel vor neun</string>
+    <string name="time_50_incorrect_1">Viertel nach acht</string>
+    <string name="time_50_incorrect_2">Halb neun</string>
+
+    <string name="time_51_question">7:00 PM</string>
+    <string name="time_51_correct">Sieben Uhr</string>
+    <string name="time_51_incorrect_1">Acht Uhr</string>
+    <string name="time_51_incorrect_2">Halb acht</string>
+
+    <string name="time_52_question">11:30 PM</string>
+    <string name="time_52_correct">Halb zwölf</string>
+    <string name="time_52_incorrect_1">Elf Uhr dreißig</string>
+    <string name="time_52_incorrect_2">Viertel vor zwölf</string>
+
+    <string name="time_53_question">4:15 PM</string>
+    <string name="time_53_correct">Viertel nach vier</string>
+    <string name="time_53_incorrect_1">Viertel vor vier</string>
+    <string name="time_53_incorrect_2">Halb fünf</string>
+
+    <string name="time_54_question">9:45 AM</string>
+    <string name="time_54_correct">Viertel vor zehn</string>
+    <string name="time_54_incorrect_1">Viertel nach neun</string>
+    <string name="time_54_incorrect_2">Halb zehn</string>
+
+    <string name="time_55_question">12:00 AM</string>
+    <string name="time_55_correct">Zwölf Uhr</string>
+    <string name="time_55_incorrect_1">Ein Uhr</string>
+    <string name="time_55_incorrect_2">Halb eins</string>
+
+    <string name="time_56_question">2:30 AM</string>
+    <string name="time_56_correct">Halb drei</string>
+    <string name="time_56_incorrect_1">Zwei Uhr dreißig</string>
+    <string name="time_56_incorrect_2">Viertel vor drei</string>
+
+    <string name="time_57_question">7:15 PM</string>
+    <string name="time_57_correct">Viertel nach sieben</string>
+    <string name="time_57_incorrect_1">Viertel vor sieben</string>
+    <string name="time_57_incorrect_2">Halb acht</string>
+
+    <string name="time_58_question">10:45 AM</string>
+    <string name="time_58_correct">Viertel vor elf</string>
+    <string name="time_58_incorrect_1">Viertel nach zehn</string>
+    <string name="time_58_incorrect_2">Halb elf</string>
+
+    <string name="time_59_question">1:00 PM</string>
+    <string name="time_59_correct">Ein Uhr</string>
+    <string name="time_59_incorrect_1">Zwei Uhr</string>
+    <string name="time_59_incorrect_2">Halb zwei</string>
+
+    <string name="time_60_question">6:30 AM</string>
+    <string name="time_60_correct">Halb sieben</string>
+    <string name="time_60_incorrect_1">Sechs Uhr dreißig</string>
+    <string name="time_60_incorrect_2">Viertel vor sieben</string>
+
+    <string name="time_61_question">11:15 AM</string>
+    <string name="time_61_correct">Viertel nach elf</string>
+    <string name="time_61_incorrect_1">Viertel vor elf</string>
+    <string name="time_61_incorrect_2">Halb zwölf</string>
+
+    <string name="time_62_question">4:45 PM</string>
+    <string name="time_62_correct">Viertel vor fünf</string>
+    <string name="time_62_incorrect_1">Viertel nach vier</string>
+    <string name="time_62_incorrect_2">Halb fünf</string>
+
+    <string name="time_63_question">9:00 AM</string>
+    <string name="time_63_correct">Neun Uhr</string>
+    <string name="time_63_incorrect_1">Zehn Uhr</string>
+    <string name="time_63_incorrect_2">Halb zehn</string>
+
+    <string name="time_64_question">12:30 PM</string>
+    <string name="time_64_correct">Halb eins</string>
+    <string name="time_64_incorrect_1">Zwölf Uhr dreißig</string>
+    <string name="time_64_incorrect_2">Viertel vor eins</string>
+
+    <string name="time_65_question">5:15 AM</string>
+    <string name="time_65_correct">Viertel nach fünf</string>
+    <string name="time_65_incorrect_1">Viertel vor fünf</string>
+    <string name="time_65_incorrect_2">Halb sechs</string>
+
+    <string name="time_66_question">8:45 PM</string>
+    <string name="time_66_correct">Viertel vor neun</string>
+    <string name="time_66_incorrect_1">Viertel nach acht</string>
+    <string name="time_66_incorrect_2">Halb neun</string>
+
+    <string name="time_67_question">10:00 PM</string>
+    <string name="time_67_correct">Zehn Uhr</string>
+    <string name="time_67_incorrect_1">Elf Uhr</string>
+    <string name="time_67_incorrect_2">Halb elf</string>
+
+    <string name="time_68_question">1:30 AM</string>
+    <string name="time_68_correct">Halb zwei</string>
+    <string name="time_68_incorrect_1">Ein Uhr dreißig</string>
+    <string name="time_68_incorrect_2">Viertel vor zwei</string>
+
+    <string name="time_69_question">6:15 PM</string>
+    <string name="time_69_correct">Viertel nach sechs</string>
+    <string name="time_69_incorrect_1">Viertel vor sechs</string>
+    <string name="time_69_incorrect_2">Halb sieben</string>
+
+    <string name="time_70_question">11:45 AM</string>
+    <string name="time_70_correct">Viertel vor zwölf</string>
+    <string name="time_70_incorrect_1">Viertel nach elf</string>
+    <string name="time_70_incorrect_2">Halb zwölf</string>
+
+    <string name="time_71_question">2:00 PM</string>
+    <string name="time_71_correct">Zwei Uhr</string>
+    <string name="time_71_incorrect_1">Drei Uhr</string>
+    <string name="time_71_incorrect_2">Halb drei</string>
+
+    <string name="time_72_question">7:30 AM</string>
+    <string name="time_72_correct">Halb acht</string>
+    <string name="time_72_incorrect_1">Sieben Uhr dreißig</string>
+    <string name="time_72_incorrect_2">Viertel vor acht</string>
+
+    <string name="time_73_question">10:15 PM</string>
+    <string name="time_73_correct">Viertel nach zehn</string>
+    <string name="time_73_incorrect_1">Viertel vor zehn</string>
+    <string name="time_73_incorrect_2">Halb elf</string>
+
+    <string name="time_74_question">1:45 AM</string>
+    <string name="time_74_correct">Viertel vor zwei</string>
+    <string name="time_74_incorrect_1">Viertel nach eins</string>
+    <string name="time_74_incorrect_2">Halb zwei</string>
+
+    <string name="time_75_question">6:00 PM</string>
+    <string name="time_75_correct">Sechs Uhr</string>
+    <string name="time_75_incorrect_1">Sieben Uhr</string>
+    <string name="time_75_incorrect_2">Halb sieben</string>
+
+    <string name="time_76_question">10:30 AM</string>
+    <string name="time_76_correct">Halb elf</string>
+    <string name="time_76_incorrect_1">Zehn Uhr dreißig</string>
+    <string name="time_76_incorrect_2">Viertel vor elf</string>
+
+    <string name="time_77_question">3:15 PM</string>
+    <string name="time_77_correct">Viertel nach drei</string>
+    <string name="time_77_incorrect_1">Viertel vor drei</string>
+    <string name="time_77_incorrect_2">Halb vier</string>
+
+    <string name="time_78_question">8:45 AM</string>
+    <string name="time_78_correct">Viertel vor neun</string>
+    <string name="time_78_incorrect_1">Viertel nach acht</string>
+    <string name="time_78_incorrect_2">Halb neun</string>
+
+    <string name="time_79_question">12:00 PM</string>
+    <string name="time_79_correct">Zwölf Uhr</string>
+    <string name="time_79_incorrect_1">Ein Uhr</string>
+    <string name="time_79_incorrect_2">Halb eins</string>
+
+    <string name="time_80_question">5:30 AM</string>
+    <string name="time_80_correct">Halb sechs</string>
+    <string name="time_80_incorrect_1">Fünf Uhr dreißig</string>
+    <string name="time_80_incorrect_2">Viertel vor sechs</string>
+
+    <string name="time_81_question">9:15 PM</string>
+    <string name="time_81_correct">Viertel nach neun</string>
+    <string name="time_81_incorrect_1">Viertel vor neun</string>
+    <string name="time_81_incorrect_2">Halb zehn</string>
+
+    <string name="time_82_question">12:45 AM</string>
+    <string name="time_82_correct">Viertel vor eins</string>
+    <string name="time_82_incorrect_1">Viertel nach zwölf</string>
+    <string name="time_82_incorrect_2">Halb eins</string>
+
+    <string name="time_83_question">3:00 PM</string>
+    <string name="time_83_correct">Drei Uhr</string>
+    <string name="time_83_incorrect_1">Vier Uhr</string>
+    <string name="time_83_incorrect_2">Halb vier</string>
+
+    <string name="time_84_question">8:30 AM</string>
+    <string name="time_84_correct">Halb neun</string>
+    <string name="time_84_incorrect_1">Acht Uhr dreißig</string>
+    <string name="time_84_incorrect_2">Viertel vor neun</string>
+
+    <string name="time_85_question">11:15 PM</string>
+    <string name="time_85_correct">Viertel nach elf</string>
+    <string name="time_85_incorrect_1">Viertel vor elf</string>
+    <string name="time_85_incorrect_2">Halb zwölf</string>
+
+    <string name="time_86_question">4:45 AM</string>
+    <string name="time_86_correct">Viertel vor fünf</string>
+    <string name="time_86_incorrect_1">Viertel nach vier</string>
+    <string name="time_86_incorrect_2">Halb fünf</string>
+
+    <string name="time_87_question">9:00 PM</string>
+    <string name="time_87_correct">Neun Uhr</string>
+    <string name="time_87_incorrect_1">Zehn Uhr</string>
+    <string name="time_87_incorrect_2">Halb zehn</string>
+
+    <string name="time_88_question">12:30 AM</string>
+    <string name="time_88_correct">Halb eins</string>
+    <string name="time_88_incorrect_1">Zwölf Uhr dreißig</string>
+    <string name="time_88_incorrect_2">Viertel vor eins</string>
+
+    <string name="time_89_question">5:15 PM</string>
+    <string name="time_89_correct">Viertel nach fünf</string>
+    <string name="time_89_incorrect_1">Viertel vor fünf</string>
+    <string name="time_89_incorrect_2">Halb sechs</string>
+
+    <string name="time_90_question">10:45 AM</string>
+    <string name="time_90_correct">Viertel vor elf</string>
+    <string name="time_90_incorrect_1">Viertel nach zehn</string>
+    <string name="time_90_incorrect_2">Halb elf</string>
+
+    <!-- Time 2 -->
+    <string name="time_2_1_question">What is the appropriate preposition to use with "Uhr" (o\'clock) in German?</string>
+    <string name="time_2_1_correct">um</string>
+    <string name="time_2_1_incorrect_1">am</string>
+    <string name="time_2_1_incorrect_2">im</string>
+    <string name="time_2_1_incorrect_3">zu</string>
+
+    <string name="time_2_2_question">Which phrase is used to express "in the morning" in German?</string>
+    <string name="time_2_2_correct">am Morgen</string>
+    <string name="time_2_2_incorrect_1">im Morgen</string>
+    <string name="time_2_2_incorrect_2">auf dem Morgen</string>
+    <string name="time_2_2_incorrect_3">in der Morgen</string>
+
+    <string name="time_2_3_question">How do you say "half past seven" in a full sentence in German?</string>
+    <string name="time_2_3_correct">Es ist halb acht.</string>
+    <string name="time_2_3_incorrect_1">Es ist halb sieben.</string>
+    <string name="time_2_3_incorrect_2">Es ist sieben Uhr dreißig.</string>
+    <string name="time_2_3_incorrect_3">Es ist dreißig Minuten nach sieben.</string>
+
+    <string name="time_2_4_question">What is the correct way to ask "What time is it?" in German?</string>
+    <string name="time_2_4_correct">Wie spät ist es?</string>
+    <string name="time_2_4_incorrect_1">Was ist die Zeit?</string>
+    <string name="time_2_4_incorrect_2">Welche Zeit ist es?</string>
+    <string name="time_2_4_incorrect_3">Wann ist die Uhr?</string>
+
+    <string name="time_2_5_question">Which word is used to express "minute" in German?</string>
+    <string name="time_2_5_correct">Minute</string>
+    <string name="time_2_5_incorrect_1">Minut</string>
+    <string name="time_2_5_incorrect_2">Minuten</string>
+    <string name="time_2_5_incorrect_3">Minüt</string>
+
+    <string name="time_2_6_question">How do you say "quarter to five" in a full sentence in German?</string>
+    <string name="time_2_6_correct">Es ist Viertel vor fünf.</string>
+    <string name="time_2_6_incorrect_1">Es ist Viertel nach fünf.</string>
+    <string name="time_2_6_incorrect_2">Es ist fünfzehn Minuten vor fünf.</string>
+    <string name="time_2_6_incorrect_3">Es ist fünf Uhr fünfzehn.</string>
+
+    <string name="time_2_7_question">Which phrase is used to express "in the evening" in German?</string>
+    <string name="time_2_7_correct">am Abend</string>
+    <string name="time_2_7_incorrect_1">im Abend</string>
+    <string name="time_2_7_incorrect_2">auf dem Abend</string>
+    <string name="time_2_7_incorrect_3">in der Abend</string>
+
+    <string name="time_2_8_question">How do you say "15 minutes to 11" in a full sentence in German?</string>
+    <string name="time_2_8_correct">Es ist Viertel vor elf.</string>
+    <string name="time_2_8_incorrect_1">Es ist Viertel nach elf.</string>
+    <string name="time_2_8_incorrect_2">Es ist fünfzehn Minuten vor elf.</string>
+    <string name="time_2_8_incorrect_3">Es ist elf Uhr fünfzehn.</string>
+
+    <string name="time_2_9_question">What is the correct way to say "I have an appointment at 3 o\'clock" in German?</string>
+    <string name="time_2_9_correct">Ich habe einen Termin um drei Uhr.</string>
+    <string name="time_2_9_incorrect_1">Ich habe einen Termin am drei Uhr.</string>
+    <string name="time_2_9_incorrect_2">Ich habe einen Termin im drei Uhr.</string>
+    <string name="time_2_9_incorrect_3">Ich habe einen Termin zu drei Uhr.</string>
+    <string name="time_2_10_question">Which word is used to express "second" in German?</string>
+    <string name="time_2_10_correct">Sekunde</string>
+    <string name="time_2_10_incorrect_1">Sekund</string>
+    <string name="time_2_10_incorrect_2">Sekunden</string>
+    <string name="time_2_10_incorrect_3">Sekünd</string>
+
+    <string name="time_2_11_question">How do you say "at noon" in German?</string>
+    <string name="time_2_11_correct">am Mittag</string>
+    <string name="time_2_11_incorrect_1">im Mittag</string>
+    <string name="time_2_11_incorrect_2">zu Mittag</string>
+    <string name="time_2_11_incorrect_3">um Mittag</string>
+
+    <string name="time_2_12_question">Which phrase is used to express "at midnight" in German?</string>
+    <string name="time_2_12_correct">um Mitternacht</string>
+    <string name="time_2_12_incorrect_1">am Mitternacht</string>
+    <string name="time_2_12_incorrect_2">im Mitternacht</string>
+    <string name="time_2_12_incorrect_3">zu Mitternacht</string>
+
+    <string name="time_2_13_question">What is the correct way to say "The train leaves at 6:45" in German?</string>
+    <string name="time_2_13_correct">Der Zug fährt um Viertel vor sieben ab.</string>
+    <string name="time_2_13_incorrect_1">Der Zug fährt um Viertel nach sechs ab.</string>
+    <string name="time_2_13_incorrect_2">Der Zug fährt um sechs Uhr fünfundvierzig ab.</string>
+    <string name="time_2_13_incorrect_3">Der Zug fährt um fünfundvierzig Minuten nach sechs ab.</string>
+
+    <string name="time_2_14_question">How do you express "I wake up at 7 o\'clock" in German?</string>
+    <string name="time_2_14_correct">Ich wache um sieben Uhr auf.</string>
+    <string name="time_2_14_incorrect_1">Ich wache am sieben Uhr auf.</string>
+    <string name="time_2_14_incorrect_2">Ich wache im sieben Uhr auf.</string>
+    <string name="time_2_14_incorrect_3">Ich wache zu sieben Uhr auf.</string>
+
+    <string name="time_2_15_question">Which preposition is used with days of the week in German when talking about time?</string>
+    <string name="time_2_15_correct">am</string>
+    <string name="time_2_15_incorrect_1">um</string>
+    <string name="time_2_15_incorrect_2">im</string>
+    <string name="time_2_15_incorrect_3">zu</string>
+
+    <string name="time_2_16_question">How do you say "See you tomorrow at 10 am" in German?</string>
+    <string name="time_2_16_correct">Bis morgen um zehn Uhr.</string>
+    <string name="time_2_16_incorrect_1">Bis morgen am zehn Uhr.</string>
+    <string name="time_2_16_incorrect_2">Bis morgen im zehn Uhr.</string>
+    <string name="time_2_16_incorrect_3">Bis morgen zu zehn Uhr.</string>
+
+    <string name="time_2_17_question">What is the correct way to say "The movie starts at 8 pm" in German?</string>
+    <string name="time_2_17_correct">Der Film beginnt um zwanzig Uhr.</string>
+    <string name="time_2_17_incorrect_1">Der Film beginnt am zwanzig Uhr.</string>
+    <string name="time_2_17_incorrect_2">Der Film beginnt im zwanzig Uhr.</string>
+    <string name="time_2_17_incorrect_3">Der Film beginnt zu zwanzig Uhr.</string>
+
+    <string name="time_2_18_question">How do you express "The meeting is at half past four" in German?</string>
+    <string name="time_2_18_correct">Die Besprechung ist um halb fünf.</string>
+    <string name="time_2_18_incorrect_1">Die Besprechungist um halb vier.</string>
+    <string name="time_2_18_incorrect_2">Die Besprechung ist um vier Uhr dreißig.</string>
+    <string name="time_2_18_incorrect_3">Die Besprechung ist um dreißig Minuten nach vier.</string>
+
+    <string name="time_2_19_question">Which phrase is used to express "in the afternoon" in German?</string>
+    <string name="time_2_19_correct">am Nachmittag</string>
+    <string name="time_2_19_incorrect_1">im Nachmittag</string>
+    <string name="time_2_19_incorrect_2">auf dem Nachmittag</string>
+    <string name="time_2_19_incorrect_3">in der Nachmittag</string>
+
+    <string name="time_2_20_question">How do you say "My birthday is on the 5th of May" in German?</string>
+    <string name="time_2_20_correct">Mein Geburtstag ist am fünften Mai.</string>
+    <string name="time_2_20_incorrect_1">Mein Geburtstag ist im fünften Mai.</string>
+    <string name="time_2_20_incorrect_2">Mein Geburtstag ist auf dem fünften Mai.</string>
+    <string name="time_2_20_incorrect_3">Mein Geburtstag ist zu fünften Mai.</string>
+
+    <string name="time_2_21_question">What is the correct way to say "I go to bed at 11 pm" in German?</string>
+    <string name="time_2_21_correct">Ich gehe um elf Uhr ins Bett.</string>
+    <string name="time_2_21_incorrect_1">Ich gehe am elf Uhr ins Bett.</string>
+    <string name="time_2_21_incorrect_2">Ich gehe im elf Uhr ins Bett.</string>
+    <string name="time_2_21_incorrect_3">Ich gehe zu elf Uhr ins Bett.</string>
+
+    <string name="time_2_22_question">How do you express "The concert starts at quarter past nine" in German?</string>
+    <string name="time_2_22_correct">Das Konzert beginnt um Viertel nach neun.</string>
+    <string name="time_2_22_incorrect_1">DasKonzert beginnt um Viertel vor neun.</string>
+    <string name="time_2_22_incorrect_2">Das Konzert beginnt um neun Uhr fünfzehn.</string>
+    <string name="time_2_22_incorrect_3">Das Konzert beginnt um fünfzehn Minuten vor neun.</string>
+
+    <string name="time_2_23_question">Which phrase is used to express "every hour" in German?</string>
+    <string name="time_2_23_correct">jede Stunde</string>
+    <string name="time_2_23_incorrect_1">jeder Stunde</string>
+    <string name="time_2_23_incorrect_2">alle Stunde</string>
+    <string name="time_2_23_incorrect_3">aller Stunde</string>
+
+    <string name="time_2_24_question">How do you say "The bus arrives every 15 minutes" in German?</string>
+    <string name="time_2_24_correct">Der Bus kommt alle Viertelstunde.</string>
+    <string name="time_2_24_incorrect_1">Der Bus kommt jede Viertelstunde.</string>
+    <string name="time_2_24_incorrect_2">Der Bus kommt alle fünfzehn Minuten.</string>
+    <string name="time_2_24_incorrect_3">Der Bus kommt jeder fünfzehn Minuten.</string>
+
+    <string name="time_2_25_question">What is the correct way to say "I have a break at quarter to ten" in German?</string>
+    <string name="time_2_25_correct">Ich habe eine Pause um Viertel vor zehn.</string>
+    <string name="time_2_25_incorrect_1">Ich habe eine Pause am Viertel vor zehn.</string>
+    <string name="time_2_25_incorrect_2">Ich habe eine Pause im Viertel vor zehn.</string>
+    <string name="time_2_25_incorrect_3">Ich habe eine Pause zu Viertel vor zehn.</string>
+
+    <string name="time_2_26_question">How do you express "We meet in an hour" in German?</string>
+    <string name="time_2_26_correct">Wir treffen uns in einer Stunde.</string>
+    <string name="time_2_26_incorrect_1">Wir treffen uns in ein Stunde.</string>
+    <string name="time_2_26_incorrect_2">Wir treffen uns in einem Stunde.</string>
+    <string name="time_2_26_incorrect_3">Wir treffen uns in eines Stunde.</string>
+
+    <string name="time_2_27_question">Which phrase is used to express "two hours ago" in German?</string>
+    <string name="time_2_27_correct">vor zwei Stunden</string>
+    <string name="time_2_27_incorrect_1">zwei Stunden vor</string>
+    <string name="time_2_27_incorrect_2">zwei Stunden zurück</string>
+    <string name="time_2_27_incorrect_3">zwei Stunden früher</string>
+
+    <string name="time_2_28_question">How do you say "The lesson lasts 45 minutes" in German?</string>
+    <string name="time_2_28_correct">Die Stunde dauert fünfundvierzig Minuten.</string>
+    <string name="time_2_28_incorrect_1">Die Stunde dauert vierundfünfzig Minuten.</string>
+    <string name="time_2_28_incorrect_2">Die Stunde dauert dreiviertel Stunde.</string>
+    <string name="time_2_28_incorrect_3">Die Stunde dauert eine Dreiviertelstunde.</string>
+
+    <string name="time_2_29_question">What is the correct way to say "I will be there in 10 minutes" in German?</string>
+    <string name="time_2_29_correct">Ich bin in zehn Minuten da.</string>
+    <string name="time_2_29_incorrect_1">Ich bin in zehnen Minuten da.</string>
+    <string name="time_2_29_incorrect_2">Ich bin da in zehn Minuten.</string>
+    <string name="time_2_29_incorrect_3">Ich werde in zehn Minuten da sein.</string>
+
+    <string name="time_2_30_question">How do you express "The shop is open until 6 pm" in German?</string>
+    <string name="time_2_30_correct">Der Laden ist bis achtzehn Uhr geöffnet.</string>
+    <string name="time_2_30_incorrect_1">Der Laden ist bis sechzehn Uhr geöffnet.</string>
+    <string name="time_2_30_incorrect_2">Der Laden ist geöffnet bis achtzehn Uhr.</string>
+    <string name="time_2_30_incorrect_3">Der Laden ist bis um achtzehn Uhr geöffnet.</string>
+
+    <string name="time_2_31_question">Which phrase is used to express "early" in relation to time in German?</string>
+    <string name="time_2_31_correct">früh</string>
+    <string name="time_2_31_incorrect_1">zeitig</string>
+    <string name="time_2_31_incorrect_2">bald</string>
+    <string name="time_2_31_incorrect_3">schnell</string>
+
+    <string name="time_2_32_question">How do you say "The train is late" in German?</string>
+    <string name="time_2_32_correct">Der Zug hat Verspätung.</string>
+    <string name="time_2_32_incorrect_1">Der Zug ist spät.</string>
+    <string name="time_2_32_incorrect_2">Der Zug ist verspätet.</string>
+    <string name="time_2_32_incorrect_3">Der Zug kommt spät.</string>
+
+    <string name="time_2_33_question">What is the correct way to say "I have time tomorrow morning" in German?</string>
+    <string name="time_2_33_correct">Ich habe morgen früh Zeit.</string>
+    <string name="time_2_33_incorrect_1">Ich habe Zeit morgen früh.</string>
+    <string name="time_2_33_incorrect_2">Ich habe morgen am Morgen Zeit.</string>
+    <string name="time_2_33_incorrect_3">Ich habe morgen im Morgen Zeit.</string>
+
+    <string name="time_2_34_question">How do you express "It\'s five past twelve" in German?</string>
+    <string name="time_2_34_correct">Es ist fünf nach zwölf.</string>
+    <string name="time_2_34_incorrect_1">Es ist zwölf Uhr fünf.</string>
+    <string name="time_2_34_incorrect_2">Es ist fünf vor eins.</string>
+    <string name="time_2_34_incorrect_3">Es ist fünf nach eins.</string>
+
+    <string name="time_2_35_question">Which phrase is used to express "What time does it start?" in German?</string>
+    <string name="time_2_35_correct">Wann fängt es an?</string>
+    <string name="time_2_35_incorrect_1">Wann beginnt es?</string>
+    <string name="time_2_35_incorrect_2">Um wie viel Uhr fängt es an?</string>
+    <string name="time_2_35_incorrect_3">Um wie viel Uhr beginnt es?</string>
+
+    <string name="time_2_36_question">How do you say "The party is on Saturday evening" in German?</string>
+    <string name="time_2_36_correct">Die Party ist am Samstagabend.</string>
+    <string name="time_2_36_incorrect_1">Die Party ist am Samstag Abend.</string>
+    <string name="time_2_36_incorrect_2">Die Party ist Samstagabend.</string>
+    <string name="time_2_36_incorrect_3">Die Party ist am Abend Samstag.</string>
+
+    <string name="time_2_37_question">What is the correct way to say "I\'ll be back in half an hour" in German?</string>
+    <string name="time_2_37_correct">Ich bin in einer halben Stunde zurück.</string>
+    <string name="time_2_37_incorrect_1">Ich bin in einer halb Stunde zurück.</string>
+    <string name="time_2_37_incorrect_2">Ich bin zurück in einer halben Stunde.</string>
+    <string name="time_2_37_incorrect_3">Ich komme in einer halben Stunde zurück.</string>
+
+    <string name="time_2_38_question">How do you express "The flight takes two and a half hours" in German?</string>
+    <string name="time_2_38_correct">Der Flug dauert zweieinhalb Stunden.</string>
+    <string name="time_2_38_incorrect_1">Der Flug dauert zwei und halb Stunden.</string>
+    <string name="time_2_38_incorrect_2">Der Flug dauert zwei und eine halbe Stunden.</string>
+    <string name="time_2_38_incorrect_3">Der Flug dauert zwei Stunden und halb.</string>
+
+    <string name="time_2_39_question">Which phrase is used to express "a quarter of an hour" in German?</string>
+    <string name="time_2_39_correct">eine Viertelstunde</string>
+    <string name="time_2_39_incorrect_1">ein Viertel Stunde</string>
+    <string name="time_2_39_incorrect_2">ein Viertel von einer Stunde</string>
+    <string name="time_2_39_incorrect_3">fünfzehn Minuten</string>
+
+    <string name="time_2_40_question">How do you say "It\'s ten to six" in German?</string>
+    <string name="time_2_40_correct">Es ist zehn vor sechs.</string>
+    <string name="time_2_40_incorrect_1">Es ist sechs Uhr zehn.</string>
+    <string name="time_2_40_incorrect_2">Es ist zehn nach fünf.</string>
+    <string name="time_2_40_incorrect_3">Es ist zehn vor fünf.</string>
+
+    <string name="time_2_41_question">What is the correct German phrase for "this morning"?</string>
+    <string name="time_2_41_correct">heute Morgen</string>
+    <string name="time_2_41_incorrect_1">dieser Morgen</string>
+    <string name="time_2_41_incorrect_2">am Morgen</string>
+    <string name="time_2_41_incorrect_3">in Morgen</string>
+
+    <string name="time_2_42_question">How do you say "I have to leave at 5:30 pm" in German?</string>
+    <string name="time_2_42_correct">Ich muss um halb sechs Uhr abends gehen.</string>
+    <string name="time_2_42_incorrect_1">Ich muss um fünf Uhr dreißig gehen.</string>
+    <string name="time_2_42_incorrect_2">Ich muss um halb sechs gehen.</string>
+    <string name="time_2_42_incorrect_3">Ich muss um 17:30 Uhr gehen.</string>
+
+    <string name="time_2_43_question">Which phrase means "see you later" in German and includes a time reference?</string>
+    <string name="time_2_43_correct">Bis später!</string>
+    <string name="time_2_43_incorrect_1">Auf Wiedersehen!</string>
+    <string name="time_2_43_incorrect_2">Tschüss!</string>
+    <string name="time_2_43_incorrect_3">Bis bald!</string>
+
+    <string name="time_2_44_question">How do you ask "What time does the train arrive?" in German?</string>
+    <string name="time_2_44_correct">Wann kommt der Zug an?</string>
+    <string name="time_2_44_incorrect_1">Wann fährt der Zug ab?</string>
+    <string name="time_2_44_incorrect_2">Um wie viel Uhr kommt der Zug?</string>
+    <string name="time_2_44_incorrect_3">Wie spät kommt der Zug an?</string>
+
+    <string name="time_2_45_question">What is the German word for "duration"?</string>
+    <string name="time_2_45_correct">Dauer</string>
+    <string name="time_2_45_incorrect_1">Zeitraum</string>
+    <string name="time_2_45_incorrect_2">Länge</string>
+    <string name="time_2_45_incorrect_3">Zeit</string>
+
+    <string name="time_2_46_question">How do you say "The appointment is tomorrow afternoon" in German?</string>
+    <string name="time_2_46_correct">Der Termin ist morgen Nachmittag.</string>
+    <string name="time_2_46_incorrect_1">Der Termin ist morgen am Nachmittag.</string>
+    <string name="time_2_46_incorrect_2">Der Termin ist am Nachmittag morgen.</string>
+    <string name="time_2_46_incorrect_3">Der Termin ist morgen im Nachmittag.</string>
+
+    <string name="time_2_47_question">Which phrase is used to express "in a few minutes" in German?</string>
+    <string name="time_2_47_correct">in wenigen Minuten</string>
+    <string name="time_2_47_incorrect_1">in ein paar Minuten</string>
+    <string name="time_2_47_incorrect_2">bald</string>
+    <string name="time_2_47_incorrect_3">gleich</string>
+
+    <string name="time_2_48_question">How do you say "The clock is fast" in German?</string>
+    <string name="time_2_48_correct">Die Uhr geht vor.</string>
+    <string name="time_2_48_incorrect_1">Die Uhr ist schnell.</string>
+    <string name="time_2_48_incorrect_2">Die Uhr ist zu früh.</string>
+    <string name="time_2_48_incorrect_3">Die Uhr eilt.</string>
+
+    <string name="time_2_49_question">What is the correct way to say "I need more time" in German?</string>
+    <string name="time_2_49_correct">Ich brauche mehr Zeit.</string>
+    <string name="time_2_49_incorrect_1">Ich brauche weitere Zeit.</string>
+    <string name="time_2_49_incorrect_2">Ich brauche noch Zeit.</string>
+    <string name="time_2_49_incorrect_3">Ich benötige mehr Zeit.</string>
+
+    <string name="time_2_50_question">How do you express "The game starts at half time" in German?</string>
+    <string name="time_2_50_correct">Das Spiel beginnt zur Halbzeit.</string>
+    <string name="time_2_50_incorrect_1">Das Spiel beginnt um Halbzeit.</string>
+    <string name="time_2_50_incorrect_2">Das Spiel beginnt in der Halbzeit.</string>
+    <string name="time_2_50_incorrect_3">Das Spiel beginnt bei Halbzeit.</string>
+
+    <string name="time_2_51_question">Which phrase is used to express "on time" in German?</string>
+    <string name="time_2_51_correct">pünktlich</string>
+    <string name="time_2_51_incorrect_1">rechtzeitig</string>
+    <string name="time_2_51_incorrect_2">zur Zeit</string>
+    <string name="time_2_51_incorrect_3">auf die Zeit</string>
+
+    <string name="time_2_52_question">How do you say "The library closes at 8 o'clock in the evening" in German?</string>
+    <string name="time_2_52_correct">Die Bibliothek schließt um zwanzig Uhr abends.</string>
+    <string name="time_2_52_incorrect_1">Die Bibliothek schließt um acht Uhr am Abend.</string>
+    <string name="time_2_52_incorrect_2">Die Bibliothek schließt um acht Uhr in der Abend.</string>
+    <string name="time_2_52_incorrect_3">Die Bibliothek schließt um 20:00 Uhr.</string>
+
+    <string name="time_2_53_question">What is the German phrase for "from time to time"?</string>
+    <string name="time_2_53_correct">von Zeit zu Zeit</string>
+    <string name="time_2_53_incorrect_1">ab und zu</string>
+    <string name="time_2_53_incorrect_2">manchmal</string>
+    <string name="time_2_53_incorrect_3">gelegentlich</string>
+
+    <string name="time_2_54_question">How do you say "I'll call you back later today" in German?</string>
+    <string name="time_2_54_correct">Ich rufe dich später heute zurück.</string>
+    <string name="time_2_54_incorrect_1">Ich rufe dich heute später zurück.</string>
+    <string name="time_2_54_incorrect_2">Ich rufe dich zurück später heute.</string>
+    <string name="time_2_54_incorrect_3">Ich rufe dich später am Tag zurück.</string>
+
+    <string name="time_2_55_question">Which phrase means "for a long time" in German?</string>
+    <string name="time_2_55_correct">für eine lange Zeit</string>
+    <string name="time_2_55_incorrect_1">lange Zeit</string>
+    <string name="time_2_55_incorrect_2">seit langem</string>
+    <string name="time_2_55_incorrect_3">für lange</string>
+
+    <string name="time_2_56_question">How do you say "The museum is open daily from 10 am to 5 pm" in German?</string>
+    <string name="time_2_56_correct">Das Museum ist täglich von zehn bis siebzehn Uhr geöffnet.</string>
+    <string name="time_2_56_incorrect_1">Das Museum ist jeden Tag von 10:00 bis 17:00 Uhr geöffnet.</string>
+    <string name="time_2_56_incorrect_2">Das Museum ist geöffnet täglich von zehn Uhr bis fünf Uhr.</string>
+    <string name="time_2_56_incorrect_3">Das Museum ist offen von zehn bis siebzehn Uhr jeden Tag.</string>
+
+    <string name="time_2_57_question">What is the German word for "schedule"?</string>
+    <string name="time_2_57_correct">Zeitplan</string>
+    <string name="time_2_57_incorrect_1">Plan</string>
+    <string name="time_2_57_incorrect_2">Terminplan</string>
+    <string name="time_2_57_incorrect_3">Kalender</string>
+
+    <string name="time_2_58_question">How do you say "We arrived just in time" in German?</string>
+    <string name="time_2_58_correct">Wir sind gerade noch rechtzeitig angekommen.</string>
+    <string name="time_2_58_incorrect_1">Wir sind pünktlich angekommen.</string>
+    <string name="time_2_58_incorrect_2">Wir sind zur richtigen Zeit angekommen.</string>
+    <string name="time_2_58_incorrect_3">Wir sind gerade noch pünktlich angekommen.</string>
+
+    <string name="time_2_59_question">Which phrase is used to express "in the meantime" in German?</string>
+    <string name="time_2_59_correct">in der Zwischenzeit</string>
+    <string name="time_2_59_incorrect_1">währenddessen</string>
+    <string name="time_2_59_incorrect_2">inzwischen</string>
+    <string name="time_2_59_incorrect_3">mittlerweile</string>
+
+    <string name="time_2_60_question">How do you say "Time flies" in German?</string>
+    <string name="time_2_60_correct">Die Zeit vergeht wie im Flug.</string>
+    <string name="time_2_60_incorrect_1">Die Zeit fliegt.</string>
+    <string name="time_2_60_incorrect_2">Zeit ist schnell.</string>
+    <string name="time_2_60_incorrect_3">Die Zeit rennt.</string>
+
+    <string name="date_1_question">What is the German word for "calendar"?</string>
+    <string name="date_1_correct">Kalender</string>
+    <string name="date_1_incorrect_1">Datum</string>
+    <string name="date_1_incorrect_2">Woche</string>
+    <string name="date_1_incorrect_3">Monat</string>
+
+    <string name="date_2_question">Which preposition is used with dates in German?</string>
+    <string name="date_2_correct">am</string>
+    <string name="date_2_incorrect_1">um</string>
+    <string name="date_2_incorrect_2">im</string>
+    <string name="date_2_incorrect_3">an</string>
+
+    <string name="date_3_question">How do you say "today" in German?</string>
+    <string name="date_3_correct">heute</string>
+    <string name="date_3_incorrect_1">morgen</string>
+    <string name="date_3_incorrect_2">gestern</string>
+    <string name="date_3_incorrect_3">Tag</string>
+
+    <string name="date_4_question">What is the German word for "tomorrow"?</string>
+    <string name="date_4_correct">morgen</string>
+    <string name="date_4_incorrect_1">heute</string>
+    <string name="date_4_incorrect_2">gestern</string>
+    <string name="date_4_incorrect_3">übermorgen</string>
+
+    <string name="date_5_question">How do you say "yesterday" in German?</string>
+    <string name="date_5_correct">gestern</string>
+    <string name="date_5_incorrect_1">heute</string>
+    <string name="date_5_incorrect_2">morgen</string>
+    <string name="date_5_incorrect_3">vorgestern</string>
+
+    <string name="date_6_question">What is the German word for "week"?</string>
+    <string name="date_6_correct">Woche</string>
+    <string name="date_6_incorrect_1">Wochenende</string>
+    <string name="date_6_incorrect_2">Tag</string>
+    <string name="date_6_incorrect_3">Monat</string>
+
+    <string name="date_7_question">How many days are there in a week?</string>
+    <string name="date_7_correct">sieben</string>
+    <string name="date_7_incorrect_1">fünf</string>
+    <string name="date_7_incorrect_2">sechs</string>
+    <string name="date_7_incorrect_3">acht</string>
+
+    <string name="date_8_question">What is the German word for "weekend"?</string>
+    <string name="date_8_correct">Wochenende</string>
+    <string name="date_8_incorrect_1">Woche</string>
+    <string name="date_8_incorrect_2">Freitag</string>
+    <string name="date_8_incorrect_3">Sonntag</string>
+
+    <string name="date_9_question">What is the first day of the week in German?</string>
+    <string name="date_9_correct">Montag</string>
+    <string name="date_9_incorrect_1">Sonntag</string>
+    <string name="date_9_incorrect_2">Dienstag</string>
+    <string name="date_9_incorrect_3">Samstag</string>
+
+    <string name="date_10_question">What is the last day of the week in German?</string>
+    <string name="date_10_correct">Sonntag</string>
+    <string name="date_10_incorrect_1">Samstag</string>
+    <string name="date_10_incorrect_2">Montag</string>
+    <string name="date_10_incorrect_3">Freitag</string>
+
+    <string name="date_11_question">What is the German word for "month"?</string>
+    <string name="date_11_correct">Monat</string>
+    <string name="date_11_incorrect_1">Jahr</string>
+    <string name="date_11_incorrect_2">Woche</string>
+    <string name="date_11_incorrect_3">Tag</string>
+
+    <string name="date_12_question">How many months are there in a year?</string>
+    <string name="date_12_correct">zwölf</string>
+    <string name="date_12_incorrect_1">zehn</string>
+    <string name="date_12_incorrect_2">elf</string>
+    <string name="date_12_incorrect_3">dreizehn</string>
+
+    <string name="date_13_question">What is the German word for "year"?</string>
+    <string name="date_13_correct">Jahr</string>
+    <string name="date_13_incorrect_1">Monat</string>
+    <string name="date_13_incorrect_2">Woche</string>
+    <string name="date_13_incorrect_3">Tag</string>
+
+    <string name="date_14_question">Which month is "Mai" in English?</string>
+    <string name="date_14_correct">May</string>
+    <string name="date_14_incorrect_1">March</string>
+    <string name="date_14_incorrect_2">June</string>
+    <string name="date_14_incorrect_3">April</string>
+
+    <string name="date_15_question">What is "July" in German?</string>
+    <string name="date_15_correct">Juli</string>
+    <string name="date_15_incorrect_1">Juni</string>
+    <string name="date_15_incorrect_2">August</string>
+    <string name="date_15_incorrect_3">Januar</string>
+
+    <string name="date_16_question">How do you say "date" (as in calendar date) in German?</string>
+    <string name="date_16_correct">Datum</string>
+    <string name="date_16_incorrect_1">Tag</string>
+    <string name="date_16_incorrect_2">Zeit</string>
+    <string name="date_16_incorrect_3">Kalender</string>
+
+    <string name="date_17_question">What is the German word for "birthday"?</string>
+    <string name="date_17_correct">Geburtstag</string>
+    <string name="date_17_incorrect_1">Geburtsdatum</string>
+    <string name="date_17_incorrect_2">Jahrestag</string>
+    <string name="date_17_incorrect_3">Feiertag</string>
+
+    <string name="date_18_question">Translate: "My birthday is on the 15th of August."</string>
+    <string name="date_18_correct">Mein Geburtstag ist am fünfzehnten August.</string>
+    <string name="date_18_incorrect_1">Mein Geburtstag ist im fünfzehnten August.</string>
+    <string name="date_18_incorrect_2">Mein Geburtstag ist auf dem fünfzehnten August.</string>
+    <string name="date_18_incorrect_3">Ich habe Geburtstag am fünfzehnten August.</string>
+
+    <string name="date_19_question">How do you write "25.12." in full German date format?</string>
+    <string name="date_19_correct">der fünfundzwanzigste Dezember</string>
+    <string name="date_19_incorrect_1">der fünfundzwanzig Dezember</string>
+    <string name="date_19_incorrect_2">fünfundzwanzigster Dezember</string>
+    <string name="date_19_incorrect_3">am fünfundzwanzigsten Dezember</string>
+
+    <string name="date_20_question">When is Christmas Eve celebrated in Germany?</string>
+    <string name="date_20_correct">am vierundzwanzigsten Dezember</string>
+    <string name="date_20_incorrect_1">am fünfundzwanzigsten Dezember</string>
+    <string name="date_20_incorrect_2">am sechsundzwanzigsten Dezember</string>
+    <string name="date_20_incorrect_3">im Dezember</string>
+
+    <string name="date_21_question">What is the German word for "weekday"?</string>
+    <string name="date_21_correct">Wochentag</string>
+    <string name="date_21_incorrect_1">Wochenende</string>
+    <string name="date_21_incorrect_2">Tag</string>
+    <string name="date_21_incorrect_3">Arbeitstag</string>
+
+    <string name="date_22_question">What day of the week is "Donnerstag"?</string>
+    <string name="date_22_correct">Thursday</string>
+    <string name="date_22_incorrect_1">Tuesday</string>
+    <string name="date_22_incorrect_2">Wednesday</string>
+    <string name="date_22_incorrect_3">Friday</string>
+
+    <string name="date_23_question">How do you say "What date is it today?" in German?</string>
+    <string name="date_23_correct">Welches Datum ist heute?</string>
+    <string name="date_23_incorrect_1">Was ist heute für ein Tag?</string>
+    <string name="date_23_incorrect_2">Welcher Tag ist heute?</string>
+    <string name="date_23_incorrect_3">Was für ein Datum ist heute?</string>
+
+    <string name="date_24_question">Translate: "The week has seven days."</string>
+    <string name="date_24_correct">Die Woche hat sieben Tage.</string>
+    <string name="date_24_incorrect_1">Der Woche hat sieben Tage.</string>
+    <string name="date_24_incorrect_2">Das Woche hat sieben Tage.</string>
+    <string name="date_24_incorrect_3">Eine Woche hat sieben Tage.</string>
+
+    <string name="date_25_question">What isthe German for "fortnight"?</string>
+    <string name="date_25_correct">vierzehn Tage</string>
+    <string name="date_25_incorrect_1">zwei Wochen</string>
+    <string name="date_25_incorrect_2">ein Monat</string>
+    <string name="date_25_incorrect_3">zehn Tage</string>
+
+    <string name="date_26_question">Which day comes after "Freitag"?</string>
+    <string name="date_26_correct">Samstag</string>
+    <string name="date_26_incorrect_1">Sonntag</string>
+    <string name="date_26_incorrect_2">Donnerstag</string>
+    <string name="date_26_incorrect_3">Montag</string>
+
+    <string name="date_27_question">What is "September" in German?</string>
+    <string name="date_27_correct">September</string>
+    <string name="date_27_incorrect_1">Oktober</string>
+    <string name="date_27_incorrect_2">August</string>
+    <string name="date_27_incorrect_3">November</string>
+
+    <string name="date_28_question">How do you say "weekend" in plural in German?</string>
+    <string name="date_28_correct">Wochenenden</string>
+    <string name="date_28_incorrect_1">Wochenendes</string>
+    <string name="date_28_incorrect_2">Wochenende</string>
+    <string name="date_28_incorrect_3">die Wochenende</string>
+
+    <string name="date_29_question">Translate: "See you next week!"</string>
+    <string name="date_29_correct">Bis nächste Woche!</string>
+    <string name="date_29_incorrect_1">Bis nächstes Woche!</string>
+    <string name="date_29_incorrect_2">Bis nächste Wochen!</string>
+    <string name="date_29_incorrect_3">Wir sehen uns nächste Woche!</string>
+
+    <string name="date_30_question">What is the German word for "leap year"?</string>
+    <string name="date_30_correct">Schaltjahr</string>
+    <string name="date_30_incorrect_1">Langjahr</string>
+    <string name="date_30_incorrect_2">Extrajahr</string>
+    <string name="date_30_incorrect_3">Springjahr</string>
+
+    <string name="date_31_question">Heute ist ____. (Today is Monday.)</string>
+    <string name="date_31_correct">Montag</string>
+    <string name="date_31_incorrect_1">Dienstag</string>
+    <string name="date_31_incorrect_2">Mittwoch</string>
+    <string name="date_31_incorrect_3">Donnerstag</string>
+
+    <string name="date_32_question">Mein Geburtstag ist im ____. (My birthday is in May.)</string>
+    <string name="date_32_correct">Mai</string>
+    <string name="date_32_incorrect_1">Juni</string>
+    <string name="date_32_incorrect_2">Juli</string>
+    <string name="date_32_incorrect_3">April</string>
+
+    <string name="date_33_question">____ ist der erste Tag der Woche. (Monday is the first day of the week.)</string>
+    <string name="date_33_correct">Montag</string>
+    <string name="date_33_incorrect_1">Sonntag</string>
+    <string name="date_33_incorrect_2">Dienstag</string>
+    <string name="date_33_incorrect_3">Samstag</string>
+
+    <string name="date_34_question">Das Jahr hat zwölf ____. (The year has twelve months.)</string>
+    <string name="date_34_correct">Monate</string>
+    <string name="date_34_incorrect_1">Wochen</string>
+    <string name="date_34_incorrect_2">Tage</string>
+    <string name="date_34_incorrect_3">Jahre</string>
+
+    <string name="date_35_question">Wir habenheute den ____. (Today is the 5th.)</string>
+    <string name="date_35_correct">fünften</string>
+    <string name="date_35_incorrect_1">sechsten</string>
+    <string name="date_35_incorrect_2">siebten</string>
+    <string name="date_35_incorrect_3">vierten</string>
+
+    <string name="date_36_question">Gestern war ____. (Yesterday was Sunday.)</string>
+    <string name="date_36_correct">Sonntag</string>
+    <string name="date_36_incorrect_1">Montag</string>
+    <string name="date_36_incorrect_2">Samstag</string>
+    <string name="date_36_incorrect_3">Freitag</string>
+
+    <string name="date_37_question">Der ____ kommt nach dem Mittwoch. (Thursday comes after Wednesday.)</string>
+    <string name="date_37_correct">Donnerstag</string>
+    <string name="date_37_incorrect_1">Dienstag</string>
+    <string name="date_37_incorrect_2">Freitag</string>
+    <string name="date_37_incorrect_3">Samstag</string>
+
+    <string name="date_38_question">____ haben im Jahr 365 Tage. (We have 365 days in a year.)</string>
+    <string name="date_38_correct">Wir</string>
+    <string name="date_38_incorrect_1">Sie</string>
+    <string name="date_38_incorrect_2">Ihr</string>
+    <string name="date_38_incorrect_3">Es</string>
+
+    <string name="date_39_question">Ein ____ hat vier Wochen. (A month has four weeks.)</string>
+    <string name="date_39_correct">Monat</string>
+    <string name="date_39_incorrect_1">Jahr</string>
+    <string name="date_39_incorrect_2">Woche</string>
+    <string name="date_39_incorrect_3">Tag</string>
+
+    <string name="date_40_question">Im ____ feiern wir Weihnachten. (We celebrate Christmas in December.)</string>
+    <string name="date_40_correct">Dezember</string>
+    <string name="date_40_incorrect_1">Januar</string>
+    <string name="date_40_incorrect_2">November</string>
+    <string name="date_40_incorrect_3">Februar</string>
+
+
+    <string name="date_41_question">Der ____ ist vor dem Sonntag. (Saturday is before Sunday.)</string>
+    <string name="date_41_correct">Samstag</string>
+    <string name="date_41_incorrect_1">Freitag</string>
+    <string name="date_41_incorrect_2">Montag</string>
+    <string name="date_41_incorrect_3">Donnerstag</string>
+
+    <string name="date_42_question">Welcher ____ ist heute? (What day is it today?)</string>
+    <string name="date_42_correct">Tag</string>
+    <string name="date_42_incorrect_1">Datum</string>
+    <string name="date_42_incorrect_2">Monat</string>
+    <string name="date_42_incorrect_3">Jahr</string>
+
+    <string name="date_43_question">____ kommtder Juli. (July comes after June.)</string>
+    <string name="date_43_correct">Nach dem Juni</string>
+    <string name="date_43_incorrect_1">Vor dem Juni</string>
+    <string name="date_43_incorrect_2">Im Juni</string>
+    <string name="date_43_incorrect_3">Am Juni</string>
+
+    <string name="date_44_question">Ein ____ hat 366 Tage. (A leap year has 366 days.)</string>
+    <string name="date_44_correct">Schaltjahr</string>
+    <string name="date_44_incorrect_1">Jahr</string>
+    <string name="date_44_incorrect_2">Monat</string>
+    <string name="date_44_incorrect_3">Woche</string>
+
+    <string name="date_45_question">Ostern ist im ____. (Easter is in spring.)</string>
+    <string name="date_45_correct">Frühling</string>
+    <string name="date_45_incorrect_1">Sommer</string>
+    <string name="date_45_incorrect_2">Herbst</string>
+    <string name="date_45_incorrect_3">Winter</string>
+
+    <string name="date_46_question">____ feiern wir Silvester. (We celebrate New Year\'s Eve on December 31st.)</string>
+    <string name="date_46_correct">Am 31. Dezember</string>
+    <string name="date_46_incorrect_1">Im Dezember</string>
+    <string name="date_46_incorrect_2">Am 1. Januar</string>
+    <string name="date_46_incorrect_3">Im Januar</string>
+
+    <string name="date_47_question">Der ____ ist der zweite Tag der Woche. (Tuesday is the second day of the week.)</string>
+    <string name="date_47_correct">Dienstag</string>
+    <string name="date_47_incorrect_1">Mittwoch</string>
+    <string name="date_47_incorrect_2">Donnerstag</string>
+    <string name="date_47_incorrect_3">Freitag</string>
+
+    <string name="date_48_question">____ Weihnachten haben wir Ferien. (We have holidays during Christmas.)</string>
+    <string name="date_48_correct">An</string>
+    <string name="date_48_incorrect_1">In</string>
+    <string name="date_48_incorrect_2">Im</string>
+    <string name="date_48_incorrect_3">Am</string>
+
+    <string name="date_49_question">Alle vier Jahre ist ein ____. (Every four years is a leap year.)</string>
+    <string name="date_49_correct">Schaltjahr</string>
+    <string name="date_49_incorrect_1">langes Jahr</string>
+    <string name="date_49_incorrect_2">neues Jahr</string>
+    <string name="date_49_incorrect_3">großes Jahr</string>
+
+    <string name="date_50_question">Heute ist der ____ April. (Today is the 1st of April.)</string>
+    <string name="date_50_correct">erste</string>
+    <string name="date_50_incorrect_1">eins</string>
+    <string name="date_50_incorrect_2">zweite</string>
+    <string name="date_50_incorrect_3">dritte</string>
+
+
+    <string name="date_51_question">Der Monat ____ hat 30 Tage. (The month of June has 30 days.)</string>
+    <string name="date_51_correct">Juni</string>
+    <string name="date_51_incorrect_1">Juli</string>
+    <string name="date_51_incorrect_2">August</string>
+    <string name="date_51_incorrect_3">Mai</string>
+
+    <string name="date_52_question">____ ist der Tag vor dem Dienstag. (Monday is the day before Tuesday.)</string>
+    <string name="date_52_correct">Montag</string>
+    <string name="date_52_incorrect_1">Sonntag</string>
+    <string name="date_52_incorrect_2">Mittwoch</string>
+    <string name="date_52_incorrect_3">Donnerstag</string>
+
+    <string name="date_53_question">Im ____ fallen die Blätter von den Bäumen. (In autumn, the leaves fall from the trees.)</string>
+    <string name="date_53_correct">Herbst</string>
+    <string name="date_53_incorrect_1">Winter</string>
+    <string name="date_53_incorrect_2">Frühling</string>
+    <string name="date_53_incorrect_3">Sommer</string>
+
+    <string name="date_54_question">____ feiern wir Karneval. (We celebrate carnival in February.)</string>
+    <string name="date_54_correct">Im Februar</string>
+    <string name="date_54_incorrect_1">Im März</string>
+    <string name="date_54_incorrect_2">Im Januar</string>
+    <string name="date_54_incorrect_3">Im April</string>
+
+    <string name="date_55_question">Nach dem Sommer kommt der ____. (Autumn comes after summer.)</string>
+    <string name="date_55_correct">Herbst</string>
+    <string name="date_55_incorrect_1">Winter</string>
+    <string name="date_55_incorrect_2">Frühling</string>
+    <string name="date_55_incorrect_3">Sommer</string>
+
+    <string name="date_56_question">____ ist der letzte Monat des Jahres. (December is the last month of the year.)</string>
+    <string name="date_56_correct">Dezember</string>
+    <string name="date_56_incorrect_1">November</string>
+    <string name="date_56_incorrect_2">Januar</string>
+    <string name="date_56_incorrect_3">Februar</string>
+
+    <string name="date_57_question">Ein Jahr hat 52 ____. (A year has 52 weeks.)</string>
+    <string name="date_57_correct">Wochen</string>
+    <string name="date_57_incorrect_1">Monate</string>
+    <string name="date_57_incorrect_2">Tage</string>
+    <string name="date_57_incorrect_3">Stunden</string>
+
+    <string name="date_58_question">____ ist es warm und sonnig. (It is warm and sunny in summer.)</string>
+    <string name="date_58_correct">Im Sommer</string>
+    <string name="date_58_incorrect_1">Im Winter</string>
+    <string name="date_58_incorrect_2">Im Frühling</string>
+    <string name="date_58_incorrect_3">Im Herbst</string>
+
+    <string name="date_59_question">Am ____ ist es kalt und es schneit oft. (It is cold and often snows in winter.)</string>
+    <string name="date_59_correct">Winter</string>
+    <string name="date_59_incorrect_1">Sommer</string>
+    <string name="date_59_incorrect_2">Herbst</string>
+    <string name="date_59_incorrect_3">Frühling</string>
+
+    <string name="date_60_question">____ blühen die Blumen. (Flowers bloom in spring.)</string>
+    <string name="date_60_correct">Im Frühling</string>
+    <string name="date_60_incorrect_1">Im Sommer</string>
+    <string name="date_60_incorrect_2">Im Herbst</string>
+    <string name="date_60_incorrect_3">Im Winter</string>
+
+    <string name="date_61_question">Mein Geburtstag ist am ____. (My birthday is on the 10th.)</string>
+    <string name="date_61_correct">zehnten</string>
+    <string name="date_61_incorrect_1">elfte</string>
+    <string name="date_61_incorrect_2">neunte</string>
+    <string name="date_61_incorrect_3">zwölfte</string>
+
+    <string name="date_62_question">____ feiern wir Halloween. (We celebrate Halloween in October.)</string>
+    <string name="date_62_correct">Im Oktober</string>
+    <string name="date_62_incorrect_1">Im November</string>
+    <string name="date_62_incorrect_2">Im Dezember</string>
+    <string name="date_62_incorrect_3">Im September</string>
+
+    <string name="date_63_question">Der ____ ist nach dem Montag. (Tuesday is after Monday.)</string>
+    <string name="date_63_correct">Dienstag</string>
+    <string name="date_63_incorrect_1">Mittwoch</string>
+    <string name="date_63_incorrect_2">Donnerstag</string>
+    <string name="date_63_incorrect_3">Freitag</string>
+
+    <string name="date_64_question">____ ist der Tag der Liebe. (Valentine\'s Day is the day of love.)</string>
+    <string name="date_64_correct">Valentinstag</string>
+    <string name="date_64_incorrect_1">Muttertag</string>
+    <string name="date_64_incorrect_2">Vatertag</string>
+    <string name="date_64_incorrect_3">Weihnachten</string>
+
+    <string name="date_65_question">____ beginnt die Schule wieder. (School starts again in September.)</string>
+    <string name="date_65_correct">ImSeptember</string>
+    <string name="date_65_incorrect_1">Im August</string>
+    <string name="date_65_incorrect_2">Im Oktober</string>
+    <string name="date_65_incorrect_3">Im Juli</string>
+
+    <string name="date_66_question">Ein ____ hat 24 Stunden. (A day has 24 hours.)</string>
+    <string name="date_66_correct">Tag</string>
+    <string name="date_66_incorrect_1">Woche</string>
+    <string name="date_66_incorrect_2">Monat</string>
+    <string name="date_66_incorrect_3">Jahr</string>
+
+    <string name="date_67_question">____ feiern wir den Tag der Deutschen Einheit. (We celebrate German Unity Day on October 3rd.)</string>
+    <string name="date_67_correct">Am 3. Oktober</string>
+    <string name="date_67_incorrect_1">Am 1. Mai</string>
+    <string name="date_67_incorrect_2">Am 25. Dezember</string>
+    <string name="date_67_incorrect_3">Am 17. Juni</string>
+
+    <string name="date_68_question">____ ist der kürzeste Monat des Jahres. (February is the shortest month of the year.)</string>
+    <string name="date_68_correct">Februar</string>
+    <string name="date_68_incorrect_1">Januar</string>
+    <string name="date_68_incorrect_2">März</string>
+    <string name="date_68_incorrect_3">April</string>
+
+    <string name="date_69_question">Die Woche endet am ____. (The week ends on Sunday.)</string>
+    <string name="date_69_correct">Sonntag</string>
+    <string name="date_69_incorrect_1">Montag</string>
+    <string name="date_69_incorrect_2">Samstag</string>
+    <string name="date_69_incorrect_3">Freitag</string>
+
+    <string name="date_70_question">____ feiern wir Ostern. (We celebrate Easter in spring.)</string>
+    <string name="date_70_correct">Im Frühling</string>
+    <string name="date_70_incorrect_1">Im Sommer</string>
+    <string name="date_70_incorrect_2">Im Herbst</string>
+    <string name="date_70_incorrect_3">Im Winter</string>
+
+    <string name="date_71_question">____ ist der Tag nach dem Samstag. (Sunday is the day after Saturday.)</string>
+    <string name="date_71_correct">Sonntag</string>
+    <string name="date_71_incorrect_1">Montag</string>
+    <string name="date_71_incorrect_2">Freitag</string>
+    <string name="date_71_incorrect_3">Dienstag</string>
+
+    <string name="date_72_question">____ beginnt der Frühling. (Spring begins in March.)</string>
+    <string name="date_72_correct">Im März</string>
+    <string name="date_72_incorrect_1">Im April</string>
+    <string name="date_72_incorrect_2">Im Mai</string>
+    <string name="date_72_incorrect_3">Im Februar</string>
+
+    <string name="date_73_question">____ feiern wir den Muttertag. (We celebrate Mother\'s Day in May.)</string>
+    <string name="date_73_correct">Im Mai</string>
+    <string name="date_73_incorrect_1">Im Juni</string>
+    <string name="date_73_incorrect_2">Im Juli</string>
+    <string name="date_73_incorrect_3">Im April</string>
+
+    <string name="date_74_question">____ ist der vierte Tag der Woche. (Thursday is the fourth day of the week.)</string>
+    <string name="date_74_correct">Donnerstag</string>
+    <string name="date_74_incorrect_1">Mittwoch</string>
+    <string name="date_74_incorrect_2">Freitag</string>
+    <string name="date_74_incorrect_3">Dienstag</string>
+
+    <string name="date_75_question">____ feiern wir Allerheiligen. (We celebrate All Saints\' Day in November.)</string>
+    <string name="date_75_correct">Im November</string>
+    <string name="date_75_incorrect_1">Im Oktober</string>
+    <string name="date_75_incorrect_2">Im Dezember</string>
+    <string name="date_75_incorrect_3">Im September</string>
+
+    <string name="date_76_question">____ ist der Tag vor dem Freitag. (Thursday is the day before Friday.)</string>
+    <string name="date_76_correct">Donnerstag</string>
+    <string name="date_76_incorrect_1">Mittwoch</string>
+    <string name="date_76_incorrect_2">Dienstag</string>
+    <string name="date_76_incorrect_3">Samstag</string>
+
+    <string name="date_77_question">____ feiern wir Nikolaus. (We celebrate St. Nicholas Day in December.)</string>
+    <string name="date_77_correct">Im Dezember</string>
+    <string name="date_77_incorrect_1">Im November</string>
+    <string name="date_77_incorrect_2">Im Januar</string>
+    <string name="date_77_incorrect_3">Im Oktober</string>
+
+    <string name="date_78_question">____ ist der Monat nach dem Juli. (August is the month after July.)</string>
+    <string name="date_78_correct">August</string>
+    <string name="date_78_incorrect_1">September</string>
+    <string name="date_78_incorrect_2">Juni</string>
+    <string name="date_78_incorrect_3">Mai</string>
+
+    <string name="date_79_question">____ ist es heiß und die Sonne scheint. (It is hot and the sun shines in summer.)</string>
+    <string name="date_79_correct">Im Sommer</string>
+    <string name="date_79_incorrect_1">Im Winter</string>
+    <string name="date_79_incorrect_2">Im Frühling</string>
+    <string name="date_79_incorrect_3">Im Herbst</string>
+
+    <string name="date_80_question">____feiern wir Erntedankfest. (We celebrate Thanksgiving in autumn.)</string>
+    <string name="date_80_correct">Im Herbst</string>
+    <string name="date_80_incorrect_1">Im Sommer</string>
+    <string name="date_80_incorrect_2">Im Frühling</string>
+    <string name="date_80_incorrect_3">Im Winter</string>
 </resources>

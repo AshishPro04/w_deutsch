@@ -5,6 +5,7 @@ import com.aschiesch.dspiel.data.quiz.QuizMode
 import com.aschiesch.dspiel.data.quiz.ArticleResource
 import com.aschiesch.dspiel.data.quiz.ArticleSource
 import com.aschiesch.dspiel.data.quiz.NumberSource
+import com.aschiesch.dspiel.data.quiz.TimeResource
 import com.aschiesch.dspiel.data.quiz.VerbConjugationResource
 import com.aschiesch.dspiel.data.results.Result
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -23,7 +24,12 @@ class QuizViewModel(
         QuizMode.SINGLE_DIGIT.name -> NumberSource.numbersSingleDigitNumeric.shuffled()
         QuizMode.DOUBLE_DIGIT.name -> NumberSource.numbersDoubleDigitNumeric.shuffled()
         QuizMode.TRIPLE_DIGIT.name -> NumberSource.numbersTripleDigitNumeric.shuffled()
-        QuizMode.VERB_CONJUGATIONS.name -> VerbConjugationResource.verbConjugations1.shuffled().take(30)
+        QuizMode.VERB_CONJUGATIONS_1.name -> VerbConjugationResource.verbConjugations1.shuffled().take(30)
+        QuizMode.VERB_CONJUGATIONS_2.name -> VerbConjugationResource.verbConjugations2.shuffled().take(30)
+        QuizMode.VERB_CONJUGATIONS_3.name -> VerbConjugationResource.verbConjugations3.shuffled().take(30)
+        QuizMode.TIME_1.name -> TimeResource.timeGuess1.shuffled().take(30)
+        QuizMode.TIME_2.name -> TimeResource.timeGuess2.shuffled().take(30)
+        QuizMode.DATE.name -> TimeResource.dateResources.shuffled().take(30)
         else ->  ArticleSource.definitiveArticles.shuffled()
     }
                 private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(

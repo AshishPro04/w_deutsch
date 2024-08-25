@@ -11,7 +11,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -24,9 +26,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.aschiesch.dspiel.R
-import com.aschiesch.dspiel.data.quiz.QuizMode
 import com.aschiesch.dspiel.data.quiz.QuizInfo
+import com.aschiesch.dspiel.data.quiz.QuizItem
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 
 @Composable
@@ -34,35 +35,16 @@ fun HomeScreen(
     onQuizOpen: (String) -> Unit
 ) {
     Surface (){
-        Column(modifier = Modifier.fillMaxWidth()) {
-            Category(
-                categoryName = stringResource(R.string.article),
-                playItems = listOf(
-                    QuizInfo(R.string.definite_article, QuizMode.DEFINITE_ARTICLE),
-                    QuizInfo(R.string.indefinite_article, QuizMode.INDEFINITE_ARTICLE),
-                    QuizInfo(R.string.indefinite_negative_article, QuizMode.NEGATIVE_ARTICLE)
-                ),
-                modifier = Modifier.padding(8.dp),
-                onOpen = onQuizOpen
-            )
-            Category(
-                categoryName = stringResource(id = R.string.numbers),
-                playItems = listOf(
-                    QuizInfo(R.string.single_digit, QuizMode.SINGLE_DIGIT),
-                    QuizInfo(R.string.double_digit, QuizMode.DOUBLE_DIGIT),
-                    QuizInfo(R.string.triple_digit, QuizMode.TRIPLE_DIGIT)
-                ),
-                modifier = Modifier.padding(8.dp),
-                onOpen = onQuizOpen
-            )
-            Category(
-                categoryName = stringResource(id = R.string.verbs_title),
-                playItems = listOf(
-                    QuizInfo(R.string.verb_conjugations_1, QuizMode.VERB_CONJUGATIONS)
-                ),
-                modifier = Modifier.padding(8.dp),
-                onOpen = onQuizOpen
-            )
+        LazyColumn(modifier = Modifier
+            .fillMaxSize()
+        ) {
+            items(QuizItem.quizGroups){
+                Category(
+                    categoryName = stringResource(id = it.quizGroupTitle),
+                    playItems = it.quizItems,
+                    onOpen = onQuizOpen
+                )
+            }
         }
     }
 }

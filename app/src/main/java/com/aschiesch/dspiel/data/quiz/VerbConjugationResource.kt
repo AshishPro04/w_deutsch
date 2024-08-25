@@ -1609,6 +1609,899 @@ object VerbConjugationResource {
                 R.string.verb_180_incorrect_1,
                 R.string.verb_180_incorrect_2
             )
+        ),
+        ArticleResource(
+            question = R.string.verb_181_question,
+            answer = R.string.verb_181_correct,
+            options = shuffledOptions(
+                R.string.verb_181_correct,
+                R.string.verb_181_incorrect_1,
+                R.string.verb_181_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_182_question,
+            answer = R.string.verb_182_correct,
+            options = shuffledOptions(
+                R.string.verb_182_correct,
+                R.string.verb_182_incorrect_1,
+                R.string.verb_182_incorrect_2
+            )
+        ),ArticleResource(
+            question = R.string.verb_183_question,
+            answer = R.string.verb_183_correct,
+            options = shuffledOptions(
+                R.string.verb_183_correct,
+                R.string.verb_183_incorrect_1,
+                R.string.verb_183_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_184_question,
+            answer = R.string.verb_184_correct,options = shuffledOptions(
+                R.string.verb_184_correct,
+                R.string.verb_184_incorrect_1,
+                R.string.verb_184_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_185_question,
+            answer = R.string.verb_185_correct,
+            options = shuffledOptions(
+                R.string.verb_185_correct,
+                R.string.verb_185_incorrect_1,
+                R.string.verb_185_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_186_question,
+            answer = R.string.verb_186_correct,
+            options = shuffledOptions(
+                R.string.verb_186_correct,
+                R.string.verb_186_incorrect_1,
+                R.string.verb_186_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_187_question,
+            answer = R.string.verb_187_correct,
+            options = shuffledOptions(
+                R.string.verb_187_correct,
+                R.string.verb_187_incorrect_1,
+                R.string.verb_187_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_188_question,
+            answer = R.string.verb_188_correct,
+            options = shuffledOptions(
+                R.string.verb_188_correct,
+                R.string.verb_188_incorrect_1,
+                R.string.verb_188_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_189_question,
+            answer = R.string.verb_189_correct,
+            options = shuffledOptions(
+                R.string.verb_189_correct,
+                R.string.verb_189_incorrect_1,
+                R.string.verb_189_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_190_question,
+            answer = R.string.verb_190_correct,
+            options = shuffledOptions(
+                R.string.verb_190_correct,
+                R.string.verb_190_incorrect_1,
+                R.string.verb_190_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_191_question,
+            answer = R.string.verb_191_correct,
+            options = shuffledOptions(
+                R.string.verb_191_correct,
+                R.string.verb_191_incorrect_1,
+                R.string.verb_191_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_192_question,
+            answer = R.string.verb_192_correct,
+            options = shuffledOptions(
+                R.string.verb_192_correct,
+                R.string.verb_192_incorrect_1,
+                R.string.verb_192_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_193_question,
+            answer = R.string.verb_193_correct,
+            options = shuffledOptions(
+                R.string.verb_193_correct,
+                R.string.verb_193_incorrect_1,
+                R.string.verb_193_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_194_question,
+            answer = R.string.verb_194_correct,
+            options = shuffledOptions(
+                R.string.verb_194_correct,
+                R.string.verb_194_incorrect_1,
+                R.string.verb_194_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_195_question,
+            answer = R.string.verb_195_correct,
+            options = shuffledOptions(
+                R.string.verb_195_correct,
+                R.string.verb_195_incorrect_1,
+                R.string.verb_195_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_196_question,
+            answer = R.string.verb_196_correct,
+            options = shuffledOptions(
+                R.string.verb_196_correct,
+                R.string.verb_196_incorrect_1,
+                R.string.verb_196_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_197_question,
+            answer = R.string.verb_197_correct,
+            options = shuffledOptions(
+                R.string.verb_197_correct,
+                R.string.verb_197_incorrect_1,
+                R.string.verb_197_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_198_question,
+            answer = R.string.verb_198_correct,
+            options = shuffledOptions(
+                R.string.verb_198_correct,
+                R.string.verb_198_incorrect_1,
+                R.string.verb_198_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_199_question,
+            answer = R.string.verb_199_correct,
+            options = shuffledOptions(
+                R.string.verb_199_correct,
+                R.string.verb_199_incorrect_1,
+                R.string.verb_199_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_200_question,
+            answer = R.string.verb_200_correct,
+            options = shuffledOptions(
+                R.string.verb_200_correct,
+                R.string.verb_200_incorrect_1,
+                R.string.verb_200_incorrect_2
+            )
+        ),
+    )
+
+    val verbConjugations3 = listOf(
+        ArticleResource(
+            question = R.string.verb_201_question,
+            answer = R.string.verb_201_correct,
+            options = shuffledOptions(
+                R.string.verb_201_correct,
+                R.string.verb_201_incorrect_1,
+                R.string.verb_201_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_202_question,
+            answer = R.string.verb_202_correct,
+            options = shuffledOptions(
+                R.string.verb_202_correct,
+                R.string.verb_202_incorrect_1,
+                R.string.verb_202_incorrect_2
+            )
+        ),ArticleResource(
+            question = R.string.verb_203_question,
+            answer = R.string.verb_203_correct,
+            options = shuffledOptions(
+                R.string.verb_203_correct,
+                R.string.verb_203_incorrect_1,
+                R.string.verb_203_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_204_question,
+            answer = R.string.verb_204_correct,options = shuffledOptions(
+                R.string.verb_204_correct,
+                R.string.verb_204_incorrect_1,
+                R.string.verb_204_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_205_question,
+            answer = R.string.verb_205_correct,
+            options = shuffledOptions(
+                R.string.verb_205_correct,
+                R.string.verb_205_incorrect_1,
+                R.string.verb_205_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_206_question,
+            answer = R.string.verb_206_correct,
+            options = shuffledOptions(
+                R.string.verb_206_correct,
+                R.string.verb_206_incorrect_1,
+                R.string.verb_206_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_207_question,
+            answer = R.string.verb_207_correct,
+            options = shuffledOptions(
+                R.string.verb_207_correct,
+                R.string.verb_207_incorrect_1,
+                R.string.verb_207_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_208_question,
+            answer = R.string.verb_208_correct,
+            options = shuffledOptions(
+                R.string.verb_208_correct,
+                R.string.verb_208_incorrect_1,
+                R.string.verb_208_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_209_question,
+            answer = R.string.verb_209_correct,
+            options = shuffledOptions(
+                R.string.verb_209_correct,
+                R.string.verb_209_incorrect_1,
+                R.string.verb_209_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_210_question,
+            answer = R.string.verb_210_correct,
+            options = shuffledOptions(
+                R.string.verb_210_correct,
+                R.string.verb_210_incorrect_1,
+                R.string.verb_210_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_211_question,
+            answer = R.string.verb_211_correct,
+            options = shuffledOptions(
+                R.string.verb_211_correct,
+                R.string.verb_211_incorrect_1,
+                R.string.verb_211_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_212_question,
+            answer = R.string.verb_212_correct,
+            options = shuffledOptions(
+                R.string.verb_212_correct,
+                R.string.verb_212_incorrect_1,
+                R.string.verb_212_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_213_question,
+            answer = R.string.verb_213_correct,
+            options = shuffledOptions(
+                R.string.verb_213_correct,
+                R.string.verb_213_incorrect_1,
+                R.string.verb_213_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_214_question,
+            answer = R.string.verb_214_correct,
+            options = shuffledOptions(
+                R.string.verb_214_correct,
+                R.string.verb_214_incorrect_1,
+                R.string.verb_214_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_215_question,
+            answer = R.string.verb_215_correct,
+            options = shuffledOptions(
+                R.string.verb_215_correct,
+                R.string.verb_215_incorrect_1,
+                R.string.verb_215_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_216_question,
+            answer = R.string.verb_216_correct,
+            options = shuffledOptions(
+                R.string.verb_216_correct,
+                R.string.verb_216_incorrect_1,
+                R.string.verb_216_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_217_question,
+            answer = R.string.verb_217_correct,
+            options = shuffledOptions(
+                R.string.verb_217_correct,
+                R.string.verb_217_incorrect_1,
+                R.string.verb_217_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_218_question,
+            answer = R.string.verb_218_correct,
+            options = shuffledOptions(
+                R.string.verb_218_correct,
+                R.string.verb_218_incorrect_1,
+                R.string.verb_218_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_219_question,
+            answer = R.string.verb_219_correct,
+            options = shuffledOptions(
+                R.string.verb_219_correct,
+                R.string.verb_219_incorrect_1,
+                R.string.verb_219_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_220_question,
+            answer = R.string.verb_220_correct,
+            options = shuffledOptions(
+                R.string.verb_220_correct,
+                R.string.verb_220_incorrect_1,
+                R.string.verb_220_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_221_question,
+            answer = R.string.verb_221_correct,
+            options = shuffledOptions(
+                R.string.verb_221_correct,
+                R.string.verb_221_incorrect_1,
+                R.string.verb_221_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_222_question,
+            answer = R.string.verb_222_correct,
+            options = shuffledOptions(
+                R.string.verb_222_correct,
+                R.string.verb_222_incorrect_1,
+                R.string.verb_222_incorrect_2
+            )
+        ),ArticleResource(
+            question = R.string.verb_223_question,
+            answer = R.string.verb_223_correct,
+            options = shuffledOptions(
+                R.string.verb_223_correct,
+                R.string.verb_223_incorrect_1,
+                R.string.verb_223_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_224_question,
+            answer = R.string.verb_224_correct,options= shuffledOptions(
+                R.string.verb_224_correct,
+                R.string.verb_224_incorrect_1,
+                R.string.verb_224_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_225_question,
+            answer = R.string.verb_225_correct,
+            options = shuffledOptions(
+                R.string.verb_225_correct,
+                R.string.verb_225_incorrect_1,
+                R.string.verb_225_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_226_question,
+            answer = R.string.verb_226_correct,
+            options = shuffledOptions(
+                R.string.verb_226_correct,
+                R.string.verb_226_incorrect_1,
+                R.string.verb_226_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_227_question,
+            answer = R.string.verb_227_correct,
+            options = shuffledOptions(
+                R.string.verb_227_correct,
+                R.string.verb_227_incorrect_1,
+                R.string.verb_227_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_228_question,
+            answer = R.string.verb_228_correct,
+            options = shuffledOptions(
+                R.string.verb_228_correct,
+                R.string.verb_228_incorrect_1,
+                R.string.verb_228_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_229_question,
+            answer = R.string.verb_229_correct,
+            options = shuffledOptions(
+                R.string.verb_229_correct,
+                R.string.verb_229_incorrect_1,
+                R.string.verb_229_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_230_question,
+            answer = R.string.verb_230_correct,
+            options = shuffledOptions(
+                R.string.verb_230_correct,
+                R.string.verb_230_incorrect_1,
+                R.string.verb_230_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_231_question,
+            answer = R.string.verb_231_correct,
+            options = shuffledOptions(
+                R.string.verb_231_correct,
+                R.string.verb_231_incorrect_1,
+                R.string.verb_231_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_232_question,
+            answer = R.string.verb_232_correct,
+            options = shuffledOptions(
+                R.string.verb_232_correct,
+                R.string.verb_232_incorrect_1,
+                R.string.verb_232_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_233_question,
+            answer = R.string.verb_233_correct,
+            options = shuffledOptions(
+                R.string.verb_233_correct,
+                R.string.verb_233_incorrect_1,
+                R.string.verb_233_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_234_question,
+            answer = R.string.verb_234_correct,
+            options = shuffledOptions(
+                R.string.verb_234_correct,
+                R.string.verb_234_incorrect_1,
+                R.string.verb_234_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_235_question,
+            answer = R.string.verb_235_correct,
+            options = shuffledOptions(
+                R.string.verb_235_correct,
+                R.string.verb_235_incorrect_1,
+                R.string.verb_235_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_236_question,
+            answer = R.string.verb_236_correct,
+            options = shuffledOptions(
+                R.string.verb_236_correct,
+                R.string.verb_236_incorrect_1,
+                R.string.verb_236_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_237_question,
+            answer = R.string.verb_237_correct,
+            options = shuffledOptions(
+                R.string.verb_237_correct,
+                R.string.verb_237_incorrect_1,
+                R.string.verb_237_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_238_question,
+            answer = R.string.verb_238_correct,
+            options = shuffledOptions(
+                R.string.verb_238_correct,
+                R.string.verb_238_incorrect_1,
+                R.string.verb_238_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_239_question,
+            answer = R.string.verb_239_correct,
+            options = shuffledOptions(
+                R.string.verb_239_correct,
+                R.string.verb_239_incorrect_1,
+                R.string.verb_239_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_240_question,
+            answer = R.string.verb_240_correct,
+            options = shuffledOptions(
+                R.string.verb_240_correct,
+                R.string.verb_240_incorrect_1,
+                R.string.verb_240_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_241_question,
+            answer = R.string.verb_241_correct,
+            options = shuffledOptions(
+                R.string.verb_241_correct,
+                R.string.verb_241_incorrect_1,
+                R.string.verb_241_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_242_question,
+            answer = R.string.verb_242_correct,
+            options = shuffledOptions(
+                R.string.verb_242_correct,
+                R.string.verb_242_incorrect_1,
+                R.string.verb_242_incorrect_2
+            )
+        ),ArticleResource(
+            question = R.string.verb_243_question,
+            answer = R.string.verb_243_correct,
+            options = shuffledOptions(
+                R.string.verb_243_correct,
+                R.string.verb_243_incorrect_1,
+                R.string.verb_243_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_244_question,
+            answer = R.string.verb_244_correct,options= shuffledOptions(
+                R.string.verb_244_correct,
+                R.string.verb_244_incorrect_1,
+                R.string.verb_244_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_245_question,
+            answer = R.string.verb_245_correct,
+            options = shuffledOptions(
+                R.string.verb_245_correct,
+                R.string.verb_245_incorrect_1,
+                R.string.verb_245_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_246_question,
+            answer = R.string.verb_246_correct,
+            options = shuffledOptions(
+                R.string.verb_246_correct,
+                R.string.verb_246_incorrect_1,
+                R.string.verb_246_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_247_question,
+            answer = R.string.verb_247_correct,
+            options = shuffledOptions(
+                R.string.verb_247_correct,
+                R.string.verb_247_incorrect_1,
+                R.string.verb_247_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_248_question,
+            answer = R.string.verb_248_correct,
+            options = shuffledOptions(
+                R.string.verb_248_correct,
+                R.string.verb_248_incorrect_1,
+                R.string.verb_248_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_249_question,
+            answer = R.string.verb_249_correct,
+            options = shuffledOptions(
+                R.string.verb_249_correct,
+                R.string.verb_249_incorrect_1,
+                R.string.verb_249_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_250_question,
+            answer = R.string.verb_250_correct,
+            options = shuffledOptions(
+                R.string.verb_250_correct,
+                R.string.verb_250_incorrect_1,
+                R.string.verb_250_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_251_question,
+            answer = R.string.verb_251_correct,
+            options = shuffledOptions(
+                R.string.verb_251_correct,
+                R.string.verb_251_incorrect_1,
+                R.string.verb_251_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_252_question,
+            answer = R.string.verb_252_correct,
+            options = shuffledOptions(
+                R.string.verb_252_correct,
+                R.string.verb_252_incorrect_1,
+                R.string.verb_252_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_253_question,
+            answer = R.string.verb_253_correct,
+            options = shuffledOptions(
+                R.string.verb_253_correct,
+                R.string.verb_253_incorrect_1,
+                R.string.verb_253_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_254_question,
+            answer = R.string.verb_254_correct,
+            options = shuffledOptions(
+                R.string.verb_254_correct,
+                R.string.verb_254_incorrect_1,
+                R.string.verb_254_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_255_question,
+            answer = R.string.verb_255_correct,
+            options = shuffledOptions(
+                R.string.verb_255_correct,
+                R.string.verb_255_incorrect_1,
+                R.string.verb_255_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_256_question,
+            answer = R.string.verb_256_correct,
+            options = shuffledOptions(
+                R.string.verb_256_correct,
+                R.string.verb_256_incorrect_1,
+                R.string.verb_256_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_257_question,
+            answer = R.string.verb_257_correct,
+            options = shuffledOptions(
+                R.string.verb_257_correct,
+                R.string.verb_257_incorrect_1,
+                R.string.verb_257_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_258_question,
+            answer = R.string.verb_258_correct,
+            options = shuffledOptions(
+                R.string.verb_258_correct,
+                R.string.verb_258_incorrect_1,
+                R.string.verb_258_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_259_question,
+            answer = R.string.verb_259_correct,
+            options = shuffledOptions(
+                R.string.verb_259_correct,
+                R.string.verb_259_incorrect_1,
+                R.string.verb_259_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_260_question,
+            answer = R.string.verb_260_correct,
+            options = shuffledOptions(
+                R.string.verb_260_correct,
+                R.string.verb_260_incorrect_1,
+                R.string.verb_260_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_261_question,
+            answer = R.string.verb_261_correct,
+            options = shuffledOptions(
+                R.string.verb_261_correct,
+                R.string.verb_261_incorrect_1,
+                R.string.verb_261_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_262_question,
+            answer = R.string.verb_262_correct,
+            options = shuffledOptions(
+                R.string.verb_262_correct,
+                R.string.verb_262_incorrect_1,
+                R.string.verb_262_incorrect_2
+            )
+        ),ArticleResource(
+            question = R.string.verb_263_question,
+            answer = R.string.verb_263_correct,
+            options = shuffledOptions(
+                R.string.verb_263_correct,
+                R.string.verb_263_incorrect_1,
+                R.string.verb_263_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_264_question,
+            answer = R.string.verb_264_correct,options= shuffledOptions(
+                R.string.verb_264_correct,
+                R.string.verb_264_incorrect_1,
+                R.string.verb_264_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_265_question,
+            answer = R.string.verb_265_correct,
+            options = shuffledOptions(
+                R.string.verb_265_correct,
+                R.string.verb_265_incorrect_1,
+                R.string.verb_265_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_266_question,
+            answer = R.string.verb_266_correct,
+            options = shuffledOptions(
+                R.string.verb_266_correct,
+                R.string.verb_266_incorrect_1,
+                R.string.verb_266_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_267_question,
+            answer = R.string.verb_267_correct,
+            options = shuffledOptions(
+                R.string.verb_267_correct,
+                R.string.verb_267_incorrect_1,
+                R.string.verb_267_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_268_question,
+            answer = R.string.verb_268_correct,
+            options = shuffledOptions(
+                R.string.verb_268_correct,
+                R.string.verb_268_incorrect_1,
+                R.string.verb_268_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_269_question,
+            answer = R.string.verb_269_correct,
+            options = shuffledOptions(
+                R.string.verb_269_correct,
+                R.string.verb_269_incorrect_1,
+                R.string.verb_269_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_270_question,
+            answer = R.string.verb_270_correct,
+            options = shuffledOptions(
+                R.string.verb_270_correct,
+                R.string.verb_270_incorrect_1,
+                R.string.verb_270_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_271_question,
+            answer = R.string.verb_271_correct,
+            options = shuffledOptions(
+                R.string.verb_271_correct,
+                R.string.verb_271_incorrect_1,
+                R.string.verb_271_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_272_question,
+            answer = R.string.verb_272_correct,
+            options = shuffledOptions(
+                R.string.verb_272_correct,
+                R.string.verb_272_incorrect_1,
+                R.string.verb_272_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_273_question,
+            answer = R.string.verb_273_correct,
+            options = shuffledOptions(
+                R.string.verb_273_correct,
+                R.string.verb_273_incorrect_1,
+                R.string.verb_273_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_274_question,
+            answer = R.string.verb_274_correct,
+            options = shuffledOptions(
+                R.string.verb_274_correct,
+                R.string.verb_274_incorrect_1,
+                R.string.verb_274_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_275_question,
+            answer = R.string.verb_275_correct,
+            options = shuffledOptions(
+                R.string.verb_275_correct,
+                R.string.verb_275_incorrect_1,
+                R.string.verb_275_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_276_question,
+            answer = R.string.verb_276_correct,
+            options = shuffledOptions(
+                R.string.verb_276_correct,
+                R.string.verb_276_incorrect_1,
+                R.string.verb_276_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_277_question,
+            answer = R.string.verb_277_correct,
+            options = shuffledOptions(
+                R.string.verb_277_correct,
+                R.string.verb_277_incorrect_1,
+                R.string.verb_277_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_278_question,
+            answer = R.string.verb_278_correct,
+            options = shuffledOptions(
+                R.string.verb_278_correct,
+                R.string.verb_278_incorrect_1,
+                R.string.verb_278_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_279_question,
+            answer = R.string.verb_279_correct,
+            options = shuffledOptions(
+                R.string.verb_279_correct,
+                R.string.verb_279_incorrect_1,
+                R.string.verb_279_incorrect_2
+            )
+        ),
+        ArticleResource(
+            question = R.string.verb_280_question,
+            answer = R.string.verb_280_correct,
+            options = shuffledOptions(
+                R.string.verb_280_correct,
+                R.string.verb_280_incorrect_1,
+                R.string.verb_280_incorrect_2
+            )
         )
     )
 
