@@ -1,5 +1,6 @@
 package com.aschiesch.dspiel.ui
 
+import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -34,15 +35,17 @@ import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 fun HomeScreen(
     onQuizOpen: (String) -> Unit
 ) {
-    Surface (){
-        LazyColumn(modifier = Modifier
-            .fillMaxSize()
+    Surface {
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
         ) {
-            items(QuizItem.quizGroups){
+            items(QuizItem.quizGroups) {
                 Category(
                     categoryName = stringResource(id = it.quizGroupTitle),
                     playItems = it.quizItems,
-                    onOpen = onQuizOpen
+                    onOpen = onQuizOpen,
+                    modifier = Modifier.padding(vertical = 8.dp)
                 )
             }
         }
@@ -91,26 +94,21 @@ fun PlayItem(
             .padding(8.dp)
             .defaultMinSize(minWidth = 128.dp)
             .height(128.dp)
-            .background(
-                brush = Brush.linearGradient(
-                    colors = listOf(
-                        MaterialTheme.colorScheme.primaryContainer,
-                        MaterialTheme.colorScheme.secondaryContainer
-                    )
-                ),
-                shape = CardDefaults.shape
-            )
             .clickable {
                 onOpen(articleItem.quizMode.name)
             }
             .border(
                 width = 1.dp,
-                brush = Brush.verticalGradient(
+                brush = Brush.linearGradient(
                     colors = listOf(
-                        MaterialTheme.colorScheme.tertiaryContainer,
-                        MaterialTheme.colorScheme.tertiary
+                        MaterialTheme.colorScheme.outlineVariant,
+                        MaterialTheme.colorScheme.outline
                     )
                 ),
+                shape = CardDefaults.shape
+            )
+            .background(
+                color = MaterialTheme.colorScheme.surfaceContainer,
                 shape = CardDefaults.shape
             )
     ) {
@@ -124,13 +122,14 @@ fun PlayItem(
                 modifier = Modifier
                     .padding(16.dp)
                     .fillMaxWidth(),
-                textAlign = TextAlign.Center
+                textAlign = TextAlign.Center,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
     }
 }
 
-@Preview
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun HomeScreenPreview() {
     WDeutschTheme {

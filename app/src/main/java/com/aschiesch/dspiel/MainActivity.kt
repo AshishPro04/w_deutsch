@@ -6,6 +6,9 @@ import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.annotation.StringRes
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -21,11 +24,15 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.TileMode
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -36,12 +43,14 @@ import androidx.navigation.NavController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.aschiesch.dspiel.data.quiz.QuizMode
 import com.aschiesch.dspiel.ui.ArticleScreen
 import com.aschiesch.dspiel.ui.HomeScreen
+import com.aschiesch.dspiel.ui.MainActivityViewModel
 
 import com.aschiesch.dspiel.ui.QuizViewModel
 import com.aschiesch.dspiel.ui.QuizViewModelFactory
@@ -60,6 +69,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             WDeutschTheme {
                 val navController = rememberNavController()
+                val currentScreen by navController.currentBackStackEntryAsState()
+                val currentRoute = currentScreen?.destination?.route ?: "Nill"
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = {
@@ -67,6 +78,7 @@ class MainActivity : ComponentActivity() {
                     },
                     bottomBar = {
                         WDeutschBottomBar(
+                            currentRoute = currentRoute,
                             onHomeClicked = {
                                 navController.navigatePopBackStack(WDeutschScreen.HOME.name)
                             },
@@ -133,7 +145,6 @@ class MainActivity : ComponentActivity() {
                                     articleType ?: QuizMode.DEFINITE_ARTICLE.name,
                                     viewModelFactory
                                 )
-//                                val viewModel: QuizViewModel = it.sharedViewModel(navController)
                                 ResultScreen(viewModel) {
                                     navController.navigatePopBackStack(WDeutschScreen.HOME.name)
                                 }
@@ -195,30 +206,62 @@ class MainActivity : ComponentActivity() {
     }
 
     @Composable
-    fun WDeutschBottomBar(onHomeClicked: () -> Unit = {}, onInfoClicked: () -> Unit = {}) {
+    fun WDeutschBottomBar(
+        currentRoute: String,
+        onHomeClicked: () -> Unit = {},
+        onInfoClicked: () -> Unit = {}
+    ) {
         BottomAppBar(
             modifier = Modifier.fillMaxWidth(),
             actions = {
-                IconButton(
-                    onClick = onHomeClicked,
-                    modifier = Modifier.weight(1f)
-                ) {
-                    Icon(
-                        imageVector = Icons.Outlined.Home,
-                        contentDescription = stringResource(id = R.string.home)
-                    )
-                }
-                IconButton(
-                    onClick = onInfoClicked,
-                    modifier = Modifier.weight(1f)
-                ) {
-                    Icon(
-                        imageVector = Icons.Outlined.Info,
-                        contentDescription = stringResource(id = R.string.privacy_policy)
-                    )
-                }
+                WDeutschBottomAction(
+                    currentRoute = currentRoute,
+                    icon = Icons.Outlined.Home,
+                    iconName = R.string.home,
+                    onHomeClicked = onHomeClicked,
+                    modifier = Modifier.weight(1f),
+                    screenRoute = WDeutschScreen.HOME.name
+                )
+                WDeutschBottomAction(
+                    currentRoute = currentRoute,
+                    icon = Icons.Outlined.Info,
+                    iconName = R.string.privacy_policy,
+                    onHomeClicked = onInfoClicked,
+                    modifier = Modifier.weight(1f),
+                    screenRoute = WDeutschScreen.PRIVACY_POLICY.name
+                )
             }
         )
+    }
+
+    @Composable
+    private fun WDeutschBottomAction(
+        currentRoute: String,
+        icon: ImageVector,
+        @StringRes iconName: Int,
+        onHomeClicked: () -> Unit,
+        modifier: Modifier = Modifier,
+        screenRoute: String
+    ) {
+        Log.d("CurrentScreen", ": $currentRoute")
+        LaunchedEffect(key1 = currentRoute) {
+        }
+        IconButton(
+            onClick = onHomeClicked,
+            modifier = modifier
+        ) {
+            val color = if (currentRoute == screenRoute) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
+            val tint by animateColorAsState(
+                targetValue = color,
+                label = "BottomBarTint",
+                animationSpec = tween(300)
+            )
+            Icon(
+                imageVector = icon,
+                contentDescription = stringResource(id = iconName),
+                tint = tint
+            )
+        }
     }
 
     @Preview(showBackground = true)
@@ -233,7 +276,9 @@ class MainActivity : ComponentActivity() {
     @Composable
     fun WDeutschBottomBarPreview() {
         WDeutschTheme {
-            WDeutschBottomBar()
+            WDeutschBottomBar(
+                currentRoute = WDeutschScreen.HOME.name
+            )
         }
     }
 
