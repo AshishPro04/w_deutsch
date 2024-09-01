@@ -1,5 +1,12 @@
 package com.aschiesch.dspiel.ui
 
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -47,24 +54,41 @@ fun ArticleScreen(
             currentNumber = uiState.currentQuestionNumber,
             totalNumber = uiState.totalQuestion
         )
-        Card(modifier = Modifier
-            .fillMaxWidth()
-            .weight(1f)
-            .padding(8.dp)) {
-            Column(
+        AnimatedContent(
+            targetState = uiState.currentQuestion,
+            label = "card",
+            transitionSpec = {
+                slideInHorizontally(
+                    tween(300),
+                    initialOffsetX = { fullWidth -> 2 * fullWidth }
+                ) + fadeIn() togetherWith
+                        slideOutHorizontally(
+                            tween(300),
+                            targetOffsetX = { fullWidth -> -2 * fullWidth }
+                        ) + fadeOut()
+            }
+        ) { question ->
+            Card(
                 modifier = Modifier
-                    .padding(8.dp)
                     .fillMaxWidth()
-                    .fillMaxHeight(),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.SpaceAround
+                    .weight(1f)
+                    .padding(8.dp)
             ) {
-                ArticleQuestion(question =  uiState.currentQuestion)
-                LazyColumn {
-                    items(uiState.options){
-                        ArticleAnswerOption(option = it) { userAnswer ->
-                            if (!gameViewModel.checkNextQuestion(userAnswer)) {
-                                onGameComplete()
+                Column(
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .fillMaxWidth()
+                        .fillMaxHeight(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.SpaceAround
+                ) {
+                    ArticleQuestion(question = question)
+                    LazyColumn {
+                        items(uiState.options) { answerOption ->
+                            ArticleAnswerOption(option = answerOption) { userAnswer ->
+                                if (!gameViewModel.checkNextQuestion(userAnswer)) {
+                                    onGameComplete()
+                                }
                             }
                         }
                     }
@@ -102,13 +126,13 @@ fun ScoreView(modifier: Modifier = Modifier, score: Int) {
             ),
         shape = RoundedCornerShape(10)
     ) {
-        Column (
+        Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .padding(8.dp)
                 .width(IntrinsicSize.Max),
             verticalArrangement = Arrangement.Center
-        ){
+        ) {
             Text(
                 text = stringResource(id = R.string.score),
                 Modifier.padding(start = 8.dp, end = 8.dp, top = 8.dp),
@@ -143,14 +167,14 @@ fun QuizQuestionNumber(modifier: Modifier = Modifier, currentNumber: Int, totalN
             ),
         shape = RoundedCornerShape(10)
     ) {
-        Column (
+        Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .padding(8.dp)
                 .width(IntrinsicSize.Max)
                 .fillMaxHeight(),
             verticalArrangement = Arrangement.Center
-        ){
+        ) {
             Text(
                 text = "$currentNumber/$totalNumber",
                 Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
