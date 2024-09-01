@@ -7,14 +7,17 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.StringRes
-import androidx.compose.animation.animateColorAsState
-import androidx.compose.animation.core.tween
+import androidx.compose.animation.animateColor
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.updateTransition
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.twotone.Home
+import androidx.compose.material.icons.twotone.Info
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -25,10 +28,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.TileMode
@@ -50,16 +53,12 @@ import androidx.navigation.navArgument
 import com.aschiesch.dspiel.data.quiz.QuizMode
 import com.aschiesch.dspiel.ui.ArticleScreen
 import com.aschiesch.dspiel.ui.HomeScreen
-import com.aschiesch.dspiel.ui.MainActivityViewModel
 
 import com.aschiesch.dspiel.ui.QuizViewModel
 import com.aschiesch.dspiel.ui.QuizViewModelFactory
 import com.aschiesch.dspiel.ui.ResultScreen
 import com.aschiesch.dspiel.ui.WDeutschScreen
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
-import com.aschiesch.dspiel.ui.theme.gBlack
-import com.aschiesch.dspiel.ui.theme.gRed
-import com.aschiesch.dspiel.ui.theme.gYellow
 
 
 class MainActivity : ComponentActivity() {
@@ -190,12 +189,10 @@ class MainActivity : ComponentActivity() {
                 Text(
                     text = stringResource(id = R.string.app_name),
                     style = MaterialTheme.typography.displaySmall.copy(
-                        brush = Brush.verticalGradient(
-                            colors = listOf(gBlack, gRed, gYellow),
-                            tileMode = TileMode.Clamp,
-                            startY = 20f,
-                            endY = 90.0f
-                        )
+                        brush = Brush.linearGradient(
+                            colors = listOf(MaterialTheme.colorScheme.primary, MaterialTheme.colorScheme.tertiary),
+                            tileMode = TileMode.Clamp
+                        ),
                     ),
                 )
             },
@@ -214,9 +211,13 @@ class MainActivity : ComponentActivity() {
         BottomAppBar(
             modifier = Modifier.fillMaxWidth(),
             actions = {
+                val isAtHome = currentRoute == WDeutschScreen.HOME.name
+                val isAtPrivacy = currentRoute == WDeutschScreen.PRIVACY_POLICY.name
+                val homeIcon = if (isAtHome) Icons.TwoTone.Home else Icons.Outlined.Home
+                val infoIcon = if (isAtPrivacy) Icons.TwoTone.Info else Icons.Outlined.Info
                 WDeutschBottomAction(
                     currentRoute = currentRoute,
-                    icon = Icons.Outlined.Home,
+                    icon = homeIcon,
                     iconName = R.string.home,
                     onHomeClicked = onHomeClicked,
                     modifier = Modifier.weight(1f),
@@ -224,7 +225,7 @@ class MainActivity : ComponentActivity() {
                 )
                 WDeutschBottomAction(
                     currentRoute = currentRoute,
-                    icon = Icons.Outlined.Info,
+                    icon = infoIcon,
                     iconName = R.string.privacy_policy,
                     onHomeClicked = onInfoClicked,
                     modifier = Modifier.weight(1f),
@@ -250,16 +251,19 @@ class MainActivity : ComponentActivity() {
             onClick = onHomeClicked,
             modifier = modifier
         ) {
-            val color = if (currentRoute == screenRoute) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
-            val tint by animateColorAsState(
-                targetValue = color,
-                label = "BottomBarTint",
-                animationSpec = tween(300)
-            )
+            val selected = currentRoute == screenRoute
+            val transition = updateTransition(targetState = selected, label = "bottomBarIcon")
+            val color by transition.animateColor(label = "itemColor") { isActive ->
+                if(isActive) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
+            }
+            val scale by transition.animateFloat(label = "itemShadow") { isActive ->
+                if (isActive) 1.3f else 1f
+            }
             Icon(
                 imageVector = icon,
                 contentDescription = stringResource(id = iconName),
-                tint = tint
+                tint = color,
+                modifier = Modifier.scale(scale)
             )
         }
     }

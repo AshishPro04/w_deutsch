@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.dp
 import com.aschiesch.dspiel.data.quiz.QuizInfo
 import com.aschiesch.dspiel.data.quiz.QuizItem
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
+import com.aschiesch.dspiel.ui.theme.outlineDark
 
 @Composable
 fun HomeScreen(
@@ -98,17 +99,17 @@ fun PlayItem(
                 onOpen(articleItem.quizMode.name)
             }
             .border(
-                width = 1.dp,
-                brush = Brush.linearGradient(
-                    colors = listOf(
-                        MaterialTheme.colorScheme.outlineVariant,
-                        MaterialTheme.colorScheme.outline
-                    )
-                ),
+                width = 2.dp,
+                color = outlineDark,
                 shape = CardDefaults.shape
             )
             .background(
-                color = MaterialTheme.colorScheme.surfaceContainer,
+                brush = Brush.linearGradient(
+                    colors = listOf(
+                        MaterialTheme.colorScheme.tertiaryContainer,
+                        MaterialTheme.colorScheme.secondaryContainer
+                    )
+                ),
                 shape = CardDefaults.shape
             )
     ) {
@@ -123,7 +124,15 @@ fun PlayItem(
                     .padding(16.dp)
                     .fillMaxWidth(),
                 textAlign = TextAlign.Center,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                style = MaterialTheme.typography.titleMedium.copy(
+                    brush = Brush.linearGradient(
+                        colors = listOf(
+                            MaterialTheme.colorScheme.onTertiaryContainer,
+                            MaterialTheme.colorScheme.onSecondaryContainer
+                        )
+                    )
+                ),
+                color = MaterialTheme.colorScheme.onSecondaryContainer,
             )
         }
     }
