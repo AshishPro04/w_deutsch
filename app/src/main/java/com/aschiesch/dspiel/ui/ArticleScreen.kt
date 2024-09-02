@@ -4,11 +4,14 @@ import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
@@ -24,7 +27,7 @@ import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -34,6 +37,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextMotion
 import androidx.compose.ui.tooling.preview.Preview
@@ -60,19 +64,29 @@ fun ArticleScreen(
             transitionSpec = {
                 slideInHorizontally(
                     tween(300),
-                    initialOffsetX = { fullWidth -> 2 * fullWidth }
-                ) + fadeIn() togetherWith
+                    initialOffsetX = { fullWidth -> fullWidth }
+                ) + fadeIn() + scaleIn(initialScale = 0.5f) togetherWith
                         slideOutHorizontally(
                             tween(300),
-                            targetOffsetX = { fullWidth -> -2 * fullWidth }
-                        ) + fadeOut()
+                            targetOffsetX = { fullWidth -> -fullWidth }
+                        ) + fadeOut() + scaleOut(targetScale = 0.5f)
             }
         ) { question ->
-            Card(
+            Box(
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f)
                     .padding(8.dp)
+                    .background(
+                        brush = Brush.linearGradient(
+                            colors = listOf(
+                                MaterialTheme.colorScheme.primaryContainer,
+                                MaterialTheme.colorScheme.secondaryContainer
+                            ),
+                        ),
+                        shape = CardDefaults.outlinedShape,
+                        alpha = 0.5f
+                    ),
             ) {
                 Column(
                     modifier = Modifier
@@ -93,6 +107,7 @@ fun ArticleScreen(
                         }
                     }
                 }
+
             }
         }
     }
