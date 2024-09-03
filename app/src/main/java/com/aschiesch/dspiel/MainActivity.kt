@@ -8,8 +8,15 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.StringRes
 import androidx.compose.animation.animateColor
+import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.spring
+import androidx.compose.animation.core.tween
 import androidx.compose.animation.core.updateTransition
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -113,7 +120,21 @@ class MainActivity : ComponentActivity() {
                                 arguments = listOf(navArgument("articleType") {
                                     type = NavType.StringType
                                     defaultValue = QuizMode.DEFINITE_ARTICLE.name
-                                })
+                                }),
+                                enterTransition = {
+                                    scaleIn(
+                                        animationSpec = spring(
+                                            dampingRatio = Spring.DampingRatioLowBouncy
+                                        )
+                                    )
+                                },
+                                exitTransition = {
+                                    scaleOut(
+                                        animationSpec = spring(
+                                            dampingRatio = Spring.DampingRatioLowBouncy
+                                        )
+                                    )
+                                }
                             ) {
                                 val articleType = it.arguments?.getString("articleType")
                                 Log.d("QUIZ", "Recieved Article name: $articleType")
@@ -134,7 +155,28 @@ class MainActivity : ComponentActivity() {
                                     }
                                 }
                             }
-                            composable(WDeutschScreen.RESULT.name) {
+                            composable(
+                                WDeutschScreen.RESULT.name,
+                                enterTransition = {
+                                    slideInVertically(
+                                        animationSpec = tween(
+                                            durationMillis = 500,
+                                            delayMillis = 400
+                                        )
+                                    ) {
+                                        it
+                                    }
+                                },
+                                exitTransition = {
+                                    slideOutVertically(
+                                        animationSpec = tween(
+                                            durationMillis = 500
+                                        )
+                                    ) {
+                                        -it
+                                    }
+                                }
+                            ) {
                                 val articleType = it.arguments?.getString("articleType")
                                 val viewModelFactory = QuizViewModelFactory(
                                     articleType ?: QuizMode.DEFINITE_ARTICLE.name
