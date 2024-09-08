@@ -1,13 +1,16 @@
 package com.aschiesch.dspiel.ui
 
 import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.scaleIn
 import androidx.compose.animation.scaleOut
 import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -52,7 +55,9 @@ fun ArticleScreen(
     onGameComplete: () -> Unit = {}
 ) {
     val uiState by gameViewModel.uiState.collectAsState()
-    Column {
+    Column(Modifier.animateContentSize(
+//        animationSpec = tween(300)
+    )) {
         GameStatus(
             score = uiState.score,
             currentNumber = uiState.currentQuestionNumber,
@@ -86,7 +91,9 @@ fun ArticleScreen(
                         ),
                         shape = CardDefaults.outlinedShape,
                         alpha = 0.5f
-                    ),
+                    )
+                    .animateContentSize(
+                    )
             ) {
                 Column(
                     modifier = Modifier
@@ -161,11 +168,25 @@ fun ScoreView(modifier: Modifier = Modifier, score: Int) {
                     .fillMaxWidth()
 
             )
-            Text(
-                text = score.toString(),
-                modifier = modifier.padding(8.dp),
-                style = MaterialTheme.typography.displaySmall
-            )
+            AnimatedContent(
+                targetState = score,
+                label = "score",
+                transitionSpec = {
+                    slideInVertically(
+                        tween(300),
+                        initialOffsetY = { fullHeight -> fullHeight }
+                    ) togetherWith slideOutVertically(
+                        tween(300),
+                        targetOffsetY = { fullHeight -> -fullHeight }
+                    )
+                }
+            ) { nScore ->
+                Text(
+                    text = nScore.toString(),
+                    modifier = modifier.padding(8.dp),
+                    style = MaterialTheme.typography.displaySmall
+                )
+            }
         }
     }
 }

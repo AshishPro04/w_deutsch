@@ -7,12 +7,15 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.StringRes
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColor
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.core.updateTransition
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
 import androidx.compose.animation.scaleIn
 import androidx.compose.animation.scaleOut
 import androidx.compose.animation.slideInVertically
@@ -65,6 +68,7 @@ import com.aschiesch.dspiel.ui.QuizViewModel
 import com.aschiesch.dspiel.ui.QuizViewModelFactory
 import com.aschiesch.dspiel.ui.ResultScreen
 import com.aschiesch.dspiel.ui.WDeutschScreen
+import com.aschiesch.dspiel.ui.bottomBarRequired
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 
 
@@ -90,22 +94,46 @@ class MainActivity : ComponentActivity() {
                             },
                             onInfoClicked = {
                                 navController.navigatePopBackStack(WDeutschScreen.PRIVACY_POLICY.name)
-                            }
+                            },
+                            visible = currentRoute.bottomBarRequired()
                         )
                     }
                 ) { innerPadding ->
                     NavHost(
                         navController = navController,
                         startDestination = WDeutschScreen.HOME.name,
-                        modifier = Modifier.padding(innerPadding)
+                        modifier = Modifier.padding(innerPadding),
                     ) {
-                        composable(WDeutschScreen.HOME.name) {
+                        composable(
+                            WDeutschScreen.HOME.name,
+                            enterTransition = {
+                                scaleIn(
+                                    animationSpec = tween(300),
+                                    initialScale = 0.5f
+                                ) + fadeIn(
+                                    animationSpec = tween(300)
+                                )
+                            },
+                            exitTransition = {
+                                scaleOut(
+                                    animationSpec = tween(300),
+                                    targetScale = 2f
+                                ) + fadeOut(
+                                    animationSpec = tween(300)
+                                )
+                            }
+                        ) {
                             HomeScreen(
                                 onQuizOpen = { articleType ->
                                     navController
                                         .navigatePopBackStack("${WDeutschScreen.QUIZ.name}/$articleType")
                                 }
                             )
+                        }
+                        composable(
+                            route = WDeutschScreen.LEARN.name
+                        ) {
+
                         }
                         navigation(
                             route = "${WDeutschScreen.QUIZ.name}/{articleType}",
@@ -123,16 +151,18 @@ class MainActivity : ComponentActivity() {
                                 }),
                                 enterTransition = {
                                     scaleIn(
-                                        animationSpec = spring(
-                                            dampingRatio = Spring.DampingRatioLowBouncy
-                                        )
+                                        animationSpec = tween(300),
+                                        initialScale = 0.5f
+                                    ) + fadeIn(
+                                        animationSpec = tween(300)
                                     )
                                 },
                                 exitTransition = {
                                     scaleOut(
-                                        animationSpec = spring(
-                                            dampingRatio = Spring.DampingRatioLowBouncy
-                                        )
+                                        animationSpec = tween(300),
+                                        targetScale = 0.5f
+                                    ) + fadeOut(
+                                        animationSpec = tween(300)
                                     )
                                 }
                             ) {
@@ -248,33 +278,51 @@ class MainActivity : ComponentActivity() {
     fun WDeutschBottomBar(
         currentRoute: String,
         onHomeClicked: () -> Unit = {},
-        onInfoClicked: () -> Unit = {}
+        onInfoClicked: () -> Unit = {},
+        visible: Boolean
     ) {
-        BottomAppBar(
-            modifier = Modifier.fillMaxWidth(),
-            actions = {
-                val isAtHome = currentRoute == WDeutschScreen.HOME.name
-                val isAtPrivacy = currentRoute == WDeutschScreen.PRIVACY_POLICY.name
-                val homeIcon = if (isAtHome) Icons.TwoTone.Home else Icons.Outlined.Home
-                val infoIcon = if (isAtPrivacy) Icons.TwoTone.Info else Icons.Outlined.Info
-                WDeutschBottomAction(
-                    currentRoute = currentRoute,
-                    icon = homeIcon,
-                    iconName = R.string.home,
-                    onHomeClicked = onHomeClicked,
-                    modifier = Modifier.weight(1f),
-                    screenRoute = WDeutschScreen.HOME.name
+        AnimatedVisibility(
+            visible = visible,
+            enter = slideInVertically(
+                animationSpec = spring(
+                    dampingRatio = Spring.DampingRatioMediumBouncy,
+                    stiffness = Spring.StiffnessLow
                 )
-                WDeutschBottomAction(
-                    currentRoute = currentRoute,
-                    icon = infoIcon,
-                    iconName = R.string.privacy_policy,
-                    onHomeClicked = onInfoClicked,
-                    modifier = Modifier.weight(1f),
-                    screenRoute = WDeutschScreen.PRIVACY_POLICY.name
-                )
+            ){
+                it
+            },
+            exit = slideOutVertically(
+                animationSpec = tween(300)
+            ){
+                it
             }
-        )
+        ) {
+            BottomAppBar(
+                modifier = Modifier.fillMaxWidth(),
+                actions = {
+                    val isAtHome = currentRoute == WDeutschScreen.HOME.name
+                    val isAtPrivacy = currentRoute == WDeutschScreen.PRIVACY_POLICY.name
+                    val homeIcon = if (isAtHome) Icons.TwoTone.Home else Icons.Outlined.Home
+                    val infoIcon = if (isAtPrivacy) Icons.TwoTone.Info else Icons.Outlined.Info
+                    WDeutschBottomAction(
+                        currentRoute = currentRoute,
+                        icon = homeIcon,
+                        iconName = R.string.home,
+                        onHomeClicked = onHomeClicked,
+                        modifier = Modifier.weight(1f),
+                        screenRoute = WDeutschScreen.HOME.name
+                    )
+                    WDeutschBottomAction(
+                        currentRoute = currentRoute,
+                        icon = infoIcon,
+                        iconName = R.string.privacy_policy,
+                        onHomeClicked = onInfoClicked,
+                        modifier = Modifier.weight(1f),
+                        screenRoute = WDeutschScreen.PRIVACY_POLICY.name
+                    )
+                }
+            )
+        }
     }
 
     @Composable
@@ -323,7 +371,8 @@ class MainActivity : ComponentActivity() {
     fun WDeutschBottomBarPreview() {
         WDeutschTheme {
             WDeutschBottomBar(
-                currentRoute = WDeutschScreen.HOME.name
+                currentRoute = WDeutschScreen.HOME.name,
+                visible = true
             )
         }
     }
