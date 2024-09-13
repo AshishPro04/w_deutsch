@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">W Deutsch</string>
     <string name="home">home</string>
+    <string name="learn">Learn</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="article">Article</string>
     <string name="definite_article">Definite Article</string>

@@ -20,14 +20,17 @@ import androidx.compose.animation.scaleIn
 import androidx.compose.animation.scaleOut
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.School
 import androidx.compose.material.icons.twotone.Home
 import androidx.compose.material.icons.twotone.Info
+import androidx.compose.material.icons.twotone.School
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -40,12 +43,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.scale
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.TileMode
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.layout.layout
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -70,6 +75,7 @@ import com.aschiesch.dspiel.ui.ResultScreen
 import com.aschiesch.dspiel.ui.WDeutschScreen
 import com.aschiesch.dspiel.ui.bottomBarRequired
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
+import kotlin.math.roundToInt
 
 
 class MainActivity : ComponentActivity() {
@@ -94,6 +100,9 @@ class MainActivity : ComponentActivity() {
                             },
                             onInfoClicked = {
                                 navController.navigatePopBackStack(WDeutschScreen.PRIVACY_POLICY.name)
+                            },
+                            onLearnClicked = {
+                                navController.navigatePopBackStack(WDeutschScreen.LEARN.name)
                             },
                             visible = currentRoute.bottomBarRequired()
                         )
@@ -133,6 +142,9 @@ class MainActivity : ComponentActivity() {
                         composable(
                             route = WDeutschScreen.LEARN.name
                         ) {
+
+                        }
+                        composable(WDeutschScreen.PRIVACY_POLICY.name) {
 
                         }
                         navigation(
@@ -221,9 +233,6 @@ class MainActivity : ComponentActivity() {
                                 }
                             }
                         }
-                        composable(WDeutschScreen.PRIVACY_POLICY.name) {
-
-                        }
                     }
                 }
             }
@@ -262,7 +271,10 @@ class MainActivity : ComponentActivity() {
                     text = stringResource(id = R.string.app_name),
                     style = MaterialTheme.typography.displaySmall.copy(
                         brush = Brush.linearGradient(
-                            colors = listOf(MaterialTheme.colorScheme.primary, MaterialTheme.colorScheme.tertiary),
+                            colors = listOf(
+                                MaterialTheme.colorScheme.primary,
+                                MaterialTheme.colorScheme.tertiary
+                            ),
                             tileMode = TileMode.Clamp
                         ),
                     ),
@@ -279,6 +291,7 @@ class MainActivity : ComponentActivity() {
         currentRoute: String,
         onHomeClicked: () -> Unit = {},
         onInfoClicked: () -> Unit = {},
+        onLearnClicked: () -> Unit = {},
         visible: Boolean
     ) {
         AnimatedVisibility(
@@ -288,12 +301,12 @@ class MainActivity : ComponentActivity() {
                     dampingRatio = Spring.DampingRatioMediumBouncy,
                     stiffness = Spring.StiffnessLow
                 )
-            ){
+            ) {
                 it
             },
             exit = slideOutVertically(
                 animationSpec = tween(300)
-            ){
+            ) {
                 it
             }
         ) {
@@ -302,8 +315,10 @@ class MainActivity : ComponentActivity() {
                 actions = {
                     val isAtHome = currentRoute == WDeutschScreen.HOME.name
                     val isAtPrivacy = currentRoute == WDeutschScreen.PRIVACY_POLICY.name
+                    val isAtLearn = currentRoute == WDeutschScreen.LEARN.name
                     val homeIcon = if (isAtHome) Icons.TwoTone.Home else Icons.Outlined.Home
                     val infoIcon = if (isAtPrivacy) Icons.TwoTone.Info else Icons.Outlined.Info
+                    val learnIcon = if (isAtLearn) Icons.TwoTone.School else Icons.Outlined.School
                     WDeutschBottomAction(
                         currentRoute = currentRoute,
                         icon = homeIcon,
@@ -311,6 +326,14 @@ class MainActivity : ComponentActivity() {
                         onHomeClicked = onHomeClicked,
                         modifier = Modifier.weight(1f),
                         screenRoute = WDeutschScreen.HOME.name
+                    )
+                    WDeutschBottomAction(
+                        currentRoute = currentRoute,
+                        icon = learnIcon,
+                        iconName = R.string.learn,
+                        onHomeClicked = onLearnClicked,
+                        modifier = Modifier.weight(1f),
+                        screenRoute = WDeutschScreen.LEARN.name
                     )
                     WDeutschBottomAction(
                         currentRoute = currentRoute,
@@ -344,17 +367,41 @@ class MainActivity : ComponentActivity() {
             val selected = currentRoute == screenRoute
             val transition = updateTransition(targetState = selected, label = "bottomBarIcon")
             val color by transition.animateColor(label = "itemColor") { isActive ->
-                if(isActive) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
+                if (isActive) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
             }
             val scale by transition.animateFloat(label = "itemShadow") { isActive ->
-                if (isActive) 1.3f else 1f
+                if (isActive) 1f else 0.9f
             }
-            Icon(
-                imageVector = icon,
-                contentDescription = stringResource(id = iconName),
-                tint = color,
-                modifier = Modifier.scale(scale)
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .graphicsLayer {
+                        scaleX = scale
+                        scaleY = scale
+                    }
+                    .layout { measurable, constraints ->
+                        val placeable = measurable.measure(constraints)
+                        val scaledHeight = (placeable.height * scale).roundToInt()
+                        val scaledWidth = (placeable.width * scale).roundToInt()
+                        val xPos = (scaledWidth - placeable.width) / 2
+                        val yPos = (scaledHeight - placeable.height) / 2
+                        layout(width = scaledWidth, height = scaledHeight) {
+                            placeable.placeRelative(xPos, yPos)
+                        }
+                    }
+            ) {
+                Icon(
+                    imageVector = icon,
+                    contentDescription = stringResource(id = iconName),
+                    tint = color,
+
+                    )
+                Text(
+                    text = stringResource(id = iconName),
+                    color = color,
+                    style = MaterialTheme.typography.labelMedium
+                )
+            }
         }
     }
 
