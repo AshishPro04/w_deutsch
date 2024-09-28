@@ -3367,4 +3367,78 @@
     <string name="date_80_incorrect_1">Im Sommer</string>
     <string name="date_80_incorrect_2">Im Frühling</string>
     <string name="date_80_incorrect_3">Im Winter</string>
+<!--Page 1-->
+    <string name="present_tense_title">Present Tense (Präsens)</string>
+    <string name="present_tense_explanation">
+        The present tense in German is used to describe actions happening now, habitual actions, and sometimes future events. It is equivalent to the English simple present, present continuous, and sometimes the future tense.
+    </string>
+<!--    Page 2 -->
+    <string name="conjugation_of_regular_verb_title">Conjugation of Regular Verbs</string>
+    <string name="conjugation_of_regular_verb_explanation">
+        To conjugate regular verbs in the present tense, remove the infinitive ending -en or -n and add the following endings:
+    </string>
+    <string name="person">Person</string>
+    <string name="ending_header">Ending</string>
+    <string name="example_learner_header">Example: lernen (to learn)</string>
+    <string name="ich_de_en">ich (I)</string>
+    <string name="du_de_en">du (you, singular informal)</string>
+    <string name="er_sie_es_de_en">er/sie/es (he/she/it)</string>
+    <string name="wir_de_en">wir (we)</string>
+    <string name="ihr_de_en">ihr (you, plural informal)</string>
+    <string name="sie_de_en">sie/Sie (they/you, formal)</string>
+    <string name="ich_present_tense_ending">-e</string>
+    <string name="du_present_tense_ending">-st</string>
+    <string name="er_sie_es_present_tense_ending">-t</string>
+    <string name="wir_present_tense_ending">-en</string>
+    <string name="ihr_present_tense_ending">-t</string>
+    <string name="sie_present_tense_ending">-en</string>
+    <string name="examples_header">Examples:</string>
+    <string name="present_regular_example_1">Ich lerne Deutsch. (I am learning German.)</string>
+    <string name="present_regular_example_2">Du spielst Fußball. (You play soccer.)</string>
+    <string name="present_regular_example_3">Er liest ein Buch. (He is reading a book.)</string>
+<!--    Page 3 -->
+    <string name="irregular_verbs_header">Irregular Verbs</string>
+    <string name="irregular_verbs_explanation">Some verbs have irregular conjugations. Here are a few common ones:</string>
+    <string name="verb">Verb</string>
+    <string name="ich">Ich</string>
+    <string name="er_sie_es">er/sie/es</string>
+    <string name="wir">wir</string>
+    <string name="ihr">ihr</string>
+    <string name="sie_sie">sie/Sie</string>
+    <string name="sein_tobe">sein (to be)</string>
+    <string name="haben_tohave">haben (to have)</string>
+    <string name="werden_tobecome">werden (to become)</string>
+    <string name="bin">bin</string>
+    <string name="bist">bist</string>
+    <string name="ist">ist</string>
+    <string name="sind">sind</string>
+    <string name="seid">seid</string>
+    <string name="habe">habe</string>
+    <string name="hast">hast</string>
+    <string name="hat">hat</string>
+    <string name="haben">haben</string>
+    <string name="habt">habt</string>
+    <string name="werde">werde</string>
+    <string name="wirst">wirst</string>
+    <string name="wird">wird</string>
+    <string name="werden">werden</string>
+    <string name="werdet">werdet</string>
+    <string name="present_irregular_example_1">Ich bin müde. (I am tired.)</string>
+    <string name="present_irregular_example_2">Du hast ein Auto. (You have a car.)</string>
+    <string name="present_irregular_example_3">Er wird Arzt. (He is becoming a doctor.)</string>
+<!--    Page 4 -->
+    <string name="usage_header">Usage</string>
+    <string name="present_actions_header">Present Actions:</string>
+    <string name="present_action_example">Ich esse jetzt. (I am eating now.)</string>
+    <string name="habitual_actions_header">Er geht jeden Tag zur Arbeit. (He goes to work every day.)</string>
+    <string name="future_actions_header">Morgen gehe ich ins Kino. (I am going to the cinema tomorrow.)</string>
+<!--    Page 5 -->
+    <string name="practice_exercises_header">Practice Exercises</string>
+    <string name="present_tense_practice_1">	1. Conjugate the verb machen (to do/make) for all pronouns.</string>
+    <string name="present_tense_practice_2">
+	2. Translate the following sentences into German:
+		○ I am reading a book.
+		○ They are playing soccer.
+        ○ We are learning German.
+    </string>
 </resources>
