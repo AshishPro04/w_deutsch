@@ -14,10 +14,6 @@ import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.core.updateTransition
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
-import androidx.compose.animation.scaleIn
-import androidx.compose.animation.scaleOut
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.Column
@@ -40,7 +36,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
+
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -58,24 +54,24 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
-import androidx.navigation.NavType
+import androidx.navigation.NavDestination
+import androidx.navigation.NavDestination.Companion.hasRoute
+import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.navArgument
-import com.aschiesch.dspiel.data.quiz.QuizMode
-import com.aschiesch.dspiel.ui.ArticleScreen
-import com.aschiesch.dspiel.ui.HomeScreen
 
-import com.aschiesch.dspiel.ui.QuizViewModel
+import com.aschiesch.dspiel.ui.HomeScreen
+import com.aschiesch.dspiel.ui.LearnScreen
+import com.aschiesch.dspiel.ui.PrivacyPolicyScreen
+import com.aschiesch.dspiel.ui.QuizNavGraph
 import com.aschiesch.dspiel.ui.QuizViewModelFactory
-import com.aschiesch.dspiel.ui.ResultScreen
-import com.aschiesch.dspiel.ui.WDeutschScreen
 import com.aschiesch.dspiel.ui.bottomBarRequired
+import com.aschiesch.dspiel.ui.quizNavGraph
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 import kotlin.math.roundToInt
+import kotlin.reflect.KClass
 
 
 class MainActivity : ComponentActivity() {
@@ -86,7 +82,7 @@ class MainActivity : ComponentActivity() {
             WDeutschTheme {
                 val navController = rememberNavController()
                 val currentScreen by navController.currentBackStackEntryAsState()
-                val currentRoute = currentScreen?.destination?.route ?: "Nill"
+                val currentDestination = currentScreen?.destination
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = {
@@ -94,163 +90,37 @@ class MainActivity : ComponentActivity() {
                     },
                     bottomBar = {
                         WDeutschBottomBar(
-                            currentRoute = currentRoute,
+                            currentDestination = currentDestination,
                             onHomeClicked = {
-                                navController.navigatePopBackStack(WDeutschScreen.HOME.name)
+                                navController.navigatePopBackStack(HomeScreen)
                             },
                             onInfoClicked = {
-                                navController.navigatePopBackStack(WDeutschScreen.PRIVACY_POLICY.name)
+                                navController.navigatePopBackStack(PrivacyPolicyScreen)
                             },
                             onLearnClicked = {
-                                navController.navigatePopBackStack(WDeutschScreen.LEARN.name)
+                                navController.navigatePopBackStack(LearnScreen)
                             },
-                            visible = currentRoute.bottomBarRequired()
+                            visible = currentDestination?.bottomBarRequired() ?: false
                         )
                     }
                 ) { innerPadding ->
                     NavHost(
                         navController = navController,
-                        startDestination = WDeutschScreen.HOME.name,
+                        startDestination = QuizNavGraph,
                         modifier = Modifier.padding(innerPadding),
                     ) {
-                        composable(
-                            WDeutschScreen.HOME.name,
-                            enterTransition = {
-                                scaleIn(
-                                    animationSpec = tween(300),
-                                    initialScale = 0.5f
-                                ) + fadeIn(
-                                    animationSpec = tween(300)
-                                )
-                            },
-                            exitTransition = {
-                                scaleOut(
-                                    animationSpec = tween(300),
-                                    targetScale = 2f
-                                ) + fadeOut(
-                                    animationSpec = tween(300)
-                                )
-                            }
+                        quizNavGraph(navController)
+                        composable<LearnScreen>(
                         ) {
-                            HomeScreen(
-                                onQuizOpen = { articleType ->
-                                    navController
-                                        .navigatePopBackStack("${WDeutschScreen.QUIZ.name}/$articleType")
-                                }
-                            )
+                            LearnScreen()
                         }
-                        composable(
-                            route = WDeutschScreen.LEARN.name
-                        ) {
-
-                        }
-                        composable(WDeutschScreen.PRIVACY_POLICY.name) {
-
-                        }
-                        navigation(
-                            route = "${WDeutschScreen.QUIZ.name}/{articleType}",
-                            startDestination = "${WDeutschScreen.ARTICLE.name}/{articleType}",
-                            arguments = listOf(navArgument("articleType") {
-                                type = NavType.StringType
-                            })
-                        ) {
-
-                            composable(
-                                "${WDeutschScreen.ARTICLE.name}/{articleType}",
-                                arguments = listOf(navArgument("articleType") {
-                                    type = NavType.StringType
-                                    defaultValue = QuizMode.DEFINITE_ARTICLE.name
-                                }),
-                                enterTransition = {
-                                    scaleIn(
-                                        animationSpec = tween(300),
-                                        initialScale = 0.5f
-                                    ) + fadeIn(
-                                        animationSpec = tween(300)
-                                    )
-                                },
-                                exitTransition = {
-                                    scaleOut(
-                                        animationSpec = tween(300),
-                                        targetScale = 0.5f
-                                    ) + fadeOut(
-                                        animationSpec = tween(300)
-                                    )
-                                }
-                            ) {
-                                val articleType = it.arguments?.getString("articleType")
-                                Log.d("QUIZ", "Recieved Article name: $articleType")
-                                val viewModelFactory = QuizViewModelFactory(
-                                    articleType ?: QuizMode.DEFINITE_ARTICLE.name
-                                )
-                                val viewModel: QuizViewModel = it.sharedViewModel(
-                                    navController,
-                                    articleType ?: QuizMode.DEFINITE_ARTICLE.name,
-                                    viewModelFactory
-                                )
-                                ArticleScreen(viewModel) {
-                                    navController.navigate(WDeutschScreen.RESULT.name) {
-                                        launchSingleTop = true
-                                        popUpTo(WDeutschScreen.ARTICLE.name) {
-                                            inclusive = true
-                                        }
-                                    }
-                                }
-                            }
-                            composable(
-                                WDeutschScreen.RESULT.name,
-                                enterTransition = {
-                                    slideInVertically(
-                                        animationSpec = tween(
-                                            durationMillis = 500,
-                                            delayMillis = 400
-                                        )
-                                    ) {
-                                        it
-                                    }
-                                },
-                                exitTransition = {
-                                    slideOutVertically(
-                                        animationSpec = tween(
-                                            durationMillis = 500
-                                        )
-                                    ) {
-                                        -it
-                                    }
-                                }
-                            ) {
-                                val articleType = it.arguments?.getString("articleType")
-                                val viewModelFactory = QuizViewModelFactory(
-                                    articleType ?: QuizMode.DEFINITE_ARTICLE.name
-                                )
-                                val viewModel: QuizViewModel = it.sharedViewModel(
-                                    navController,
-                                    articleType ?: QuizMode.DEFINITE_ARTICLE.name,
-                                    viewModelFactory
-                                )
-                                ResultScreen(viewModel) {
-                                    navController.navigatePopBackStack(WDeutschScreen.HOME.name)
-                                }
-                            }
+                        composable<PrivacyPolicyScreen>() {
+                            PrivacyPolicyScreen()
                         }
                     }
                 }
             }
         }
-    }
-
-    @Composable
-    inline fun <reified T : ViewModel> NavBackStackEntry.sharedViewModel(
-        navController: NavController,
-        quizType: String,
-        viewModelFactory: QuizViewModelFactory = QuizViewModelFactory(quizType)
-    ): T {
-        val navGraphRoute =
-            destination.parent?.route ?: return viewModel(factory = viewModelFactory)
-        val parentEntry = remember(this) {
-            navController.getBackStackEntry(navGraphRoute)
-        }
-        return viewModel(parentEntry, factory = viewModelFactory)
     }
 
     @Composable
@@ -288,7 +158,7 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     fun WDeutschBottomBar(
-        currentRoute: String,
+        currentDestination: NavDestination?,
         onHomeClicked: () -> Unit = {},
         onInfoClicked: () -> Unit = {},
         onLearnClicked: () -> Unit = {},
@@ -311,37 +181,50 @@ class MainActivity : ComponentActivity() {
             }
         ) {
             BottomAppBar(
+
                 modifier = Modifier.fillMaxWidth(),
                 actions = {
-                    val isAtHome = currentRoute == WDeutschScreen.HOME.name
-                    val isAtPrivacy = currentRoute == WDeutschScreen.PRIVACY_POLICY.name
-                    val isAtLearn = currentRoute == WDeutschScreen.LEARN.name
+                    val destinations = listOf(HomeScreen, LearnScreen, PrivacyPolicyScreen)
+                    destinations.forEach { destination ->
+                        currentDestination?.hierarchy?.any {
+                            it.hasRoute(destination::class)
+                        }
+                    }
+                    val isAtHome = currentDestination?.hierarchy?.any { route ->
+                        route.hasRoute(HomeScreen::class)
+                    } == true
+                    val isAtPrivacy = currentDestination?.hierarchy?.any { route ->
+                        route.hasRoute(PrivacyPolicyScreen::class)
+                    } == true
+                    val isAtLearn = currentDestination?.hierarchy?.any { route ->
+                        route.hasRoute(LearnScreen::class)
+                    } == true
                     val homeIcon = if (isAtHome) Icons.TwoTone.Home else Icons.Outlined.Home
                     val infoIcon = if (isAtPrivacy) Icons.TwoTone.Info else Icons.Outlined.Info
                     val learnIcon = if (isAtLearn) Icons.TwoTone.School else Icons.Outlined.School
                     WDeutschBottomAction(
-                        currentRoute = currentRoute,
+                        currentDestination = currentDestination,
                         icon = homeIcon,
                         iconName = R.string.home,
                         onHomeClicked = onHomeClicked,
                         modifier = Modifier.weight(1f),
-                        screenRoute = WDeutschScreen.HOME.name
+                        currentScreen = HomeScreen::class
                     )
                     WDeutschBottomAction(
-                        currentRoute = currentRoute,
+                        currentDestination = currentDestination,
                         icon = learnIcon,
                         iconName = R.string.learn,
                         onHomeClicked = onLearnClicked,
                         modifier = Modifier.weight(1f),
-                        screenRoute = WDeutschScreen.LEARN.name
+                        currentScreen = LearnScreen::class
                     )
                     WDeutschBottomAction(
-                        currentRoute = currentRoute,
+                        currentDestination = currentDestination,
                         icon = infoIcon,
                         iconName = R.string.privacy_policy,
                         onHomeClicked = onInfoClicked,
                         modifier = Modifier.weight(1f),
-                        screenRoute = WDeutschScreen.PRIVACY_POLICY.name
+                        currentScreen = PrivacyPolicyScreen::class
                     )
                 }
             )
@@ -349,22 +232,22 @@ class MainActivity : ComponentActivity() {
     }
 
     @Composable
-    private fun WDeutschBottomAction(
-        currentRoute: String,
+    private fun <T : Any> WDeutschBottomAction(
+        currentDestination: NavDestination?,
         icon: ImageVector,
         @StringRes iconName: Int,
         onHomeClicked: () -> Unit,
         modifier: Modifier = Modifier,
-        screenRoute: String
+        currentScreen: KClass<T>
     ) {
-        Log.d("CurrentScreen", ": $currentRoute")
-        LaunchedEffect(key1 = currentRoute) {
-        }
+        Log.d("CurrentScreen", ": ${currentDestination?.route}")
         IconButton(
             onClick = onHomeClicked,
             modifier = modifier
         ) {
-            val selected = currentRoute == screenRoute
+            val selected = currentDestination?.hierarchy?.any { route ->
+                route.hasRoute(currentScreen)
+            } == true
             val transition = updateTransition(targetState = selected, label = "bottomBarIcon")
             val color by transition.animateColor(label = "itemColor") { isActive ->
                 if (isActive) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
@@ -418,7 +301,7 @@ class MainActivity : ComponentActivity() {
     fun WDeutschBottomBarPreview() {
         WDeutschTheme {
             WDeutschBottomBar(
-                currentRoute = WDeutschScreen.HOME.name,
+                currentDestination = null,
                 visible = true
             )
         }
@@ -433,10 +316,24 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-fun NavController.navigatePopBackStack(route: String) {
-    navigate(route) {
+@Composable
+inline fun <reified T : ViewModel> NavBackStackEntry.sharedViewModel(
+    navController: NavController,
+    argumentType: String,
+    viewModelFactory: QuizViewModelFactory = QuizViewModelFactory(argumentType),
+): T {
+    val navGraphRoute =
+        destination.parent?.route ?: return viewModel(factory = viewModelFactory)
+    val parentEntry = remember(this) {
+        navController.getBackStackEntry(navGraphRoute)
+    }
+    return viewModel(parentEntry, factory = viewModelFactory)
+}
+
+fun NavController.navigatePopBackStack(type: Any) {
+    navigate(type) {
         launchSingleTop = true
-        popUpTo(WDeutschScreen.HOME.name) {
+        popUpTo<HomeScreen>() {
             inclusive = false
         }
     }

@@ -35,6 +35,10 @@ import com.aschiesch.dspiel.data.quiz.QuizInfo
 import com.aschiesch.dspiel.data.quiz.QuizItem
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 import com.aschiesch.dspiel.ui.theme.outlineDark
+import kotlinx.serialization.Serializable
+
+@Serializable
+object HomeScreen
 
 @Composable
 fun HomeScreen(

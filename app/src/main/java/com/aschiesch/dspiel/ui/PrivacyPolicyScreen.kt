@@ -4,9 +4,8 @@ import androidx.compose.runtime.Composable
 import kotlinx.serialization.Serializable
 
 @Serializable
-object LearnScreen
+object PrivacyPolicyScreen
 
 @Composable
-fun LearnScreen() {
-    
+fun PrivacyPolicyScreen() {
 }

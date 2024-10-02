@@ -48,6 +48,10 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.aschiesch.dspiel.R
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class ArticleScreen(var articleType: String = "")
 
 @Composable
 fun ArticleScreen(

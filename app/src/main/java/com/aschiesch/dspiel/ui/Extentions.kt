@@ -1,5 +1,14 @@
 package com.aschiesch.dspiel.ui
 
-fun String.bottomBarRequired(): Boolean {
-    return this == WDeutschScreen.HOME.name || this == WDeutschScreen.PRIVACY_POLICY.name || this == WDeutschScreen.LEARN.name
+import androidx.navigation.NavDestination
+import androidx.navigation.NavDestination.Companion.hasRoute
+import androidx.navigation.NavDestination.Companion.hierarchy
+
+val destinations = listOf(HomeScreen, LearnScreen, PrivacyPolicyScreen)
+fun NavDestination.bottomBarRequired(): Boolean {
+    return destinations.any { destination ->
+        this.hierarchy.any { currentDestination ->
+            currentDestination.hasRoute(destination::class)
+        }
+    }
 }

@@ -47,7 +47,11 @@ import com.aschiesch.dspiel.data.results.Result
 import com.aschiesch.dspiel.data.results.ResultInfo
 import com.aschiesch.dspiel.data.results.ResultSource
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
+import kotlinx.serialization.Serializable
 import kotlin.math.roundToInt
+
+@Serializable
+object ResultScreen
 
 @Composable
 fun ResultScreen(
