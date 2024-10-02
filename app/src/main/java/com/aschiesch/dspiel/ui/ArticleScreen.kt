@@ -251,7 +251,7 @@ fun ArticleAnswerOption(option: Int, onOptionClick: (Int) -> Unit = {}) {
             onOptionClick(option)
         },
         shape = CutCornerShape(topStart = 25f, 0.10f, 25f, 0.10f),
-        border = ButtonDefaults.outlinedButtonBorder
+        border = ButtonDefaults.outlinedButtonBorder()
     ) {
         Text(
             text = stringResource(id = option),
