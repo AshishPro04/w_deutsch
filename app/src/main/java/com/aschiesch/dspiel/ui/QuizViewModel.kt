@@ -14,40 +14,51 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 
 class QuizViewModel(
-    articleType: String
 ) : ViewModel() {
 
-    private  val quizItems: List<ArticleResource> = when (articleType) {
+    private val _articleType: MutableStateFlow<String> = MutableStateFlow("")
+
+    private var quizItems: List<ArticleResource> = updateArticleResource(_articleType.value)
+
+    private fun updateArticleResource(newArticleType: String) = when (newArticleType) {
         QuizMode.DEFINITE_ARTICLE.name -> ArticleSource.definitiveArticles.shuffled()
         QuizMode.INDEFINITE_ARTICLE.name -> ArticleSource.indefiniteArticles.shuffled()
         QuizMode.NEGATIVE_ARTICLE.name -> ArticleSource.negativeArticles.shuffled()
         QuizMode.SINGLE_DIGIT.name -> NumberSource.numbersSingleDigitNumeric.shuffled()
         QuizMode.DOUBLE_DIGIT.name -> NumberSource.numbersDoubleDigitNumeric.shuffled()
         QuizMode.TRIPLE_DIGIT.name -> NumberSource.numbersTripleDigitNumeric.shuffled()
-        QuizMode.VERB_CONJUGATIONS_1.name -> VerbConjugationResource.verbConjugations1.shuffled().take(30)
-        QuizMode.VERB_CONJUGATIONS_2.name -> VerbConjugationResource.verbConjugations2.shuffled().take(30)
-        QuizMode.VERB_CONJUGATIONS_3.name -> VerbConjugationResource.verbConjugations3.shuffled().take(30)
+        QuizMode.VERB_CONJUGATIONS_1.name -> VerbConjugationResource.verbConjugations1.shuffled()
+            .take(30)
+
+        QuizMode.VERB_CONJUGATIONS_2.name -> VerbConjugationResource.verbConjugations2.shuffled()
+            .take(30)
+
+        QuizMode.VERB_CONJUGATIONS_3.name -> VerbConjugationResource.verbConjugations3.shuffled()
+            .take(30)
+
         QuizMode.TIME_1.name -> TimeResource.timeGuess1.shuffled().take(30)
         QuizMode.TIME_2.name -> TimeResource.timeGuess2.shuffled().take(30)
         QuizMode.DATE.name -> TimeResource.dateResources.shuffled().take(30)
-        else ->  ArticleSource.definitiveArticles.shuffled()
+        else -> listOf()
     }
-                private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(
-            QuizUiState(
-                score = 0,
-                currentQuestionNumber = 0,
-                totalQuestion = 0,
-                currentQuestion = 0,
-                currentAnswer = 0,
-                options = listOf(),
-                isGameOver = false,
-                result = null
-            )
+
+    private var _uiState: MutableStateFlow<QuizUiState> = MutableStateFlow(
+        QuizUiState(
+            score = 0,
+            currentQuestionNumber = 0,
+            totalQuestion = 0,
+            currentQuestion = 0,
+            currentAnswer = 0,
+            options = listOf(),
+            isGameOver = false,
+            result = null
         )
+    )
     val uiState: StateFlow<QuizUiState> = _uiState.asStateFlow()
 
 
-    init {
+
+    private fun setUpInitialState() {
         initUIState(
             score = 0,
             currentQuestionNumber = 1,
@@ -56,6 +67,14 @@ class QuizViewModel(
             currentAnswer = quizItems[0].answer,
             options = quizItems[0].options
         )
+    }
+
+    fun changeGame(articleType: String) {
+        _articleType.update {
+            articleType
+        }
+        quizItems = updateArticleResource(articleType)
+        setUpInitialState()
     }
 
 
@@ -68,7 +87,7 @@ class QuizViewModel(
         options: List<Int>,
         isGameOver: Boolean = false
     ) {
-         _uiState.update {
+        _uiState.update {
             it.copy(
                 score = score,
                 currentQuestionNumber = currentQuestionNumber,
@@ -80,6 +99,7 @@ class QuizViewModel(
             )
         }
     }
+
     fun updateScore(score: Int) {
         _uiState.update {
             it.copy(score = score)
@@ -98,7 +118,7 @@ class QuizViewModel(
                     currentQuestion = nextQuestion,
                     currentAnswer = nextAnswer,
                     options = options
-                    )
+                )
             }
         } else {
             _uiState.update {
@@ -114,7 +134,7 @@ class QuizViewModel(
         if (answer == _uiState.value.currentAnswer && !_uiState.value.isGameOver) {
             updateScore(_uiState.value.score + 1)
         }
-        if (_uiState.value.currentQuestionNumber < _uiState.value.totalQuestion){
+        if (_uiState.value.currentQuestionNumber < _uiState.value.totalQuestion) {
             quizItems[_uiState.value.currentQuestionNumber].let {
                 proceedToNext(
                     nextQuestion = it.question,
@@ -131,32 +151,37 @@ class QuizViewModel(
         }
         return true
     }
-    private fun setResult(){
+
+    private fun setResult() {
         val percentageScored = _uiState.value.run {
-            (score/totalQuestion.toFloat() * 100)
+            (score / totalQuestion.toFloat() * 100)
         }
         when {
-            percentageScored >= 90f ->{
+            percentageScored >= 90f -> {
                 _uiState.update {
                     it.copy(result = Result.EXCELLENT)
                 }
             }
-            percentageScored >= 80f ->{
+
+            percentageScored >= 80f -> {
                 _uiState.update {
                     it.copy(result = Result.GOOD)
                 }
             }
-            percentageScored >= 70f ->{
+
+            percentageScored >= 70f -> {
                 _uiState.update {
                     it.copy(result = Result.AVERAGE)
                 }
             }
-            percentageScored >= 60f ->{
+
+            percentageScored >= 60f -> {
                 _uiState.update {
                     it.copy(result = Result.FAIR)
                 }
             }
-            else  ->{
+
+            else -> {
                 _uiState.update {
                     it.copy(result = Result.POOR)
                 }

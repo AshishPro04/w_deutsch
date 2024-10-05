@@ -1,6 +1,7 @@
 package com.aschiesch.dspiel.ui
 
 import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -35,6 +36,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -56,69 +58,77 @@ data class ArticleScreen(var articleType: String = "")
 @Composable
 fun ArticleScreen(
     gameViewModel: QuizViewModel = viewModel(),
+    articleType: String,
     onGameComplete: () -> Unit = {}
 ) {
     val uiState by gameViewModel.uiState.collectAsState()
-    Column(Modifier.animateContentSize(
-//        animationSpec = tween(300)
-    )) {
+    LaunchedEffect(Unit) {
+        gameViewModel.changeGame(articleType)
+    }
+    Column(Modifier.animateContentSize()) {
         GameStatus(
             score = uiState.score,
             currentNumber = uiState.currentQuestionNumber,
             totalNumber = uiState.totalQuestion
         )
-        AnimatedContent(
-            targetState = uiState.currentQuestion,
-            label = "card",
-            transitionSpec = {
-                slideInHorizontally(
-                    tween(300),
-                    initialOffsetX = { fullWidth -> fullWidth }
-                ) + fadeIn() + scaleIn(initialScale = 0.5f) togetherWith
-                        slideOutHorizontally(
-                            tween(300),
-                            targetOffsetX = { fullWidth -> -fullWidth }
-                        ) + fadeOut() + scaleOut(targetScale = 0.5f)
-            }
-        ) { question ->
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .weight(1f)
-                    .padding(8.dp)
-                    .background(
-                        brush = Brush.linearGradient(
-                            colors = listOf(
-                                MaterialTheme.colorScheme.primaryContainer,
-                                MaterialTheme.colorScheme.secondaryContainer
-                            ),
-                        ),
-                        shape = CardDefaults.outlinedShape,
-                        alpha = 0.5f
-                    )
-                    .animateContentSize(
-                    )
-            ) {
-                Column(
+        AnimatedVisibility (
+            visible = uiState.totalQuestion > 0,
+            enter = fadeIn() + scaleIn(initialScale = 0.5f),
+            exit = fadeOut() + scaleOut(targetScale = 0.5f)
+        ) {
+            AnimatedContent(
+                targetState = uiState.currentQuestion,
+                label = "card",
+                transitionSpec = {
+                    slideInHorizontally(
+                        tween(300),
+                        initialOffsetX = { fullWidth -> fullWidth }
+                    ) + fadeIn() + scaleIn(initialScale = 0.5f) togetherWith
+                            slideOutHorizontally(
+                                tween(300),
+                                targetOffsetX = { fullWidth -> -fullWidth }
+                            ) + fadeOut() + scaleOut(targetScale = 0.5f)
+                }
+            ) { question ->
+                Box(
                     modifier = Modifier
-                        .padding(8.dp)
                         .fillMaxWidth()
-                        .fillMaxHeight(),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.SpaceAround
+                        .weight(1f)
+                        .padding(8.dp)
+                        .background(
+                            brush = Brush.linearGradient(
+                                colors = listOf(
+                                    MaterialTheme.colorScheme.primaryContainer,
+                                    MaterialTheme.colorScheme.secondaryContainer
+                                ),
+                            ),
+                            shape = CardDefaults.outlinedShape,
+                            alpha = 0.5f
+                        )
+                        .animateContentSize(
+                        )
                 ) {
-                    ArticleQuestion(question = question)
-                    LazyColumn {
-                        items(uiState.options) { answerOption ->
-                            ArticleAnswerOption(option = answerOption) { userAnswer ->
-                                if (!gameViewModel.checkNextQuestion(userAnswer)) {
-                                    onGameComplete()
+                    Column(
+                        modifier = Modifier
+                            .padding(8.dp)
+                            .fillMaxWidth()
+                            .fillMaxHeight(),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.SpaceAround
+                    ) {
+                        ArticleQuestion(question = question)
+                        LazyColumn {
+                            items(uiState.options) { answerOption ->
+                                ArticleAnswerOption(option = answerOption) { userAnswer ->
+                                    if (!gameViewModel.checkNextQuestion(userAnswer)) {
+                                        onGameComplete()
+                                    }
                                 }
                             }
                         }
                     }
-                }
 
+                }
             }
         }
     }

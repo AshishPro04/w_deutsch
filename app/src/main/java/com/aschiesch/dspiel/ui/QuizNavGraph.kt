@@ -75,10 +75,9 @@ fun NavGraphBuilder.quizNavGraph(
             Log.d("ArticleScreen", "articleType: $articleType")
 
             val viewModel: QuizViewModel = navBackStackEntry.sharedViewModel(
-                navController,
-                argumentType = arguments.articleType
+                navController
             )
-            ArticleScreen(viewModel){
+            ArticleScreen(gameViewModel = viewModel, articleType = articleType){
                 navController.navigate(ResultScreen) {
                     launchSingleTop = true
                     popUpTo(HomeScreen) {
@@ -109,10 +108,8 @@ fun NavGraphBuilder.quizNavGraph(
                 }
             }
         ) { navBackStackEntry ->
-            val arguments = navBackStackEntry.toRoute<ArticleScreen>()
             val viewModel: QuizViewModel = navBackStackEntry.sharedViewModel(
-                navController,
-                argumentType = arguments.articleType
+                navController
             )
             ResultScreen (viewModel){
                 navController.navigate(HomeScreen) {

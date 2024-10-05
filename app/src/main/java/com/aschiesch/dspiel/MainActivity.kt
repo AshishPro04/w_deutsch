@@ -66,7 +66,6 @@ import com.aschiesch.dspiel.ui.HomeScreen
 import com.aschiesch.dspiel.ui.LearnScreen
 import com.aschiesch.dspiel.ui.PrivacyPolicyScreen
 import com.aschiesch.dspiel.ui.QuizNavGraph
-import com.aschiesch.dspiel.ui.QuizViewModelFactory
 import com.aschiesch.dspiel.ui.bottomBarRequired
 import com.aschiesch.dspiel.ui.quizNavGraph
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
@@ -318,16 +317,14 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 inline fun <reified T : ViewModel> NavBackStackEntry.sharedViewModel(
-    navController: NavController,
-    argumentType: String,
-    viewModelFactory: QuizViewModelFactory = QuizViewModelFactory(argumentType),
+    navController: NavController
 ): T {
     val navGraphRoute =
-        destination.parent?.route ?: return viewModel(factory = viewModelFactory)
+        destination.parent?.route ?: return viewModel()
     val parentEntry = remember(this) {
         navController.getBackStackEntry(navGraphRoute)
     }
-    return viewModel(parentEntry, factory = viewModelFactory)
+    return viewModel(parentEntry)
 }
 
 fun NavController.navigatePopBackStack(type: Any) {
