@@ -63,10 +63,11 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 
 import com.aschiesch.dspiel.ui.HomeScreen
-import com.aschiesch.dspiel.ui.LearnScreen
+import com.aschiesch.dspiel.ui.learn.LearnGraph
 import com.aschiesch.dspiel.ui.PrivacyPolicyScreen
 import com.aschiesch.dspiel.ui.QuizNavGraph
 import com.aschiesch.dspiel.ui.bottomBarRequired
+import com.aschiesch.dspiel.ui.learn.learnGraph
 import com.aschiesch.dspiel.ui.quizNavGraph
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 import kotlin.math.roundToInt
@@ -97,7 +98,7 @@ class MainActivity : ComponentActivity() {
                                 navController.navigatePopBackStack(PrivacyPolicyScreen)
                             },
                             onLearnClicked = {
-                                navController.navigatePopBackStack(LearnScreen)
+                                navController.navigatePopBackStack(LearnGraph)
                             },
                             visible = currentDestination?.bottomBarRequired() ?: false
                         )
@@ -109,10 +110,9 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier.padding(innerPadding),
                     ) {
                         quizNavGraph(navController)
-                        composable<LearnScreen>(
-                        ) {
-                            LearnScreen()
-                        }
+
+                        learnGraph(navController = navController)
+
                         composable<PrivacyPolicyScreen>() {
                             PrivacyPolicyScreen()
                         }
@@ -183,7 +183,7 @@ class MainActivity : ComponentActivity() {
 
                 modifier = Modifier.fillMaxWidth(),
                 actions = {
-                    val destinations = listOf(HomeScreen, LearnScreen, PrivacyPolicyScreen)
+                    val destinations = listOf(HomeScreen, LearnGraph, PrivacyPolicyScreen)
                     destinations.forEach { destination ->
                         currentDestination?.hierarchy?.any {
                             it.hasRoute(destination::class)
@@ -196,7 +196,7 @@ class MainActivity : ComponentActivity() {
                         route.hasRoute(PrivacyPolicyScreen::class)
                     } == true
                     val isAtLearn = currentDestination?.hierarchy?.any { route ->
-                        route.hasRoute(LearnScreen::class)
+                        route.hasRoute(LearnGraph::class)
                     } == true
                     val homeIcon = if (isAtHome) Icons.TwoTone.Home else Icons.Outlined.Home
                     val infoIcon = if (isAtPrivacy) Icons.TwoTone.Info else Icons.Outlined.Info
@@ -215,7 +215,7 @@ class MainActivity : ComponentActivity() {
                         iconName = R.string.learn,
                         onHomeClicked = onLearnClicked,
                         modifier = Modifier.weight(1f),
-                        currentScreen = LearnScreen::class
+                        currentScreen = LearnGraph::class
                     )
                     WDeutschBottomAction(
                         currentDestination = currentDestination,

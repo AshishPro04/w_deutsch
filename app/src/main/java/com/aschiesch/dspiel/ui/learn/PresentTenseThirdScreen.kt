@@ -1,12 +1,12 @@
-package com.aschiesch.dspiel.ui
+package com.aschiesch.dspiel.ui.learn
 
 import androidx.compose.runtime.Composable
 import kotlinx.serialization.Serializable
 
 @Serializable
-object LearnScreen
+object PresentTenseThirdScreen
 
 @Composable
-fun LearnScreen() {
-    
+fun PresentTensThirdScreen() {
+
 }

@@ -2,7 +2,6 @@ package com.aschiesch.dspiel.ui
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -34,7 +33,6 @@ import androidx.compose.ui.unit.dp
 import com.aschiesch.dspiel.data.quiz.QuizInfo
 import com.aschiesch.dspiel.data.quiz.QuizItem
 import com.aschiesch.dspiel.ui.theme.WDeutschTheme
-import com.aschiesch.dspiel.ui.theme.outlineDark
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -114,11 +112,7 @@ fun PlayItem(
             .clickable {
                 onOpen(articleItem.quizMode.name)
             }
-            .border(
-                width = 2.dp,
-                color = outlineDark,
-                shape = CardDefaults.shape
-            )
+
             .background(
                 brush = Brush.linearGradient(
                     colors = listOf(
