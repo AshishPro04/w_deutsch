@@ -3392,6 +3392,12 @@
     <string name="wir_present_tense_ending">-en</string>
     <string name="ihr_present_tense_ending">-t</string>
     <string name="sie_present_tense_ending">-en</string>
+    <string name="ich_present_tense_example">ich lerne</string>
+    <string name="du_present_tense_example">du lernst</string>
+    <string name="er_sie_es_present_tense_example">er/sie/es lernt</string>
+    <string name="wir_present_tense_example">wir lernen</string>
+    <string name="ihr_present_tense_example">ihr lernt</string>
+    <string name="sie_present_tense_example">sie/Sie lernt</string>
     <string name="examples_header">Examples:</string>
     <string name="present_regular_example_1">Ich lerne Deutsch. (I am learning German.)</string>
     <string name="present_regular_example_2">Du spielst Fußball. (You play soccer.)</string>
