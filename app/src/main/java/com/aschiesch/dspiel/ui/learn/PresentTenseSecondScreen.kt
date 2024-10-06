@@ -1,7 +1,6 @@
 package com.aschiesch.dspiel.ui.learn
 
-import androidx.compose.foundation.basicMarquee
-import androidx.compose.foundation.border
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
@@ -13,14 +12,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.LocalTextStyle
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.aschiesch.dspiel.R
@@ -35,12 +30,17 @@ fun PresentTenseSecondScreen(
     onPreviousClicked: () -> Unit = {},
     onNextClicked: () -> Unit = {}
 ) {
+    val columnScrollState = rememberScrollState(0)
     Column(
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier.fillMaxSize().verticalScroll(columnScrollState)
     ) {
         LessonSubTitle(stringResource(R.string.conjugation_of_regular_verb_title))
         LessonParagraph(stringResource(R.string.conjugation_of_regular_verb_explanation))
         RegularVerbConjugationTable()
+        LessonSubTitleSmall(stringResource(R.string.examples_header))
+        BulletedPoint(stringResource(R.string.present_regular_example_1))
+        BulletedPoint(stringResource(R.string.present_regular_example_2))
+        BulletedPoint(stringResource(R.string.present_regular_example_3))
         Spacer(modifier = Modifier.weight(1f))
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -59,7 +59,12 @@ fun PresentTenseSecondScreen(
 @Composable
 fun RegularVerbConjugationTable() {
     val scrollSate = rememberScrollState(0)
-    Row(Modifier.fillMaxWidth().padding(8.dp).verticalScroll(scrollSate)) {
+    Row(
+        Modifier
+            .horizontalScroll(scrollSate)
+            .fillMaxWidth()
+            .padding(8.dp)
+    ) {
         Column(
             modifier = Modifier.width(IntrinsicSize.Max)
         ) {
@@ -114,8 +119,7 @@ fun RegularVerbConjugationTable() {
             modifier = Modifier.width(IntrinsicSize.Max)
         ) {
             BoxedTitle(
-                text = stringResource(R.string.example_learner_header),
-                modifier = Modifier.basicMarquee()
+                text = stringResource(R.string.example_learner_header)
             )
             BoxedContent(
                 contentText = stringResource(R.string.ich_present_tense_example)
@@ -133,49 +137,10 @@ fun RegularVerbConjugationTable() {
                 contentText = stringResource(R.string.ihr_present_tense_example)
             )
             BoxedContent(
-                contentText = stringResource(R.string.er_sie_es_present_tense_example),
+                contentText = stringResource(R.string.sie_present_tense_example)
             )
         }
     }
-}
-
-@Composable
-fun BoxedText(
-    text: String,
-    modifier: Modifier = Modifier,
-    style: TextStyle = LocalTextStyle.current
-) {
-    val tableBorderWidth = 1f.dp
-
-    Text(
-        text = text,
-        modifier = modifier
-            .fillMaxWidth()
-            .border(width = tableBorderWidth, color = MaterialTheme.colorScheme.outline)
-            .padding(8.dp),
-        style = style,
-        maxLines = 1
-    )
-}
-
-@Composable
-fun BoxedTitle(text: String, modifier: Modifier = Modifier) {
-    BoxedText(
-        text = text,
-        modifier = modifier,
-        style = MaterialTheme.typography.labelLarge.copy(
-            color = MaterialTheme.colorScheme.primary
-        )
-    )
-}
-
-@Composable
-fun BoxedContent(contentText: String, modifier: Modifier = Modifier) {
-    BoxedText(
-        text = contentText,
-        modifier = modifier,
-        style = MaterialTheme.typography.labelMedium
-    )
 }
 
 

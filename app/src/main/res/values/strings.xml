@@ -3397,7 +3397,7 @@
     <string name="er_sie_es_present_tense_example">er/sie/es lernt</string>
     <string name="wir_present_tense_example">wir lernen</string>
     <string name="ihr_present_tense_example">ihr lernt</string>
-    <string name="sie_present_tense_example">sie/Sie lernt</string>
+    <string name="sie_present_tense_example">sie/Sie lernen</string>
     <string name="examples_header">Examples:</string>
     <string name="present_regular_example_1">Ich lerne Deutsch. (I am learning German.)</string>
     <string name="present_regular_example_2">Du spielst Fußball. (You play soccer.)</string>
@@ -3440,7 +3440,7 @@
     <string name="future_actions_header">Morgen gehe ich ins Kino. (I am going to the cinema tomorrow.)</string>
 <!--    Page 5 -->
     <string name="practice_exercises_header">Practice Exercises</string>
-    <string name="present_tense_practice_1">	1. Conjugate the verb machen (to do/make) for all pronouns.</string>
+    <string name="present_tense_practice_1">1. Conjugate the verb machen (to do/make) for all pronouns.</string>
     <string name="present_tense_practice_2">
 	2. Translate the following sentences into German:
 		○ I am reading a book.

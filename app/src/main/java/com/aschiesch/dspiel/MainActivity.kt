@@ -249,7 +249,8 @@ class MainActivity : ComponentActivity() {
             } == true
             val transition = updateTransition(targetState = selected, label = "bottomBarIcon")
             val color by transition.animateColor(label = "itemColor") { isActive ->
-                if (isActive) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
+                if (isActive)
+                    MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
             }
             val scale by transition.animateFloat(label = "itemShadow") { isActive ->
                 if (isActive) 1f else 0.9f
@@ -276,7 +277,6 @@ class MainActivity : ComponentActivity() {
                     imageVector = icon,
                     contentDescription = stringResource(id = iconName),
                     tint = color,
-
                     )
                 Text(
                     text = stringResource(id = iconName),
