@@ -3,6 +3,7 @@ package com.aschiesch.dspiel.ui.learn
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CutCornerShape
@@ -14,6 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.ParagraphStyle
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
@@ -23,6 +25,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.aschiesch.dspiel.R
 
 
 @Composable
@@ -112,13 +115,14 @@ fun LessonSubTitleSmall(subTitle: String, modifier: Modifier = Modifier) {
 fun NextButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
     Button(
         onClick = onClick,
-        modifier = modifier.padding(8.dp),
+        modifier = modifier.padding(8.dp).defaultMinSize(minWidth = 128.dp),
         shape = CutCornerShape(
             topStartPercent = 10,
             bottomEndPercent = 40,
             topEndPercent = 40,
             bottomStartPercent = 10
-        )
+        ),
+
     ) {
         Text(
             text = "Next",
@@ -131,7 +135,7 @@ fun NextButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
 fun PreviousButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
     OutlinedButton(
         onClick = onClick,
-        modifier = modifier.padding(8.dp),
+        modifier = modifier.padding(8.dp).defaultMinSize(minWidth = 128.dp),
         shape = CutCornerShape(
             topStartPercent = 40,
             bottomEndPercent = 10,
@@ -141,6 +145,28 @@ fun PreviousButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
     ) {
         Text(
             text = "Previous",
+            modifier = Modifier.padding(8.dp)
+        )
+    }
+}
+
+@Composable
+fun FinishButton(
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Button(
+        modifier = modifier.padding(8.dp).defaultMinSize(minWidth = 128.dp),
+        onClick = onClick,
+        shape = CutCornerShape(
+            topStartPercent = 40,
+            bottomEndPercent = 40,
+            topEndPercent = 40,
+            bottomStartPercent = 40
+        )
+    ) {
+        Text(
+            stringResource(R.string.finish),
             modifier = Modifier.padding(8.dp)
         )
     }

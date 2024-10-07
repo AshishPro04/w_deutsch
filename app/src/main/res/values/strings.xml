@@ -3367,6 +3367,11 @@
     <string name="date_80_incorrect_1">Im Sommer</string>
     <string name="date_80_incorrect_2">Im Frühling</string>
     <string name="date_80_incorrect_3">Im Winter</string>
+
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
 <!--Page 1-->
     <string name="present_tense_title">Present Tense (Präsens)</string>
     <string name="present_tense_explanation">
@@ -3444,10 +3449,8 @@
 <!--    Page 5 -->
     <string name="practice_exercises_header">Practice Exercises</string>
     <string name="present_tense_practice_1">1. Conjugate the verb machen (to do/make) for all pronouns.</string>
-    <string name="present_tense_practice_2">
-	2. Translate the following sentences into German:
-		○ I am reading a book.
-		○ They are playing soccer.
-        ○ We are learning German.
-    </string>
+    <string name="present_tense_practice_2">2. Translate the following sentences into German:</string>
+    <string name="present_tense_practice_2_1">I am reading a book.</string>
+    <string name="present_tense_practice_2_2">They are playing soccer.</string>
+    <string name="present_tense_practice_2_3">We are learning German.</string>
 </resources>

@@ -58,8 +58,13 @@ fun NavGraphBuilder.learnGraph(navController: NavController) {
                 onPreviousClick = {
                     navController.navigateUp()
                 },
-                onNextClick = {
-
+                onCloseClick = {
+                    navController.navigate(LearnHomeScreen) {
+                        launchSingleTop = true
+                        popUpTo<LearnHomeScreen>(){
+                            inclusive = false
+                        }
+                    }
                 }
             )
         }
