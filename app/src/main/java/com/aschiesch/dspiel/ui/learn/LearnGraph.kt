@@ -34,7 +34,34 @@ fun NavGraphBuilder.learnGraph(navController: NavController) {
             )
         }
         composable<PresentTenseThirdScreen> {
-            PresentTensThirdScreen()
+            PresentTenseThirdScreen(
+                onPreviousClick = {
+                    navController.navigateUp()
+                },
+                onNextClick = {
+                    navController.navigate(PresentTenseFourthScreen)
+                }
+            )
+        }
+        composable<PresentTenseFourthScreen> {
+            PresentTenseFourthScreen(
+                onPreviousClick = {
+                    navController.navigateUp()
+                },
+                onNextClick = {
+                    navController.navigate(PresentTenseFifthScreen)
+                }
+            )
+        }
+        composable<PresentTenseFifthScreen> {
+            PresentTenseFifthScreen(
+                onPreviousClick = {
+                    navController.navigateUp()
+                },
+                onNextClick = {
+
+                }
+            )
         }
     }
 }

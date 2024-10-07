@@ -43,7 +43,7 @@ fun PresentTenseSecondScreen(
         BulletedPoint(stringResource(R.string.present_regular_example_3))
         Spacer(modifier = Modifier.weight(1f))
         Row(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth().padding(8.dp),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             PreviousButton(

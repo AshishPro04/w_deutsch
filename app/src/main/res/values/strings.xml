@@ -3407,6 +3407,7 @@
     <string name="irregular_verbs_explanation">Some verbs have irregular conjugations. Here are a few common ones:</string>
     <string name="verb">Verb</string>
     <string name="ich">Ich</string>
+    <string name="du">du</string>
     <string name="er_sie_es">er/sie/es</string>
     <string name="wir">wir</string>
     <string name="ihr">ihr</string>
@@ -3436,8 +3437,10 @@
     <string name="usage_header">Usage</string>
     <string name="present_actions_header">Present Actions:</string>
     <string name="present_action_example">Ich esse jetzt. (I am eating now.)</string>
-    <string name="habitual_actions_header">Er geht jeden Tag zur Arbeit. (He goes to work every day.)</string>
-    <string name="future_actions_header">Morgen gehe ich ins Kino. (I am going to the cinema tomorrow.)</string>
+    <string name="habitual_actions_header">Habitual Actions: </string>
+    <string name="habitual_actions_example">Er geht jeden Tag zur Arbeit. (He goes to work every day.)</string>
+    <string name="future_action_header">Future Actions:</string>
+    <string name="future_actions_example">Morgen gehe ich ins Kino. (I am going to the cinema tomorrow.)</string>
 <!--    Page 5 -->
     <string name="practice_exercises_header">Practice Exercises</string>
     <string name="present_tense_practice_1">1. Conjugate the verb machen (to do/make) for all pronouns.</string>

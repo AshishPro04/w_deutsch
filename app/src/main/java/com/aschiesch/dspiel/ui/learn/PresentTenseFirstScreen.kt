@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -21,8 +23,9 @@ object PresentTenseFirstScreen
 
 @Composable
 fun PresentTenseFirstScreen(onNextClicked: () -> Unit = {}) {
+    val scrollState = rememberScrollState()
     Surface (modifier = Modifier.fillMaxSize()){
-        Column(modifier = Modifier.fillMaxSize()) {
+        Column(modifier = Modifier.fillMaxSize().verticalScroll(scrollState)) {
             LessonTitle(stringResource(R.string.present_tense_title))
             LessonParagraph(stringResource(R.string.present_tense_explanation))
             Spacer(modifier = Modifier.weight(1f))
