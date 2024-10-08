@@ -3457,4 +3457,10 @@
     <!--Past Page 1 -->
     <string name="past_header">Past Tenses (Präteritum and Perfekt)</string>
     <string name="past_introduction_header">1. Introduction to Past Tenses</string>
+    <string name="simple_past_title_de">Präteritum</string>
+    <string name="simple_past_title_en">Simple Past</string>
+    <string name="simple_past_explanation">Often used in written language, such as stories, reports, and formal communication.</string>
+    <string name="present_perfect_title_de">Perfekt</string>
+    <string name="present_perfect_title_en">Present Perfect</string>
+    <string name="present_perfect_explanation">Commonly used in spoken language and informal writing.</string>
 </resources>

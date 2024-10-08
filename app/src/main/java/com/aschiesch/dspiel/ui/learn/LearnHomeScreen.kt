@@ -29,7 +29,9 @@ object LearnHomeScreen
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun LearnHomeScreen(
-    onPresentTenseClicked: () -> Unit = {}
+    onPresentTenseClicked: () -> Unit = {},
+    onPastTenseClicked: () -> Unit = {},
+    onFutureTenseClicked: () -> Unit = {}
 ) {
     FlowRow (
         modifier = Modifier.fillMaxSize(),
@@ -40,6 +42,13 @@ fun LearnHomeScreen(
             title = stringResource(R.string.present_tense_title),
             onClick = {
                 onPresentTenseClicked()
+            },
+            modifier = Modifier.weight(1f)
+        )
+        LearnItem(
+            title = stringResource(R.string.past_header),
+            onClick = {
+                onPastTenseClicked()
             },
             modifier = Modifier.weight(1f)
         )

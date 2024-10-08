@@ -23,6 +23,7 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.aschiesch.dspiel.R
@@ -61,7 +62,7 @@ fun LessonParagraph(paragraph: String, modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun BulletedPoint(text: String, modifier: Modifier = Modifier) {
+fun BulletedPoint(text: String, modifier: Modifier = Modifier, fontSize: TextUnit = 18.sp) {
     val bullet = "\u2022" // Unicode for bullet
     val pointTextColors = listOf(
         MaterialTheme.colorScheme.onSurface,
@@ -71,8 +72,52 @@ fun BulletedPoint(text: String, modifier: Modifier = Modifier) {
     )
     val pointedText = buildAnnotatedString {
         withStyle(ParagraphStyle(textAlign = TextAlign.Left)) {
-            withStyle(style = SpanStyle(fontSize = 16.sp)) {
+            withStyle(style = SpanStyle(fontSize = fontSize)) {
                 append(bullet)
+                append(" ")
+                append(text)
+            }
+        }
+    }
+    val pointedTextBrush = Brush.linearGradient(pointTextColors)
+    Text(
+        text = pointedText,
+        modifier = modifier.padding(8.dp),
+        style = MaterialTheme.typography.titleMedium.copy(
+            brush = pointedTextBrush
+        ),
+    )
+}
+
+@Composable
+fun BulletedPointWithBoldCaption(
+    caption: String,
+    text: String,
+    modifier: Modifier = Modifier,
+    inBrackets: String = "",
+    fontSize: TextUnit = 18.sp
+) {
+    val bullet = "\u2022" // Unicode for bullet
+    val pointTextColors = listOf(
+        MaterialTheme.colorScheme.onSurface,
+        MaterialTheme.colorScheme.primary,
+        MaterialTheme.colorScheme.onSurface,
+        MaterialTheme.colorScheme.tertiary
+    )
+    val pointedText = buildAnnotatedString {
+        withStyle(ParagraphStyle(textAlign = TextAlign.Left)) {
+            withStyle(style = SpanStyle(fontSize = fontSize, fontWeight = FontWeight.Bold)){
+                append(bullet)
+                append(caption)
+            }
+            if (inBrackets.isNotEmpty()) {
+                withStyle(style = SpanStyle(fontSize = fontSize)){
+                    append(" ")
+                    append("($inBrackets)")
+                }
+            }
+            withStyle(style = SpanStyle(fontSize = fontSize)) {
+                append(":")
                 append(" ")
                 append(text)
             }

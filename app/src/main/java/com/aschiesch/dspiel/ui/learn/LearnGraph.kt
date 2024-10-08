@@ -19,7 +19,8 @@ fun NavGraphBuilder.learnGraph(navController: NavController) {
     navigation<LearnGraph>(startDestination = LearnHomeScreen) {
         composable<LearnHomeScreen> {
             LearnHomeScreen(
-                onPresentTenseClicked = {navController.navigate(PresentTenseFirstScreen)}
+                onPresentTenseClicked = {navController.navigate(PresentTenseFirstScreen)},
+                onPastTenseClicked = {navController.navigate(PastTensesFirstScreen)}
             )
         }
         composable<PresentTenseFirstScreen>() {
