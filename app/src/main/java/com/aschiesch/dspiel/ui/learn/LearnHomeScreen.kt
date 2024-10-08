@@ -30,8 +30,7 @@ object LearnHomeScreen
 @Composable
 fun LearnHomeScreen(
     onPresentTenseClicked: () -> Unit = {},
-    onPastTenseClicked: () -> Unit = {},
-    onFutureTenseClicked: () -> Unit = {}
+    onPastTenseClicked: () -> Unit = {}
 ) {
     FlowRow (
         modifier = Modifier.fillMaxSize(),

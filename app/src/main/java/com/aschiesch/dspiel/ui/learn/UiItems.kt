@@ -3,6 +3,7 @@ package com.aschiesch.dspiel.ui.learn
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -260,4 +261,23 @@ fun BoxedContent(contentText: String, modifier: Modifier = Modifier) {
         modifier = modifier,
         style = MaterialTheme.typography.labelMedium
     )
+}
+
+@Composable
+fun RoundedFancyBox(
+    modifier: Modifier = Modifier,
+    content: @Composable () (BoxScope.()->  Unit)
+) {
+    val boxColors = listOf(
+        MaterialTheme.colorScheme.onSurface,
+        MaterialTheme.colorScheme.primary,
+        MaterialTheme.colorScheme.onSurface,
+        MaterialTheme.colorScheme.tertiary
+    )
+    val boxBrush = Brush.linearGradient(
+        colors = boxColors
+    )
+    Box(modifier = modifier.border(width = 2.dp, brush = boxBrush, shape = MaterialTheme.shapes.medium)) {
+        content()
+    }
 }
