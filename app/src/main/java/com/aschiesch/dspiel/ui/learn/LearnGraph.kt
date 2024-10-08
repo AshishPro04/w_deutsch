@@ -4,6 +4,12 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.aschiesch.dspiel.ui.learn.pasttenses.PastTensesFirstScreen
+import com.aschiesch.dspiel.ui.learn.presenttense.PresentTenseFifthScreen
+import com.aschiesch.dspiel.ui.learn.presenttense.PresentTenseFirstScreen
+import com.aschiesch.dspiel.ui.learn.presenttense.PresentTenseFourthScreen
+import com.aschiesch.dspiel.ui.learn.presenttense.PresentTenseSecondScreen
+import com.aschiesch.dspiel.ui.learn.presenttense.PresentTenseThirdScreen
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -67,6 +73,9 @@ fun NavGraphBuilder.learnGraph(navController: NavController) {
                     }
                 }
             )
+        }
+        composable<PastTensesFirstScreen> {
+            PastTensesFirstScreen()
         }
     }
 }

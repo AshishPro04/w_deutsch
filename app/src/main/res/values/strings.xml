@@ -3453,4 +3453,8 @@
     <string name="present_tense_practice_2_1">I am reading a book.</string>
     <string name="present_tense_practice_2_2">They are playing soccer.</string>
     <string name="present_tense_practice_2_3">We are learning German.</string>
+
+    <!--Past Page 1 -->
+    <string name="past_header">Past Tenses (Präteritum and Perfekt)</string>
+    <string name="past_introduction_header">1. Introduction to Past Tenses</string>
 </resources>

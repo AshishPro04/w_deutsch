@@ -1,4 +1,4 @@
-package com.aschiesch.dspiel.ui.learn
+package com.aschiesch.dspiel.ui.learn.presenttense
 
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
@@ -17,6 +17,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.aschiesch.dspiel.R
+import com.aschiesch.dspiel.ui.learn.BoxedContent
+import com.aschiesch.dspiel.ui.learn.BoxedTitle
+import com.aschiesch.dspiel.ui.learn.BulletedPoint
+import com.aschiesch.dspiel.ui.learn.LessonParagraph
+import com.aschiesch.dspiel.ui.learn.LessonSubTitle
+import com.aschiesch.dspiel.ui.learn.LessonSubTitleSmall
+import com.aschiesch.dspiel.ui.learn.NextButton
+import com.aschiesch.dspiel.ui.learn.PreviousButton
 import kotlinx.serialization.Serializable
 
 @Serializable
