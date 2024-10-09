@@ -3463,4 +3463,35 @@
     <string name="present_perfect_title_de">Perfekt</string>
     <string name="present_perfect_title_en">Present Perfect</string>
     <string name="present_perfect_explanation">Commonly used in spoken language and informal writing.</string>
+
+<!--    Past Page 2 -->
+    <string name="formation_of_plateritm_header">Formation of Präteritum</string>
+    <string name="prateritum_regular_verbs_caption">Regular Verbs</string>
+    <string name="prateritum_regular_verbs_explanation">Add the endings -te, -test, -te, -ten, -tet, -ten to the stem of the verb.</string>
+    <string name="prateritum_example_header">Example: spielen (to play)</string>
+    <string name="prateritum_example_1">ich spielte</string>
+    <string name="prateritum_example_2">du spieltest</string>
+    <string name="prateritum_example_3">er/sie/es spielte</string>
+    <string name="prateritum_example_4">wir spielten</string>
+    <string name="prateritum_example_5">ihr spieltet</string>
+    <string name="prateritum_example_6">sie/Sie spielten</string>
+    <string name="prateritum_irregular_verbs_caption">Irregular Verbs</string>
+    <string name="prateritum_irregular_verbs_explanation">These verbs often change their stem vowel and have different endings.</string>
+    <string name="prateritum_irregular_verbs_example_header">Example: gehen (to go)</string>
+    <string name="prateritum_irregular_verbs_example_1">ich ging</string>
+    <string name="prateritum_irregular_verbs_example_2">du gingst</string>
+    <string name="prateritum_irregular_verbs_example_3">er/sie/es ging</string>
+    <string name="prateritum_irregular_verbs_example_4">wir gingen</string>
+    <string name="prateritum_irregular_verbs_example_5">ihr gingt</string>
+    <string name="prateritum_irregular_verbs_example_6">sie/Sie ging</string>
+
+<!--    Page 3 -->
+    <string name="formation_of_perfekt_header">Formation of Perfekt</string>
+    <string name="perfekt_auxiliary_verbs_caption">Auxiliary Verbs</string>
+    <string name="perfekt_auxiliary_verbs_explanation">Use haben or sein as auxiliary verbs.</string>
+    <string name="perfekt_haben_description">Haben is used with most verbs.</string>
+    <string name="perfekt_sein_description">Sein is used with verbs indicating movement or change of state (e.g., gehen, kommen).</string>
+    <string name="perfekt_past_participle_caption">Past Participle</string>
+    <string name="perfekt_past_participle_explanation">Formed by adding ge- to the verb stem and -t or -en at the end.</string>
+    <string name="perfekt_past_participle_example_spielen_header">Example: spielen (to play)</string>
 </resources>
