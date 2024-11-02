@@ -3465,7 +3465,7 @@
     <string name="present_perfect_explanation">Commonly used in spoken language and informal writing.</string>
 
 <!--    Past Page 2 -->
-    <string name="formation_of_plateritm_header">Formation of Präteritum</string>
+    <string name="formation_of_prateritm_header">Formation of Präteritum</string>
     <string name="prateritum_regular_verbs_caption">Regular Verbs</string>
     <string name="prateritum_regular_verbs_explanation">Add the endings -te, -test, -te, -ten, -tet, -ten to the stem of the verb.</string>
     <string name="prateritum_example_header">Example: spielen (to play)</string>
@@ -3494,4 +3494,56 @@
     <string name="perfekt_past_participle_caption">Past Participle</string>
     <string name="perfekt_past_participle_explanation">Formed by adding ge- to the verb stem and -t or -en at the end.</string>
     <string name="perfekt_past_participle_example_spielen_header">Example: spielen (to play)</string>
+    <string name="perfekt_past_participle_example_spielen_1">Ich habe gespielt</string>
+    <string name="perfekt_past_participle_example_spielen_2">du hast gespielt</string>
+    <string name="perfekt_past_participle_example_spielen_3">er/sie/es hat gespielt</string>
+    <string name="perfekt_past_participle_example_spielen_4">wir haben gespielt</string>
+    <string name="perfekt_past_participle_example_spielen_5">ihr habt gespielt</string>
+    <string name="perfekt_past_participle_example_spielen_6">sie/Sie haben gespielt</string>
+    <string name="perfekt_past_participle_example_gehen_heder">Example: gehen (to go)</string>
+    <string name="perfekt_past_participle_example_gehen_1">ich bin gegangen</string>
+    <string name="perfekt_past_participle_example_gehen_2">du bist gegangen</string>
+    <string name="perfekt_past_participle_example_gehen_3">er/sie/es ist gegangen</string>
+    <string name="perfekt_past_participle_example_gehen_4">wir sind gegangen</string>
+    <string name="perfekt_past_participle_example_gehen_5">ihr seid gegangen</string>
+    <string name="perfekt_past_participle_example_gehen_6">sie/Sie sind gegangen</string>
+
+<!--    Page 4 -->
+    <string name="usage_of_prateritum_vs_perfekt_header">Usage of Präteritum vs. Perfekt</string>
+    <string name="prateritum_caption">Präteritum</string>
+    <string name="prateritum_explanation">Used in written narratives, formal reports, and literature.</string>
+    <string name="prateritum_example_sentence">Example: Gestern spielte ich Fußball. (Yesterday, I played football.)</string>
+    <string name="perfekt_caption">Perfekt</string>
+    <string name="perfekt_explanation">Used in spoken language and informal writing.</string>
+    <string name="perfekt_example_sentence">Example: Gestern habe ich Fußball gespielt. (Yesterday, I played football.)</string>
+
+<!--    Page 5 -->
+    <string name="common_verbs_and_their_forms">Common Verbs and Their Past Forms</string>
+    <string name="sein_to_be_header">Sein (to be)</string>
+    <string name="sein_prateritum_example_1">Ich war</string>
+    <string name="sein_prateritum_example_2">Du warst</string>
+    <string name="sein_prateritum_example_3">er/sie/es war</string>
+    <string name="sein_prateritum_example_4">Wir waren</string>
+    <string name="sein_prateritum_example_5">Ihr wart</string>
+    <string name="sein_prateritum_example_6">sie/Sie waren</string>
+    <string name="sein_perfekt_example_1">ich bin gewesen</string>
+    <string name="sein_perfekt_example_2">du bist gewesen</string>
+    <string name="sein_perfekt_example_3">er/sie/es ist gewesen</string>
+    <string name="sein_perfekt_example_4">wir sind gewesen</string>
+    <string name="sein_perfekt_example_5">ihr seid gewesen</string>
+    <string name="sein_perfekt_example_6">sie/Sie sind gewesen</string>
+    <string name="haben_to_have_header">Haben (to have)</string>
+    <string name="haben_prateritum_example_1">ich hatte</string>
+    <string name="haben_prateritum_example_2">du hattest</string>
+    <string name="haben_prateritum_example_3">er/sie/es hatte</string>
+    <string name="haben_prateritum_example_4">wir hatten</string>
+    <string name="haben_prateritum_example_5">ihr hatte</string>
+    <string name="haben_prateritum_example_6">sie/Sie hatten</string>
+    <string name="haben_perfekt_example_1">ich habe gehabt</string>
+    <string name="haben_perfekt_example_2">du hast gehabt</string>
+    <string name="haben_perfekt_example_3">er/sie/es hat gehabt</string>
+    <string name="haben_perfekt_example_4">wir haben gehabt</string>
+    <string name="haben_perfekt_example_5">ihr habt gehabt</string>
+    <string name="haben_perfekt_example_6">sie/Sie haben gehabt</string>
+
 </resources>

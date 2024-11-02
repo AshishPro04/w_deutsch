@@ -3,17 +3,14 @@ package com.aschiesch.dspiel.ui.learn.pasttenses
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.aschiesch.dspiel.R
@@ -22,101 +19,110 @@ import com.aschiesch.dspiel.ui.learn.BulletedPointWithBoldCaption
 import com.aschiesch.dspiel.ui.learn.LessonTitle
 import com.aschiesch.dspiel.ui.learn.NextButton
 import com.aschiesch.dspiel.ui.learn.PreviousButton
-import com.aschiesch.dspiel.ui.theme.WDeutschTheme
 import kotlinx.serialization.Serializable
 
 @Serializable
-object PastTenseSecondScreen
+object PastTenseThirdScreen
 
 @Composable
-fun PastTenseSecondScreen(
+fun PastTenseThirdScreen(
     onPreviousClick: () -> Unit = {},
     onNextClick: () -> Unit = {}
 ) {
     val columnScrollState = rememberScrollState()
     Column(
         modifier = Modifier.fillMaxSize().verticalScroll(columnScrollState)
-    ) {
+    ){
         LessonTitle(
-            stringResource(R.string.formation_of_prateritm_header)
+            title = stringResource(R.string.formation_of_perfekt_header)
         )
         BulletedPointWithBoldCaption(
-            caption = stringResource(R.string.prateritum_regular_verbs_caption),
-            text = stringResource(R.string.prateritum_regular_verbs_explanation),
+            caption = stringResource(R.string.perfekt_auxiliary_verbs_caption),
+            text = stringResource(R.string.perfekt_auxiliary_verbs_explanation),
             fontSize = 20.sp
         )
         BulletedPoint(
-            text = stringResource(R.string.prateritum_example_header),
+            text = stringResource(R.string.perfekt_haben_description),
             modifier = Modifier.padding(start = 32.dp),
             fontSize = 18.sp
         )
         BulletedPoint(
-            text = stringResource(R.string.prateritum_example_1),
-            modifier = Modifier.padding(start = 64.dp),
-            fontSize = 16.sp
-        )
-        BulletedPoint(
-            text = stringResource(R.string.prateritum_example_2),
-            modifier = Modifier.padding(start = 64.dp),
-            fontSize = 16.sp
-        )
-        BulletedPoint(
-            text = stringResource(R.string.prateritum_example_3),
-            modifier = Modifier.padding(start = 64.dp),
-            fontSize = 16.sp
-        )
-        BulletedPoint(
-            text = stringResource(R.string.prateritum_example_4),
-            modifier = Modifier.padding(start = 64.dp),
-            fontSize = 16.sp
-        )
-        BulletedPoint(
-            text = stringResource(R.string.prateritum_example_5),
-            modifier = Modifier.padding(start = 64.dp),
-            fontSize = 16.sp
-        )
-        BulletedPoint(
-            text = stringResource(R.string.prateritum_example_6),
-            modifier = Modifier.padding(start = 64.dp),
-            fontSize = 16.sp
+            text = stringResource(R.string.perfekt_sein_description),
+            modifier = Modifier.padding(start = 32.dp),
+            fontSize = 18.sp
         )
         BulletedPointWithBoldCaption(
-            caption = stringResource(R.string.prateritum_regular_verbs_caption),
-            text = stringResource(R.string.prateritum_irregular_verbs_explanation),
+            caption = stringResource(R.string.perfekt_past_participle_caption),
+            text = stringResource(R.string.perfekt_past_participle_explanation),
             fontSize = 20.sp
         )
         BulletedPoint(
-            text = stringResource(R.string.prateritum_irregular_verbs_example_header),
+            text = stringResource(R.string.perfekt_past_participle_example_spielen_header),
             modifier = Modifier.padding(start = 32.dp),
             fontSize = 18.sp
         )
         BulletedPoint(
-            text = stringResource(R.string.prateritum_irregular_verbs_example_1),
+            text = stringResource(R.string.perfekt_past_participle_example_spielen_1),
             modifier = Modifier.padding(start = 64.dp),
             fontSize = 16.sp
         )
         BulletedPoint(
-            text = stringResource(R.string.prateritum_irregular_verbs_example_2),
+            text = stringResource(R.string.perfekt_past_participle_example_spielen_2),
             modifier = Modifier.padding(start = 64.dp),
             fontSize = 16.sp
         )
         BulletedPoint(
-            text = stringResource(R.string.prateritum_irregular_verbs_example_3),
+            text = stringResource(R.string.perfekt_past_participle_example_spielen_3),
             modifier = Modifier.padding(start = 64.dp),
             fontSize = 16.sp
         )
         BulletedPoint(
-            text = stringResource(R.string.prateritum_irregular_verbs_example_4),
+            text = stringResource(R.string.perfekt_past_participle_example_spielen_4),
             modifier = Modifier.padding(start = 64.dp),
             fontSize = 16.sp
         )
         BulletedPoint(
-            text = stringResource(R.string.prateritum_irregular_verbs_example_5),
+            text = stringResource(R.string.perfekt_past_participle_example_spielen_5),
             modifier = Modifier.padding(start = 64.dp),
             fontSize = 16.sp
         )
         BulletedPoint(
-            text = stringResource(R.string.prateritum_irregular_verbs_example_6),
+            text = stringResource(R.string.perfekt_past_participle_example_spielen_6),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.perfekt_past_participle_example_gehen_heder),
+            modifier = Modifier.padding(start = 32.dp),
+            fontSize = 18.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.perfekt_past_participle_example_gehen_1),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.perfekt_past_participle_example_gehen_2),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.perfekt_past_participle_example_gehen_3),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.perfekt_past_participle_example_gehen_4),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.perfekt_past_participle_example_gehen_5),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.perfekt_past_participle_example_gehen_6),
             modifier = Modifier.padding(start = 64.dp),
             fontSize = 16.sp
         )
@@ -124,24 +130,8 @@ fun PastTenseSecondScreen(
             modifier = Modifier.fillMaxWidth().padding(8.dp),
             horizontalArrangement = Arrangement.SpaceBetween
         ){
-            PreviousButton(
-                onClick = onPreviousClick
-            )
-            Spacer(modifier = Modifier.weight(1f))
-            NextButton(
-                onClick = onNextClick
-            )
-
-        }
-    }
-}
-
-@Preview
-@Composable
-fun PreviewPastTenseSecondScreen() {
-    WDeutschTheme {
-        Surface {
-            PastTenseSecondScreen()
+            PreviousButton(onClick = onPreviousClick)
+            NextButton(onClick = onNextClick)
         }
     }
 }

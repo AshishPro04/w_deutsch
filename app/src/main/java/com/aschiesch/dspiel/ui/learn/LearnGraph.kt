@@ -4,7 +4,11 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseFifthScreen
+import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseFourthScreen
 import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseSecondScreen
+import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseSixthScreen
+import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseThirdScreen
 import com.aschiesch.dspiel.ui.learn.pasttenses.PastTensesFirstScreen
 import com.aschiesch.dspiel.ui.learn.presenttense.PresentTenseFifthScreen
 import com.aschiesch.dspiel.ui.learn.presenttense.PresentTenseFirstScreen
@@ -85,7 +89,48 @@ fun NavGraphBuilder.learnGraph(navController: NavController) {
         }
 
         composable<PastTenseSecondScreen> {
-            PastTenseSecondScreen()
+            PastTenseSecondScreen(
+                onPreviousClick ={
+                    navController.navigateUp()
+                },
+                onNextClick = {
+                    navController.navigate(PastTenseThirdScreen)
+                }
+            )
         }
+        composable<PastTenseThirdScreen> {
+            PastTenseThirdScreen(
+                onPreviousClick = {
+                    navController.navigateUp()
+                },
+                onNextClick = {
+                    navController.navigate(PastTenseFourthScreen)
+                }
+            )
+        }
+        composable<PastTenseFourthScreen> {
+            PastTenseFourthScreen(
+                onPreviousClick = {
+                    navController.navigateUp()
+                },
+                onNextClick = {
+                    navController.navigate(PastTenseFifthScreen)
+                }
+            )
+        }
+        composable<PastTenseFifthScreen> {
+            PastTenseFifthScreen(
+                onPreviousClick = {
+                    navController.navigateUp()
+                },
+                onNextClick = {
+                    navController.navigate(PastTenseSixthScreen)
+                }
+            )
+        }
+        composable<PastTenseSixthScreen> {
+
+        }
+
     }
 }

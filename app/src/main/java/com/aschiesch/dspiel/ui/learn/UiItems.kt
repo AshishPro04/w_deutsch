@@ -109,6 +109,7 @@ fun BulletedPointWithBoldCaption(
         withStyle(ParagraphStyle(textAlign = TextAlign.Left)) {
             withStyle(style = SpanStyle(fontSize = fontSize, fontWeight = FontWeight.Bold)){
                 append(bullet)
+                append(" ")
                 append(caption)
             }
             if (inBrackets.isNotEmpty()) {
