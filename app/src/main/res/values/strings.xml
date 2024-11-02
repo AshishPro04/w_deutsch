@@ -3546,4 +3546,16 @@
     <string name="haben_perfekt_example_5">ihr habt gehabt</string>
     <string name="haben_perfekt_example_6">sie/Sie haben gehabt</string>
 
+<!--    Page 6 -->
+    <string name="exercise_1_caption">Exercise 1</string>
+    <string name="exercise_2_caption">Exercise 2</string>
+    <string name="past_exercise_1_description">Convert the following sentences from Präteritum to Perfekt.</string>
+    <string name="past_exercise_2_description">Write a short paragraph about what you did yesterday using both Präteritum and Perfekt.</string>
+    <string name="past_exercise_1_frage_1">Er spielte Klavier.</string>
+    <string name="past_exercise_1_frage_2">Wir gingen ins Kino.</string>
+    <string name="past_exercise_1_frage_3">Sie las ein Buch</string>
+    <!-- Page 7 -->
+    <string name="summary_header">Summary</string>
+    <string name="summary_point_1">Präteritum is mainly used in written German, while Perfekt is used in spoken German.</string>
+    <string name="summary_point_2">Both tenses are essential for expressing past actions, and their usage depends on the context and formality.</string>
 </resources>

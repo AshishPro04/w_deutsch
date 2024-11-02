@@ -7,6 +7,7 @@ import androidx.navigation.navigation
 import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseFifthScreen
 import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseFourthScreen
 import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseSecondScreen
+import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseSeventhScreen
 import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseSixthScreen
 import com.aschiesch.dspiel.ui.learn.pasttenses.PastTenseThirdScreen
 import com.aschiesch.dspiel.ui.learn.pasttenses.PastTensesFirstScreen
@@ -129,7 +130,29 @@ fun NavGraphBuilder.learnGraph(navController: NavController) {
             )
         }
         composable<PastTenseSixthScreen> {
-
+            PastTenseSixthScreen(
+                onPreviousClick = {
+                    navController.navigateUp()
+                },
+                onNextClick = {
+                    navController.navigate(PastTenseSeventhScreen)
+                }
+            )
+        }
+        composable<PastTenseSeventhScreen>() {
+            PastTenseSeventhScreen(
+                onPreviousClick = {
+                    navController.navigateUp()
+                },
+                onFinishClick = {
+                    navController.navigate(LearnHomeScreen) {
+                        launchSingleTop = true
+                        popUpTo<LearnHomeScreen>(){
+                            inclusive = false
+                        }
+                    }
+                }
+            )
         }
 
     }
