@@ -151,10 +151,44 @@ fun PastTenseFifthScreen(
             modifier = Modifier.padding(start = 64.dp),
             fontSize = 16.sp
         )
+        BulletedPoint(
+            text = stringResource(R.string.perfekt_caption),
+            modifier = Modifier.padding(start = 32.dp),
+            fontSize = 18.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.haben_perfekt_example_1),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.haben_perfekt_example_2),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.haben_perfekt_example_3),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.haben_perfekt_example_4),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.haben_perfekt_example_5),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
+        BulletedPoint(
+            text = stringResource(R.string.haben_perfekt_example_6),
+            modifier = Modifier.padding(start = 64.dp),
+            fontSize = 16.sp
+        )
         Row (
             modifier = Modifier.fillMaxWidth().padding(8.dp),
             horizontalArrangement = Arrangement.SpaceBetween
-
         ){
             PreviousButton(onClick = onPreviousClick)
             NextButton(onClick = onNextClick)
